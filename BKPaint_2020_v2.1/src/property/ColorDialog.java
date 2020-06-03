@@ -115,19 +115,33 @@ public class ColorDialog extends javax.swing.JPanel {
 
     private void bFillColorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bFillColorActionPerformed
     }//GEN-LAST:event_bFillColorActionPerformed
-
+    /**
+     * 
+     * set color khi bấm chọn màu trong Colordialog
+     */
+    
     private void colorPaneMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_colorPaneMousePressed
-        if (bStrokeColor.isSelected()) {
+        /**
+         * Set color cho net ve khi chon StrokeColor
+         */
+    	if (bStrokeColor.isSelected()) {
             strokeIcon = colorPane.getImage();
             strokeColor = colorPane.getColor();
             bStrokeColor.setIcon(strokeIcon);
-        } else if (bFillColor.isSelected()) {
+        }
+    	/**
+    	 * Set color cho tool to mau khi chon fillColor
+    	 */
+    	else if (bFillColor.isSelected()) {
             fillIcon = colorPane.getImage();
             fillColor = colorPane.getColor();
             bFillColor.setIcon(fillIcon);
         }
     }//GEN-LAST:event_colorPaneMousePressed
 
+    /**
+     * show bang chon mau mo rong va set su kien lay mau khi bam chon mau
+     */
     private void colorChooserActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_colorChooserActionPerformed
         Color color = JColorChooser.showDialog(this, "specify your color", Color.yellow);
         colorPane.setImage(color);
@@ -161,7 +175,9 @@ public class ColorDialog extends javax.swing.JPanel {
     public Color getFillColor() {
         return fillColor;
     }
-
+    /**
+     * lay mau duoc chon va thiet lap lay mau
+     */
     public void setColorPicker(Color c) {
         if (bStrokeColor.isSelected()) {
             colorPane.setImage(c);
