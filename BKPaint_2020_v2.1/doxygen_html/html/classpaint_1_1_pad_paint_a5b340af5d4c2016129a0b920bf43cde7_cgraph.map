@@ -1,0 +1,41 @@
+<map id="paint.PadPaint.redo" name="paint.PadPaint.redo">
+<area shape="rect" id="node1" title=" " alt="" coords="5,925,141,951"/>
+<area shape="rect" id="node2" href="$classpaint_1_1_paint_state.html#a438315d90a623cb1c45b217f10649417" title=" " alt="" coords="713,5,883,47"/>
+<area shape="rect" id="node3" href="$classpaint_1_1_paint_state.html#a76d75a3f952fb9abe65d16b62e94501b" title=" " alt="" coords="700,71,896,98"/>
+<area shape="rect" id="node4" href="$classshape_1_1_line.html#afe9a0812aeabdc06fc9fe183b333ba17" title=" " alt="" coords="740,625,856,651"/>
+<area shape="rect" id="node5" href="$classshape_1_1_pencil.html#a3236f49153f3361a2091972d4decd17f" title=" " alt="" coords="231,773,359,799"/>
+<area shape="rect" id="node6" href="$classshape_1_1_right_triangle.html#a61ab8ce37e1546c9aaa1cf6fb71f2c3e" title=" " alt="" coords="211,823,378,850"/>
+<area shape="rect" id="node7" href="$classshape_1_1_triangle.html#a010b03c67d015e2af7a1ef7226845b05" title=" " alt="" coords="226,874,363,901"/>
+<area shape="rect" id="node8" href="$classshape_1_1_rectangle.html#af5bda43128020a5e1e5213deb3b77cd5" title=" " alt="" coords="219,925,370,951"/>
+<area shape="rect" id="node9" href="$classshape_1_1_oval.html#a0781683126ab79fc360b155eafe2195f" title=" " alt="" coords="236,975,353,1002"/>
+<area shape="rect" id="node10" href="$classshape_1_1_round_rect.html#a44f6266c45d658a631f3bd9f0bb2f72d" title=" " alt="" coords="217,1026,373,1053"/>
+<area shape="rect" id="node11" href="$classshape_1_1_polygon.html#a8cbe64e89fb50e7e9976bf322a609ec2" title=" " alt="" coords="225,1077,364,1103"/>
+<area shape="rect" id="node12" href="$classshape_1_1_selection_shape.html#a270fc98b04dbd8996dc48be4ef013437" title=" " alt="" coords="707,675,889,702"/>
+<area shape="rect" id="node13" href="$classshape_1_1_bucket.html#a6f859cb04d34c4b70d7436c60196fa68" title=" " alt="" coords="228,1127,361,1154"/>
+<area shape="rect" id="node15" href="$classshape_1_1_curve.html#a22d4f081653d452a11d8fb1d2f197530" title=" " alt="" coords="736,726,860,753"/>
+<area shape="rect" id="node16" href="$classpaint_1_1_pad_paint.html#a7fb457e1060ab4d074d925c2250b7588" title=" " alt="" coords="219,267,370,294"/>
+<area shape="rect" id="node21" href="$classshape_1_1_shape.html#aa636f9716acc14c57fc94e46ac3b5cdf" title=" " alt="" coords="195,1178,394,1205"/>
+<area shape="rect" id="node22" href="$classpaint_1_1_paint_state.html#aba66b9fbc33c08c70d223aae2abcaa38" title=" " alt="" coords="211,1229,378,1271"/>
+<area shape="rect" id="node23" href="$classpaint_1_1_paint_state.html#a6613e9112ff8c303c03c8b20687aa0de" title=" " alt="" coords="215,1295,374,1336"/>
+<area shape="rect" id="node24" href="$classpaint_1_1_paint_state.html#a90dd8a74f2f06707b5478501b0f799de" title=" " alt="" coords="211,1361,378,1387"/>
+<area shape="rect" id="node25" href="$classpaint_1_1_pad_paint.html#ac184ffc3b56178282ed156d8d0e98d73" title=" " alt="" coords="219,1411,370,1438"/>
+<area shape="rect" id="node26" href="$classpaint_1_1_paint_state.html#a096feccc2b4dbf0307f67447f015a2a4" title=" " alt="" coords="203,1463,386,1504"/>
+<area shape="rect" id="node27" href="$classpaint_1_1_paint_state.html#a78e9d647ec6476d15e5c4bcd976b7882" title=" " alt="" coords="189,1529,400,1555"/>
+<area shape="rect" id="node28" href="$classpaint_1_1_pad_paint.html#a382553c92e223eabaaba05ac69f60815" title=" " alt="" coords="223,355,367,382"/>
+<area shape="rect" id="node36" href="$classshape_1_1_shape.html#a6abe2c9daa03d0969c221d2749e1284b" title=" " alt="" coords="723,777,873,803"/>
+<area shape="rect" id="node14" href="$classshape_1_1_bucket.html#a882797aa9e68fbc4e42475adf6790ba6" title=" " alt="" coords="461,1127,637,1154"/>
+<area shape="rect" id="node17" href="$classshape_1_1_selection_shape.html#a5159760876de7ea9e686d99bc6031d8d" title=" " alt="" coords="448,297,649,323"/>
+<area shape="rect" id="node18" href="$classshape_1_1_selection_shape.html#a50f5a1800799c17c35da7cb2af13a2be" title=" " alt="" coords="461,348,636,389"/>
+<area shape="rect" id="node19" href="$classshape_1_1_selection_shape.html#a28c4e17545bea26ce6b78d699005e80d" title=" " alt="" coords="461,165,636,207"/>
+<area shape="rect" id="node20" href="$classshape_1_1_selection_shape.html#afabfa64053bdfce122f718703a1c8713" title=" " alt="" coords="461,231,636,272"/>
+<area shape="rect" id="node29" href="$classpaint_1_1_pad_paint.html#a219f87d5e5bb55ab206426528e10c39f" title=" " alt="" coords="461,465,637,491"/>
+<area shape="rect" id="node30" href="$classshape_1_1_shape.html#a61ab4e9c6f595fe9391f150a828faf89" title=" " alt="" coords="697,290,899,317"/>
+<area shape="rect" id="node31" href="$classshape_1_1_polygon.html#ae13d63bbd7ec73ab113c30e55f34d5fa" title=" " alt="" coords="707,341,889,367"/>
+<area shape="rect" id="node32" href="$classpaint_1_1_paint_tool.html#a6eb9a60045f01a3c8b5ce7ca65ef6329" title=" " alt="" coords="703,391,893,418"/>
+<area shape="rect" id="node33" href="$classpaint_1_1_pad_paint.html#a0d9341cb2bad32c142db5cbc64a61648" title=" " alt="" coords="719,442,877,469"/>
+<area shape="rect" id="node34" href="$classproperty_1_1_stroke_state.html#a1f1506c6a3c0121fafb2b516a76398ce" title=" " alt="" coords="716,493,880,535"/>
+<area shape="rect" id="node35" href="$classproperty_1_1_color_dialog.html#acbe444c23fcd5b910daffc0e98f75fe1" title=" " alt="" coords="717,559,879,600"/>
+<area shape="rect" id="node37" href="$classshape_1_1_selection_shape.html#a16ba65ee6c2f0634c92290a99a1850f2" title=" " alt="" coords="711,123,885,164"/>
+<area shape="rect" id="node38" href="$classshape_1_1_shape.html#a6625a3e0f034664fb287acb81ab81908" title=" " alt="" coords="719,189,877,215"/>
+<area shape="rect" id="node39" href="$classshape_1_1_shape.html#a6de56a836e6cbe545eef0953860a3399" title=" " alt="" coords="704,239,892,266"/>
+</map>

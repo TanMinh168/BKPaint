@@ -1,0 +1,18 @@
+<map id="paint.PadPaint.toolChange" name="paint.PadPaint.toolChange">
+<area shape="rect" id="node1" title=" " alt="" coords="5,376,181,403"/>
+<area shape="rect" id="node2" href="$classshape_1_1_shape.html#a61ab4e9c6f595fe9391f150a828faf89" title=" " alt="" coords="229,5,431,32"/>
+<area shape="rect" id="node3" href="$classpaint_1_1_paint_state.html#a438315d90a623cb1c45b217f10649417" title=" " alt="" coords="245,57,415,98"/>
+<area shape="rect" id="node4" href="$classpaint_1_1_paint_state.html#a76d75a3f952fb9abe65d16b62e94501b" title=" " alt="" coords="232,123,428,149"/>
+<area shape="rect" id="node5" href="$classshape_1_1_polygon.html#ae13d63bbd7ec73ab113c30e55f34d5fa" title=" " alt="" coords="239,173,421,200"/>
+<area shape="rect" id="node6" href="$classshape_1_1_line.html#afe9a0812aeabdc06fc9fe183b333ba17" title=" " alt="" coords="272,224,388,251"/>
+<area shape="rect" id="node7" href="$classshape_1_1_selection_shape.html#a270fc98b04dbd8996dc48be4ef013437" title=" " alt="" coords="239,275,421,301"/>
+<area shape="rect" id="node8" href="$classshape_1_1_curve.html#a22d4f081653d452a11d8fb1d2f197530" title=" " alt="" coords="268,325,392,352"/>
+<area shape="rect" id="node9" href="$classpaint_1_1_paint_tool.html#a6eb9a60045f01a3c8b5ce7ca65ef6329" title=" " alt="" coords="235,376,425,403"/>
+<area shape="rect" id="node10" href="$classpaint_1_1_pad_paint.html#a0d9341cb2bad32c142db5cbc64a61648" title=" " alt="" coords="251,427,409,453"/>
+<area shape="rect" id="node11" href="$classproperty_1_1_stroke_state.html#a1f1506c6a3c0121fafb2b516a76398ce" title=" " alt="" coords="248,478,412,519"/>
+<area shape="rect" id="node12" href="$classproperty_1_1_color_dialog.html#acbe444c23fcd5b910daffc0e98f75fe1" title=" " alt="" coords="249,543,411,585"/>
+<area shape="rect" id="node13" href="$classshape_1_1_shape.html#a6abe2c9daa03d0969c221d2749e1284b" title=" " alt="" coords="255,609,405,636"/>
+<area shape="rect" id="node14" href="$classshape_1_1_selection_shape.html#a16ba65ee6c2f0634c92290a99a1850f2" title=" " alt="" coords="243,661,417,702"/>
+<area shape="rect" id="node15" href="$classshape_1_1_shape.html#a6625a3e0f034664fb287acb81ab81908" title=" " alt="" coords="251,727,409,753"/>
+<area shape="rect" id="node16" href="$classshape_1_1_shape.html#a6de56a836e6cbe545eef0953860a3399" title=" " alt="" coords="236,777,424,804"/>
+</map>

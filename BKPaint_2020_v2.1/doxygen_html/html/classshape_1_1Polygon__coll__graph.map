@@ -1,0 +1,10 @@
+<map id="shape.Polygon" name="shape.Polygon">
+<area shape="rect" id="node1" title=" " alt="" coords="275,199,383,225"/>
+<area shape="rect" id="node2" href="$classshape_1_1Shape.html" title=" " alt="" coords="146,109,245,136"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,5,95,32"/>
+<area shape="rect" id="node4" title=" " alt="" coords="119,5,171,32"/>
+<area shape="rect" id="node5" title=" " alt="" coords="220,5,272,32"/>
+<area shape="rect" id="node6" title=" " alt="" coords="297,5,425,32"/>
+<area shape="rect" id="node7" href="$interfaceshape_1_1DrawType.html" title=" " alt="" coords="269,109,388,136"/>
+<area shape="rect" id="node8" title=" " alt="" coords="412,109,573,136"/>
+</map>

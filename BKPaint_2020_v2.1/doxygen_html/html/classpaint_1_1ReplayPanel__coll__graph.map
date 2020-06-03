@@ -1,0 +1,34 @@
+<map id="paint.ReplayPanel" name="paint.ReplayPanel">
+<area shape="rect" id="node1" title=" " alt="" coords="863,1053,989,1080"/>
+<area shape="rect" id="node2" title=" " alt="" coords="633,5,695,32"/>
+<area shape="rect" id="node3" title=" " alt="" coords="626,56,702,83"/>
+<area shape="rect" id="node4" href="$classpaint_1_1PaintState.html" title=" " alt="" coords="607,1521,721,1548"/>
+<area shape="rect" id="node5" title=" " alt="" coords="25,1516,114,1543"/>
+<area shape="rect" id="node10" href="$classshape_1_1Shape.html" title=" " alt="" coords="300,795,399,821"/>
+<area shape="rect" id="node6" title=" " alt="" coords="281,1477,418,1504"/>
+<area shape="rect" id="node7" title=" " alt="" coords="252,1603,447,1629"/>
+<area shape="rect" id="node8" href="$interfaceshape_1_1DrawType.html" title=" " alt="" coords="290,895,409,921"/>
+<area shape="rect" id="node9" href="$classshape_1_1SelectionShape.html" title=" " alt="" coords="588,1116,740,1143"/>
+<area shape="rect" id="node14" href="$classshape_1_1Curve.html" title=" " alt="" coords="617,612,711,639"/>
+<area shape="rect" id="node16" href="$classshape_1_1Triangle.html" title=" " alt="" coords="611,1228,717,1255"/>
+<area shape="rect" id="node18" href="$classshape_1_1RoundRect.html" title=" " alt="" coords="601,679,727,705"/>
+<area shape="rect" id="node19" href="$classshape_1_1RightTriangle.html" title=" " alt="" coords="596,785,732,812"/>
+<area shape="rect" id="node20" href="$classshape_1_1Rectangle.html" title=" " alt="" coords="605,848,723,875"/>
+<area shape="rect" id="node21" href="$classshape_1_1Eraser.html" title=" " alt="" coords="615,995,713,1021"/>
+<area shape="rect" id="node22" href="$classshape_1_1Line.html" title=" " alt="" coords="621,1053,707,1080"/>
+<area shape="rect" id="node25" href="$classshape_1_1Pencil.html" title=" " alt="" coords="615,928,713,955"/>
+<area shape="rect" id="node26" href="$classshape_1_1Bucket.html" title=" " alt="" coords="613,412,715,439"/>
+<area shape="rect" id="node32" href="$classshape_1_1Oval.html" title=" " alt="" coords="621,511,707,537"/>
+<area shape="rect" id="node11" title=" " alt="" coords="43,595,95,621"/>
+<area shape="rect" id="node12" title=" " alt="" coords="43,1084,95,1111"/>
+<area shape="rect" id="node13" title=" " alt="" coords="5,209,133,236"/>
+<area shape="rect" id="node15" title=" " alt="" coords="619,1635,709,1661"/>
+<area shape="rect" id="node17" title=" " alt="" coords="302,1323,397,1349"/>
+<area shape="rect" id="node23" title=" " alt="" coords="635,1685,693,1712"/>
+<area shape="rect" id="node24" title=" " alt="" coords="297,1823,401,1849"/>
+<area shape="rect" id="node28" href="$classpaint_1_1PaintTool.html" title=" " alt="" coords="610,1941,718,1968"/>
+<area shape="rect" id="node27" title=" " alt="" coords="612,1992,716,2019"/>
+<area shape="rect" id="node29" title=" " alt="" coords="280,2011,419,2037"/>
+<area shape="rect" id="node30" title=" " alt="" coords="297,2061,402,2088"/>
+<area shape="rect" id="node31" href="$enumpaint_1_1PaintTool_1_1DrawMode.html" title=" " alt="" coords="263,1960,436,1987"/>
+</map>
