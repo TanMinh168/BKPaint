@@ -1,4 +1,3 @@
-
 package property;
 
 import java.awt.Color;
@@ -77,7 +76,6 @@ public class ColorDialog extends javax.swing.JPanel {
 
         buttonGroup1.add(bStrokeColor);
         bStrokeColor.setSelected(true);
-
         jLabel1.setText("  Stroke");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -117,7 +115,7 @@ public class ColorDialog extends javax.swing.JPanel {
     }//GEN-LAST:event_bFillColorActionPerformed
     /**
      * 
-     * set color khi bấm chọn màu trong Colordialog
+     * Set color khi bam chon mau trong ColorDialog
      */
     
     private void colorPaneMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_colorPaneMousePressed
@@ -140,7 +138,7 @@ public class ColorDialog extends javax.swing.JPanel {
     }//GEN-LAST:event_colorPaneMousePressed
 
     /**
-     * show bang chon mau mo rong va set su kien lay mau khi bam chon mau
+     * Show bang chon mau mo rong va set su kien lay mau khi bam chon mau
      */
     private void colorChooserActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_colorChooserActionPerformed
         Color color = JColorChooser.showDialog(this, "specify your color", Color.yellow);
@@ -176,7 +174,7 @@ public class ColorDialog extends javax.swing.JPanel {
         return fillColor;
     }
     /**
-     * lay mau duoc chon va thiet lap lay mau
+     * Lay mau duoc chon va thiet lap lay mau
      */
     public void setColorPicker(Color c) {
         if (bStrokeColor.isSelected()) {
