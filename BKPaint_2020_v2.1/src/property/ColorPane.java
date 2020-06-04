@@ -27,7 +27,7 @@ public class ColorPane extends javax.swing.JPanel {
     private Point location;
 
     /**
-     * Tạo form ColorPane
+     * Tao form ColorPane
      */
     public ColorPane() {
         initComponents();
@@ -67,21 +67,23 @@ public class ColorPane extends javax.swing.JPanel {
         this.setPreferredSize(new Dimension(251, 76));
         for (int i = 0; i < soDong; i++) {
             for (int j = 0; j < soCot; j++) {
-            	//Gắn màu cho từng ô trong color cell
+            	//Gan mau cho tung o trong color cell
                 cells[i][j] = new ColorCell(colors[i][j]);
             }
         }
-        
+        /**
+         * Xac dinh thay doi trang thai chuot cua user
+         */
         this.addMouseListener(new MouseAdapter() {
         	/**
-             * Xác định vị trí click chuột của user
+             * Tra ve vi tri an chuot cua user
              */
             public void mousePressed(MouseEvent e) {
                 setImage(e.getX(), e.getY());
             }
             
             /**
-             * Recover trạng thái sau khi user kéo chuột ra khỏi vùng chọn
+             * Recover trang thai sau khi user roi chuot khoi bang mau
              */
             public void mouseExited(MouseEvent e) {
                 location = null;
@@ -89,9 +91,12 @@ public class ColorPane extends javax.swing.JPanel {
             }
         });
         
+        /**
+         * Bat cac chuyen dong chuot cua user (keo, di chuyen)
+         */
         this.addMouseMotionListener(new MouseMotionAdapter() {
         	/**
-             * Bắt chuyển động chuột của user
+             * Bat chuyen dong di chuyen chuot cua user
              */
             public void mouseMoved(MouseEvent e) {
                 location = e.getPoint();
@@ -109,9 +114,9 @@ public class ColorPane extends javax.swing.JPanel {
     }
     
     /**
-     * Trả về màu tương ứng với lựa chọn click chuột của user.
-     * Nếu vị trí click chuột ở biên giữa 2 ô màu thì không trả về kết quả.
-     * Nếu vị trí click chuột ở ngoài diện tích của color pane thì không trả về kết quả.
+     * Tra ve mau tuong ung voi vi tri an chon chua user.
+     * Neu vi tri an chon cua user nam ngay tren duong bien giua 2 o mau thi khong tra ve ket qua
+     * Neu vi tri an chon cua user nam ngoai pham vi cua bang mau thi khong tra ve ket qua
      */
     public void setImage(int mouseX, int mouseY) {
         if (mouseX % ColorCell.HEIGHT == 0 || mouseY % ColorCell.WIDTH == 0) {
@@ -153,8 +158,8 @@ public class ColorPane extends javax.swing.JPanel {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     /**
-     * Khởi tạo thành phần
-     * */
+     * Khoi tao thanh phan
+     */
     private void initComponents() {
         setLayout(null);
     }// </editor-fold>//GEN-END:initComponents
