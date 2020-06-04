@@ -474,7 +474,7 @@ public class MainFrame extends javax.swing.JFrame {
                                     .addComponent(width_tf, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jLabel4))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(height_tf, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jLabel3))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -900,6 +900,25 @@ public class MainFrame extends javax.swing.JFrame {
 
     private void OK_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OK_btnActionPerformed
         // TODO add your handling code here:
+       /**
+        * Neu file chua duoc luu ma muon mo rong nen ve thi can hien dialog hoi xem nguoi dung co muon luu hay khong
+        */
+        
+        if (padPaint.isSaving() == false) {
+                    Object[] option = {"Save", "Don't Save", "Cancel"};
+                    int specify = JOptionPane.showOptionDialog(null, "Do you want to save file ?", "BKPaint", JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.QUESTION_MESSAGE, null, option, rootPane);
+                    if (specify != JOptionPane.CANCEL_OPTION && specify != JOptionPane.CLOSED_OPTION) {
+                        if (specify == JOptionPane.YES_OPTION) {
+                            saveImageToFile();
+                        }
+                        
+                    }
+                    else {
+                            return;
+                    }
+       }
+        
+        
         try{
             int value = Integer.parseInt(width_tf.getText());
             if(value > 0)
@@ -934,7 +953,7 @@ public class MainFrame extends javax.swing.JFrame {
             return;
         }
         padPaint.SetSize(width, height);
-       backgroundPanel.setLayout(null);
+        backgroundPanel.setLayout(null);
         backgroundPanel.setBackground(new Color(204, 204, 255));
         buff_img = padPaint.getBuffer();
         backgroundPanel.setPreferredSize(new Dimension(buff_img.getWidth() + 120, buff_img.getHeight() + 50));
