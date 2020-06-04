@@ -202,7 +202,41 @@ public class PadPaint extends javax.swing.JPanel implements MouseListener, Mouse
             return false;
         }
     }
+    
+    public int getWidth() {
+		return width;
+	}
 
+	public void setWidth(int width) {
+		this.width = width;
+	}
+
+	public int getHeight() {
+		return height;
+	}
+
+	public void setHeight(int height) {
+		this.height = height;
+	}
+
+	public void SetSize(int width,int height) {
+	this.width = width;
+        this.height = height;
+        this.setSize(new Dimension(width, height));
+        ///Khoi tao anh
+        org_img = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
+        g2d = (Graphics2D) org_img.getGraphics();
+        g2d.setColor(new Color(255, 255, 255));
+        g2d.fillRect(0, 0, width, height);
+        g2d.dispose();
+        
+        buff_img = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
+        g2 = (Graphics2D) buff_img.getGraphics();
+        g2.setColor(new Color(255, 255, 255));
+        g2.fillRect(0, 0, width, height);
+        g2.dispose();
+        
+    }
     public PadPaint(int width, int height) {
         initComponents();
         line = new Line();
