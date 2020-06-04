@@ -198,7 +198,22 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="interfaceshape_1_1_draw_type.html#a32f2f06d2e787ebcf8ebbb486645fb32">shape.DrawType</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_round_rect_8java_source.html#l00016">16</a> of file <a class="el" href="_round_rect_8java_source.html">RoundRect.java</a>.</p>
-<div class="dynheader">
+<div class="fragment"><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                                     {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;         BasicStroke stroke = <span class="keyword">new</span> BasicStroke(<a class="code" href="classshape_1_1_shape.html#a95776244db45c13cbc8c22c808231f31">strokeThickness</a>,<a class="code" href="classshape_1_1_shape.html#a9da81a96d6a2422aae2f05c4ef287c19">endStrokeCap</a>,<a class="code" href="classshape_1_1_shape.html#a91f14f61f123563a8dcefd1f59d1930d">lineStrokeJoin</a>,<a class="code" href="classshape_1_1_shape.html#a15d88edbbec1a0320055e4d369e1c5d5">miterLimit</a>,</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <a class="code" href="classshape_1_1_shape.html#aea8b54ba1922eec21008c74b2a5416a6">dashArray</a>,<a class="code" href="classshape_1_1_shape.html#a2b3fe08e448a43ce1a412c41e27a63d1">dashPhase</a>);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        g2d.setStroke(stroke);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classshape_1_1_round_rect.html#a41463b8e710157b76db7685dbcf9231a">fillColor</a> != Color.WHITE) {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            g2d.setColor(<a class="code" href="classshape_1_1_round_rect.html#a41463b8e710157b76db7685dbcf9231a">fillColor</a>);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            g2d.fillRoundRect(Math.min(<a class="code" href="classshape_1_1_shape.html#a6cb0a6d0265cb4c81460dc6e9322fd42">start</a>.x, <a class="code" href="classshape_1_1_shape.html#a23fd06c705d1b554dacacb76135b7ce1">end</a>.x), Math.min(<a class="code" href="classshape_1_1_shape.html#a6cb0a6d0265cb4c81460dc6e9322fd42">start</a>.y, <a class="code" href="classshape_1_1_shape.html#a23fd06c705d1b554dacacb76135b7ce1">end</a>.y),</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                    Math.abs(<a class="code" href="classshape_1_1_shape.html#a6cb0a6d0265cb4c81460dc6e9322fd42">start</a>.x - <a class="code" href="classshape_1_1_shape.html#a23fd06c705d1b554dacacb76135b7ce1">end</a>.x), Math.abs(<a class="code" href="classshape_1_1_shape.html#a6cb0a6d0265cb4c81460dc6e9322fd42">start</a>.y - <a class="code" href="classshape_1_1_shape.html#a23fd06c705d1b554dacacb76135b7ce1">end</a>.y), <a class="code" href="classshape_1_1_round_rect.html#ae42f44479ac44f4202c714376ce5ec8d">ARC_WIDTH</a>, <a class="code" href="classshape_1_1_round_rect.html#ac535e36b7c9b4a01336bc07df0f72a96">ARC_HEIGHT</a>);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        }</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        g2d.setColor(<a class="code" href="classshape_1_1_shape.html#a49bdc84297706340259df69e23d3ddcb">strokeColor</a>);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        g2d.drawRoundRect(Math.min(<a class="code" href="classshape_1_1_shape.html#a6cb0a6d0265cb4c81460dc6e9322fd42">start</a>.x, <a class="code" href="classshape_1_1_shape.html#a23fd06c705d1b554dacacb76135b7ce1">end</a>.x), Math.min(<a class="code" href="classshape_1_1_shape.html#a6cb0a6d0265cb4c81460dc6e9322fd42">start</a>.y, <a class="code" href="classshape_1_1_shape.html#a23fd06c705d1b554dacacb76135b7ce1">end</a>.y), Math.abs(<a class="code" href="classshape_1_1_shape.html#a23fd06c705d1b554dacacb76135b7ce1">end</a>.x - <a class="code" href="classshape_1_1_shape.html#a6cb0a6d0265cb4c81460dc6e9322fd42">start</a>.x),</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                Math.abs(<a class="code" href="classshape_1_1_shape.html#a23fd06c705d1b554dacacb76135b7ce1">end</a>.y - <a class="code" href="classshape_1_1_shape.html#a6cb0a6d0265cb4c81460dc6e9322fd42">start</a>.y), <a class="code" href="classshape_1_1_round_rect.html#ae42f44479ac44f4202c714376ce5ec8d">ARC_WIDTH</a>, <a class="code" href="classshape_1_1_round_rect.html#ac535e36b7c9b4a01336bc07df0f72a96">ARC_HEIGHT</a>);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    }</div>
+</div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classshape_1_1_round_rect_a44f6266c45d658a631f3bd9f0bb2f72d_icgraph.png" border="0" usemap="#classshape_1_1_round_rect_a44f6266c45d658a631f3bd9f0bb2f72d_icgraph" alt=""/></div>
@@ -209,11 +224,10 @@ Here is the caller graph for this function:</div>
 <area shape="rect" href="classpaint_1_1_replay_panel.html#a157f393d9cc7504cd8e62852148ddd35" title=" " alt="" coords="467,122,692,149"/>
 <area shape="rect" href="classpaint_1_1_pad_paint.html#a761c370786b3ba2aa3f0731d777ab451" title=" " alt="" coords="477,173,682,199"/>
 <area shape="rect" href="classpaint_1_1_pad_paint.html#a5b340af5d4c2016129a0b920bf43cde7" title=" " alt="" coords="511,223,647,250"/>
-<area shape="rect" href="classpaint_1_1_pad_paint.html#a184767bfb4fcb162ca1d00c45f91ce71" title=" " alt="" coords="510,278,649,305"/>
+<area shape="rect" href="classpaint_1_1_pad_paint.html#a184767bfb4fcb162ca1d00c45f91ce71" title=" " alt="" coords="510,274,649,301"/>
 <area shape="rect" href="classpaint_1_1_replay_panel.html#a5eedc47768d0b72adf8d2f3c0ff5f9b0" title=" " alt="" coords="222,13,418,39"/>
 <area shape="rect" href="classpaint_1_1_replay_dialog.html#afd802a71a62e07223e2109d7082248a9" title=" " alt="" coords="5,5,173,47"/>
-<area shape="rect" href="classpaint_1_1_main_frame.html#ae82e9bc5bca66f8df00ddead69fac496" title=" " alt="" coords="221,212,419,253"/>
-<area shape="rect" href="classpaint_1_1_main_frame.html#a758e41c07d53e3ca72727077cd13951d" title=" " alt="" coords="221,277,419,319"/>
+<area shape="rect" href="classpaint_1_1_main_frame.html#a758e41c07d53e3ca72727077cd13951d" title=" " alt="" coords="221,267,419,308"/>
 </map>
 </div>
 
@@ -237,7 +251,10 @@ Here is the caller graph for this function:</div>
 <p>Reimplemented from <a class="el" href="classshape_1_1_shape.html#a63b868da95da9d757c4fb9ecf8eac118">shape.Shape</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_round_rect_8java_source.html#l00032">32</a> of file <a class="el" href="_round_rect_8java_source.html">RoundRect.java</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                                  {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classshape_1_1_shape.html#a49bdc84297706340259df69e23d3ddcb">strokeColor</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="abe30dccab8e386bfd3b4e364491102f4"></a>
@@ -257,7 +274,10 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_round_rect_8java_source.html#l00036">36</a> of file <a class="el" href="_round_rect_8java_source.html">RoundRect.java</a>.</p>
-<div class="dynheader">
+<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                                              {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        this.<a class="code" href="classshape_1_1_round_rect.html#a41463b8e710157b76db7685dbcf9231a">fillColor</a> = <a class="code" href="classshape_1_1_round_rect.html#a41463b8e710157b76db7685dbcf9231a">fillColor</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div>
+</div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classshape_1_1_round_rect_abe30dccab8e386bfd3b4e364491102f4_icgraph.png" border="0" usemap="#classshape_1_1_round_rect_abe30dccab8e386bfd3b4e364491102f4_icgraph" alt=""/></div>
@@ -270,8 +290,8 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a41463b8e710157b76db7685dbcf9231a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a41463b8e710157b76db7685dbcf9231a">&#9670;&nbsp;</a></span>fillColor</h2>
+<a id="ac535e36b7c9b4a01336bc07df0f72a96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac535e36b7c9b4a01336bc07df0f72a96">&#9670;&nbsp;</a></span>ARC_HEIGHT</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -280,17 +300,17 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Color shape.RoundRect.fillColor</td>
+          <td class="memname">final int shape.RoundRect.ARC_HEIGHT = 50</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_round_rect_8java_source.html#l00011">11</a> of file <a class="el" href="_round_rect_8java_source.html">RoundRect.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_round_rect_8java_source.html#l00013">13</a> of file <a class="el" href="_round_rect_8java_source.html">RoundRect.java</a>.</p>
 
 </div>
 </div>
@@ -318,8 +338,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="ac535e36b7c9b4a01336bc07df0f72a96"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac535e36b7c9b4a01336bc07df0f72a96">&#9670;&nbsp;</a></span>ARC_HEIGHT</h2>
+<a id="a41463b8e710157b76db7685dbcf9231a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41463b8e710157b76db7685dbcf9231a">&#9670;&nbsp;</a></span>fillColor</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -328,17 +348,17 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final int shape.RoundRect.ARC_HEIGHT = 50</td>
+          <td class="memname">Color shape.RoundRect.fillColor</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_round_rect_8java_source.html#l00013">13</a> of file <a class="el" href="_round_rect_8java_source.html">RoundRect.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_round_rect_8java_source.html#l00011">11</a> of file <a class="el" href="_round_rect_8java_source.html">RoundRect.java</a>.</p>
 
 </div>
 </div>
@@ -347,6 +367,18 @@ Here is the caller graph for this function:</div>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclassshape_1_1_shape_html_a2b3fe08e448a43ce1a412c41e27a63d1"><div class="ttname"><a href="classshape_1_1_shape.html#a2b3fe08e448a43ce1a412c41e27a63d1">shape.Shape.dashPhase</a></div><div class="ttdeci">float dashPhase</div><div class="ttdef"><b>Definition:</b> <a href="_shape_8java_source.html#l00044">Shape.java:44</a></div></div>
+<div class="ttc" id="aclassshape_1_1_shape_html_aea8b54ba1922eec21008c74b2a5416a6"><div class="ttname"><a href="classshape_1_1_shape.html#aea8b54ba1922eec21008c74b2a5416a6">shape.Shape.dashArray</a></div><div class="ttdeci">float[] dashArray</div><div class="ttdef"><b>Definition:</b> <a href="_shape_8java_source.html#l00046">Shape.java:46</a></div></div>
+<div class="ttc" id="aclassshape_1_1_round_rect_html_ae42f44479ac44f4202c714376ce5ec8d"><div class="ttname"><a href="classshape_1_1_round_rect.html#ae42f44479ac44f4202c714376ce5ec8d">shape.RoundRect.ARC_WIDTH</a></div><div class="ttdeci">static final int ARC_WIDTH</div><div class="ttdef"><b>Definition:</b> <a href="_round_rect_8java_source.html#l00012">RoundRect.java:12</a></div></div>
+<div class="ttc" id="aclassshape_1_1_shape_html_a23fd06c705d1b554dacacb76135b7ce1"><div class="ttname"><a href="classshape_1_1_shape.html#a23fd06c705d1b554dacacb76135b7ce1">shape.Shape.end</a></div><div class="ttdeci">Point end</div><div class="ttdef"><b>Definition:</b> <a href="_shape_8java_source.html#l00015">Shape.java:15</a></div></div>
+<div class="ttc" id="aclassshape_1_1_shape_html_a49bdc84297706340259df69e23d3ddcb"><div class="ttname"><a href="classshape_1_1_shape.html#a49bdc84297706340259df69e23d3ddcb">shape.Shape.strokeColor</a></div><div class="ttdeci">Color strokeColor</div><div class="ttdef"><b>Definition:</b> <a href="_shape_8java_source.html#l00013">Shape.java:13</a></div></div>
+<div class="ttc" id="aclassshape_1_1_shape_html_a95776244db45c13cbc8c22c808231f31"><div class="ttname"><a href="classshape_1_1_shape.html#a95776244db45c13cbc8c22c808231f31">shape.Shape.strokeThickness</a></div><div class="ttdeci">float strokeThickness</div><div class="ttdef"><b>Definition:</b> <a href="_shape_8java_source.html#l00041">Shape.java:41</a></div></div>
+<div class="ttc" id="aclassshape_1_1_round_rect_html_a41463b8e710157b76db7685dbcf9231a"><div class="ttname"><a href="classshape_1_1_round_rect.html#a41463b8e710157b76db7685dbcf9231a">shape.RoundRect.fillColor</a></div><div class="ttdeci">Color fillColor</div><div class="ttdef"><b>Definition:</b> <a href="_round_rect_8java_source.html#l00011">RoundRect.java:11</a></div></div>
+<div class="ttc" id="aclassshape_1_1_shape_html_a9da81a96d6a2422aae2f05c4ef287c19"><div class="ttname"><a href="classshape_1_1_shape.html#a9da81a96d6a2422aae2f05c4ef287c19">shape.Shape.endStrokeCap</a></div><div class="ttdeci">int endStrokeCap</div><div class="ttdef"><b>Definition:</b> <a href="_shape_8java_source.html#l00042">Shape.java:42</a></div></div>
+<div class="ttc" id="aclassshape_1_1_shape_html_a15d88edbbec1a0320055e4d369e1c5d5"><div class="ttname"><a href="classshape_1_1_shape.html#a15d88edbbec1a0320055e4d369e1c5d5">shape.Shape.miterLimit</a></div><div class="ttdeci">float miterLimit</div><div class="ttdef"><b>Definition:</b> <a href="_shape_8java_source.html#l00045">Shape.java:45</a></div></div>
+<div class="ttc" id="aclassshape_1_1_shape_html_a91f14f61f123563a8dcefd1f59d1930d"><div class="ttname"><a href="classshape_1_1_shape.html#a91f14f61f123563a8dcefd1f59d1930d">shape.Shape.lineStrokeJoin</a></div><div class="ttdeci">int lineStrokeJoin</div><div class="ttdef"><b>Definition:</b> <a href="_shape_8java_source.html#l00043">Shape.java:43</a></div></div>
+<div class="ttc" id="aclassshape_1_1_shape_html_a6cb0a6d0265cb4c81460dc6e9322fd42"><div class="ttname"><a href="classshape_1_1_shape.html#a6cb0a6d0265cb4c81460dc6e9322fd42">shape.Shape.start</a></div><div class="ttdeci">Point start</div><div class="ttdef"><b>Definition:</b> <a href="_shape_8java_source.html#l00015">Shape.java:15</a></div></div>
+<div class="ttc" id="aclassshape_1_1_round_rect_html_ac535e36b7c9b4a01336bc07df0f72a96"><div class="ttname"><a href="classshape_1_1_round_rect.html#ac535e36b7c9b4a01336bc07df0f72a96">shape.RoundRect.ARC_HEIGHT</a></div><div class="ttdeci">static final int ARC_HEIGHT</div><div class="ttdef"><b>Definition:</b> <a href="_round_rect_8java_source.html#l00013">RoundRect.java:13</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

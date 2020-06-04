@@ -175,7 +175,7 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_color_dialog_8java_source.html#l00011">11</a> of file <a class="el" href="_color_dialog_8java_source.html">ColorDialog.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_color_dialog_8java_source.html#l00010">10</a> of file <a class="el" href="_color_dialog_8java_source.html">ColorDialog.java</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab1537ba376c140aa010ad8dae61c960e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab1537ba376c140aa010ad8dae61c960e">&#9670;&nbsp;</a></span>ColorDialog()</h2>
@@ -193,8 +193,19 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Tao form <a class="el" href="classproperty_1_1_color_dialog.html">ColorDialog</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="_color_dialog_8java_source.html#l00023">23</a> of file <a class="el" href="_color_dialog_8java_source.html">ColorDialog.java</a>.</p>
-<div class="dynheader">
+<p class="definition">Definition at line <a class="el" href="_color_dialog_8java_source.html#l00022">22</a> of file <a class="el" href="_color_dialog_8java_source.html">ColorDialog.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                         {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <a class="code" href="classproperty_1_1_color_dialog.html#ac9a922b3095bbd45169893ed16613f7f">strokeIcon</a> = <span class="keyword">new</span> ColorCell(Color.BLACK);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <a class="code" href="classproperty_1_1_color_dialog.html#aeaba2af61f37ca5a6a6488ef10257157">fillIcon</a> = <span class="keyword">new</span> ColorCell(Color.WHITE);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <a class="code" href="classproperty_1_1_color_dialog.html#afdab0c35151b3b65ce38eb1553a7c04c">strokeColor</a> = Color.BLACK;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <a class="code" href="classproperty_1_1_color_dialog.html#a1290fb8772a946627bbfd4f277348ce9">fillColor</a> = Color.WHITE;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <a class="code" href="classproperty_1_1_color_dialog.html#aa5555c3a9150ac27477f630bed0ba1bb">initComponents</a>();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <a class="code" href="classproperty_1_1_color_dialog.html#a56724336a70680f869de86ee0198d9f5">bStrokeColor</a>.setIcon(<a class="code" href="classproperty_1_1_color_dialog.html#ac9a922b3095bbd45169893ed16613f7f">strokeIcon</a>);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <a class="code" href="classproperty_1_1_color_dialog.html#a093389b155b362a6059c194e1dcde5a1">bFillColor</a>.setIcon(<a class="code" href="classproperty_1_1_color_dialog.html#aeaba2af61f37ca5a6a6488ef10257157">fillIcon</a>);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <a class="code" href="classproperty_1_1_color_dialog.html#a6d0cef13a36f2491d50845c3270af217">colorChooser</a>.setIcon(<span class="keyword">new</span> ImageIcon(<a class="code" href="classproperty_1_1_color_dialog.html#a767903cdd00a2ed532be5cb1fb602e48">getImageIcon</a>(<span class="stringliteral">&quot;/icon/ColorChooser.png&quot;</span>)));</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    }</div>
+</div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classproperty_1_1_color_dialog_ab1537ba376c140aa010ad8dae61c960e_cgraph.png" border="0" usemap="#classproperty_1_1_color_dialog_ab1537ba376c140aa010ad8dae61c960e_cgraph" alt=""/></div>
@@ -211,6 +222,175 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a5d96c5f93193cc3c6b8acf4ef21864fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d96c5f93193cc3c6b8acf4ef21864fc">&#9670;&nbsp;</a></span>bFillColorActionPerformed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void property.ColorDialog.bFillColorActionPerformed </td>
+          <td>(</td>
+          <td class="paramtype">java.awt.event.ActionEvent&#160;</td>
+          <td class="paramname"><em>evt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_color_dialog_8java_source.html#l00114">114</a> of file <a class="el" href="_color_dialog_8java_source.html">ColorDialog.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                                                                           {<span class="comment">//GEN-FIRST:event_bFillColorActionPerformed</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    }<span class="comment">//GEN-LAST:event_bFillColorActionPerformed</span></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="afa38b524da61df288df7eda223935a01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa38b524da61df288df7eda223935a01">&#9670;&nbsp;</a></span>colorChooserActionPerformed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void property.ColorDialog.colorChooserActionPerformed </td>
+          <td>(</td>
+          <td class="paramtype">java.awt.event.ActionEvent&#160;</td>
+          <td class="paramname"><em>evt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Show bang chon mau mo rong va set su kien lay mau khi bam chon mau </p>
+
+<p class="definition">Definition at line <a class="el" href="_color_dialog_8java_source.html#l00143">143</a> of file <a class="el" href="_color_dialog_8java_source.html">ColorDialog.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                                                                             {<span class="comment">//GEN-FIRST:event_colorChooserActionPerformed</span></div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        Color color = JColorChooser.showDialog(<span class="keyword">this</span>, <span class="stringliteral">&quot;specify your color&quot;</span>, Color.yellow);</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        <a class="code" href="classproperty_1_1_color_dialog.html#ab7870562e16adddf41ced176ef01f1b8">colorPane</a>.<a class="code" href="classproperty_1_1_color_pane.html#a3985c7b0efc43c01576fafc5edd7ef84">setImage</a>(color);</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classproperty_1_1_color_dialog.html#a56724336a70680f869de86ee0198d9f5">bStrokeColor</a>.isSelected()) {</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            <a class="code" href="classproperty_1_1_color_dialog.html#ac9a922b3095bbd45169893ed16613f7f">strokeIcon</a> = <a class="code" href="classproperty_1_1_color_dialog.html#ab7870562e16adddf41ced176ef01f1b8">colorPane</a>.<a class="code" href="classproperty_1_1_color_pane.html#a8860c481c1e45cafebe0d3774fce9715">getImage</a>();</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;            <a class="code" href="classproperty_1_1_color_dialog.html#afdab0c35151b3b65ce38eb1553a7c04c">strokeColor</a> = color;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            <a class="code" href="classproperty_1_1_color_dialog.html#a56724336a70680f869de86ee0198d9f5">bStrokeColor</a>.setIcon(<a class="code" href="classproperty_1_1_color_dialog.html#ac9a922b3095bbd45169893ed16613f7f">strokeIcon</a>);</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="classproperty_1_1_color_dialog.html#a093389b155b362a6059c194e1dcde5a1">bFillColor</a>.isSelected()) {</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            <a class="code" href="classproperty_1_1_color_dialog.html#aeaba2af61f37ca5a6a6488ef10257157">fillIcon</a> = <a class="code" href="classproperty_1_1_color_dialog.html#ab7870562e16adddf41ced176ef01f1b8">colorPane</a>.<a class="code" href="classproperty_1_1_color_pane.html#a8860c481c1e45cafebe0d3774fce9715">getImage</a>();</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            <a class="code" href="classproperty_1_1_color_dialog.html#a1290fb8772a946627bbfd4f277348ce9">fillColor</a> = color;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;            <a class="code" href="classproperty_1_1_color_dialog.html#a093389b155b362a6059c194e1dcde5a1">bFillColor</a>.setIcon(<a class="code" href="classproperty_1_1_color_dialog.html#aeaba2af61f37ca5a6a6488ef10257157">fillIcon</a>);</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        }</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    }<span class="comment">//GEN-LAST:event_colorChooserActionPerformed</span></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae89a348e485cc8ee71cf1d2876e32a09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae89a348e485cc8ee71cf1d2876e32a09">&#9670;&nbsp;</a></span>colorPaneMousePressed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void property.ColorDialog.colorPaneMousePressed </td>
+          <td>(</td>
+          <td class="paramtype">java.awt.event.MouseEvent&#160;</td>
+          <td class="paramname"><em>evt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set color khi bam chon mau trong <a class="el" href="classproperty_1_1_color_dialog.html">ColorDialog</a> </p>
+<p>Set color cho net ve khi chon StrokeColor</p>
+<p>Set color cho tool to mau khi chon fillColor</p>
+
+<p class="definition">Definition at line <a class="el" href="_color_dialog_8java_source.html#l00121">121</a> of file <a class="el" href="_color_dialog_8java_source.html">ColorDialog.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                                                                      {<span class="comment">//GEN-FIRST:event_colorPaneMousePressed</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="comment"></span>        <span class="keywordflow">if</span> (<a class="code" href="classproperty_1_1_color_dialog.html#a56724336a70680f869de86ee0198d9f5">bStrokeColor</a>.isSelected()) {</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            <a class="code" href="classproperty_1_1_color_dialog.html#ac9a922b3095bbd45169893ed16613f7f">strokeIcon</a> = <a class="code" href="classproperty_1_1_color_dialog.html#ab7870562e16adddf41ced176ef01f1b8">colorPane</a>.<a class="code" href="classproperty_1_1_color_pane.html#a8860c481c1e45cafebe0d3774fce9715">getImage</a>();</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            <a class="code" href="classproperty_1_1_color_dialog.html#afdab0c35151b3b65ce38eb1553a7c04c">strokeColor</a> = <a class="code" href="classproperty_1_1_color_dialog.html#ab7870562e16adddf41ced176ef01f1b8">colorPane</a>.<a class="code" href="classproperty_1_1_color_pane.html#a8914dca06828d56d28e8240ee9bb0ff8">getColor</a>();</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            <a class="code" href="classproperty_1_1_color_dialog.html#a56724336a70680f869de86ee0198d9f5">bStrokeColor</a>.setIcon(<a class="code" href="classproperty_1_1_color_dialog.html#ac9a922b3095bbd45169893ed16613f7f">strokeIcon</a>);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        }</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="classproperty_1_1_color_dialog.html#a093389b155b362a6059c194e1dcde5a1">bFillColor</a>.isSelected()) {</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            <a class="code" href="classproperty_1_1_color_dialog.html#aeaba2af61f37ca5a6a6488ef10257157">fillIcon</a> = <a class="code" href="classproperty_1_1_color_dialog.html#ab7870562e16adddf41ced176ef01f1b8">colorPane</a>.<a class="code" href="classproperty_1_1_color_pane.html#a8860c481c1e45cafebe0d3774fce9715">getImage</a>();</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            <a class="code" href="classproperty_1_1_color_dialog.html#a1290fb8772a946627bbfd4f277348ce9">fillColor</a> = <a class="code" href="classproperty_1_1_color_dialog.html#ab7870562e16adddf41ced176ef01f1b8">colorPane</a>.<a class="code" href="classproperty_1_1_color_pane.html#a8914dca06828d56d28e8240ee9bb0ff8">getColor</a>();</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;            <a class="code" href="classproperty_1_1_color_dialog.html#a093389b155b362a6059c194e1dcde5a1">bFillColor</a>.setIcon(<a class="code" href="classproperty_1_1_color_dialog.html#aeaba2af61f37ca5a6a6488ef10257157">fillIcon</a>);</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        }</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    }<span class="comment">//GEN-LAST:event_colorPaneMousePressed</span></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6eebb5d35d7aa93b154000ee3d17694f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6eebb5d35d7aa93b154000ee3d17694f">&#9670;&nbsp;</a></span>getColorPicker()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Color property.ColorDialog.getColorPicker </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_color_dialog_8java_source.html#l00193">193</a> of file <a class="el" href="_color_dialog_8java_source.html">ColorDialog.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;                                  {</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        <span class="keywordflow">return</span> this.<a class="code" href="classproperty_1_1_color_dialog.html#a2a516f4d9c5ed48d1c7a9ea9a6773263">colorPicker</a>;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aaa6711a2baf0ba2a04e26090ce2ee007"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa6711a2baf0ba2a04e26090ce2ee007">&#9670;&nbsp;</a></span>getFillColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Color property.ColorDialog.getFillColor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_color_dialog_8java_source.html#l00173">173</a> of file <a class="el" href="_color_dialog_8java_source.html">ColorDialog.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;                                {</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classproperty_1_1_color_dialog.html#a1290fb8772a946627bbfd4f277348ce9">fillColor</a>;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    }</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classproperty_1_1_color_dialog_aaa6711a2baf0ba2a04e26090ce2ee007_icgraph.png" border="0" usemap="#classproperty_1_1_color_dialog_aaa6711a2baf0ba2a04e26090ce2ee007_icgraph" alt=""/></div>
+<map name="classproperty_1_1_color_dialog_aaa6711a2baf0ba2a04e26090ce2ee007_icgraph" id="classproperty_1_1_color_dialog_aaa6711a2baf0ba2a04e26090ce2ee007_icgraph">
+<area shape="rect" title=" " alt="" coords="257,23,419,65"/>
+<area shape="rect" href="classpaint_1_1_pad_paint.html#a90316b7d8893cdfb0a92b11ba961c3c1" title=" " alt="" coords="8,5,207,32"/>
+<area shape="rect" href="classpaint_1_1_pad_paint.html#a6cae06a133ccdaf0720c9fc5985eb9e4" title=" " alt="" coords="5,56,209,83"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="a767903cdd00a2ed532be5cb1fb602e48"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a767903cdd00a2ed532be5cb1fb602e48">&#9670;&nbsp;</a></span>getImageIcon()</h2>
 
@@ -227,14 +407,57 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_color_dialog_8java_source.html#l00034">34</a> of file <a class="el" href="_color_dialog_8java_source.html">ColorDialog.java</a>.</p>
-<div class="dynheader">
+<p class="definition">Definition at line <a class="el" href="_color_dialog_8java_source.html#l00033">33</a> of file <a class="el" href="_color_dialog_8java_source.html">ColorDialog.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                                           {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        Image image = Toolkit.getDefaultToolkit().getImage(getClass().getResource(path));</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordflow">return</span> image;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
+</div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classproperty_1_1_color_dialog_a767903cdd00a2ed532be5cb1fb602e48_icgraph.png" border="0" usemap="#classproperty_1_1_color_dialog_a767903cdd00a2ed532be5cb1fb602e48_icgraph" alt=""/></div>
 <map name="classproperty_1_1_color_dialog_a767903cdd00a2ed532be5cb1fb602e48_icgraph" id="classproperty_1_1_color_dialog_a767903cdd00a2ed532be5cb1fb602e48_icgraph">
 <area shape="rect" title=" " alt="" coords="227,5,388,47"/>
 <area shape="rect" href="classproperty_1_1_color_dialog.html#ab1537ba376c140aa010ad8dae61c960e" title=" " alt="" coords="5,5,179,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="acbe444c23fcd5b910daffc0e98f75fe1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbe444c23fcd5b910daffc0e98f75fe1">&#9670;&nbsp;</a></span>getStrokeColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Color property.ColorDialog.getStrokeColor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_color_dialog_8java_source.html#l00169">169</a> of file <a class="el" href="_color_dialog_8java_source.html">ColorDialog.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;                                  {</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classproperty_1_1_color_dialog.html#afdab0c35151b3b65ce38eb1553a7c04c">strokeColor</a>;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    }</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classproperty_1_1_color_dialog_acbe444c23fcd5b910daffc0e98f75fe1_icgraph.png" border="0" usemap="#classproperty_1_1_color_dialog_acbe444c23fcd5b910daffc0e98f75fe1_icgraph" alt=""/></div>
+<map name="classproperty_1_1_color_dialog_acbe444c23fcd5b910daffc0e98f75fe1_icgraph" id="classproperty_1_1_color_dialog_acbe444c23fcd5b910daffc0e98f75fe1_icgraph">
+<area shape="rect" title=" " alt="" coords="1000,49,1161,90"/>
+<area shape="rect" href="classpaint_1_1_pad_paint.html#a90316b7d8893cdfb0a92b11ba961c3c1" title=" " alt="" coords="751,5,949,32"/>
+<area shape="rect" href="classpaint_1_1_pad_paint.html#a6cae06a133ccdaf0720c9fc5985eb9e4" title=" " alt="" coords="748,56,952,83"/>
+<area shape="rect" href="classpaint_1_1_pad_paint.html#a219f87d5e5bb55ab206426528e10c39f" title=" " alt="" coords="762,107,938,133"/>
+<area shape="rect" href="classpaint_1_1_main_frame.html#a90654d50d6c8f74e5cf8db001b88bdb2" title=" " alt="" coords="493,41,700,82"/>
+<area shape="rect" href="classpaint_1_1_pad_paint.html#a382553c92e223eabaaba05ac69f60815" title=" " alt="" coords="525,107,669,133"/>
+<area shape="rect" href="classpaint_1_1_pad_paint.html#a184767bfb4fcb162ca1d00c45f91ce71" title=" " alt="" coords="279,157,417,184"/>
+<area shape="rect" href="classpaint_1_1_main_frame.html#a6386ca5437d197f9d8a9a16d8a767769" title=" " alt="" coords="251,41,445,82"/>
+<area shape="rect" href="classpaint_1_1_pad_paint.html#a5b340af5d4c2016129a0b920bf43cde7" title=" " alt="" coords="280,107,416,133"/>
+<area shape="rect" href="classpaint_1_1_main_frame.html#a758e41c07d53e3ca72727077cd13951d" title=" " alt="" coords="5,150,203,191"/>
 </map>
 </div>
 
@@ -264,8 +487,77 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>This method is called from within the constructor to initialize the form. WARNING: Do NOT modify this code. The content of this method is always regenerated by the Form Editor. </p>
 
-<p class="definition">Definition at line <a class="el" href="_color_dialog_8java_source.html#l00045">45</a> of file <a class="el" href="_color_dialog_8java_source.html">ColorDialog.java</a>.</p>
-<div class="dynheader">
+<p class="definition">Definition at line <a class="el" href="_color_dialog_8java_source.html#l00044">44</a> of file <a class="el" href="_color_dialog_8java_source.html">ColorDialog.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                                  {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <a class="code" href="classproperty_1_1_color_dialog.html#a0e6e286dbed34c608dd131ed78350067">buttonGroup1</a> = <span class="keyword">new</span> javax.swing.ButtonGroup();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <a class="code" href="classproperty_1_1_color_dialog.html#a85494366d8a2c94bc2cee72c7d2b2a1c">buttonGroup2</a> = <span class="keyword">new</span> javax.swing.ButtonGroup();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="classproperty_1_1_color_dialog.html#a093389b155b362a6059c194e1dcde5a1">bFillColor</a> = <span class="keyword">new</span> javax.swing.JToggleButton();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <a class="code" href="classproperty_1_1_color_dialog.html#ab7870562e16adddf41ced176ef01f1b8">colorPane</a> = <span class="keyword">new</span> <span class="keyword">property</span>.<a class="code" href="classproperty_1_1_color_pane.html#a79e0da8a5276b2500bf8367a3615b73f">ColorPane</a>();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <a class="code" href="classproperty_1_1_color_dialog.html#a40aa4a0c0f91f89ed220ed1b3542174e">jLabel2</a> = <span class="keyword">new</span> javax.swing.JLabel();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <a class="code" href="classproperty_1_1_color_dialog.html#a6d0cef13a36f2491d50845c3270af217">colorChooser</a> = <span class="keyword">new</span> javax.swing.JButton();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <a class="code" href="classproperty_1_1_color_dialog.html#a56724336a70680f869de86ee0198d9f5">bStrokeColor</a> = <span class="keyword">new</span> javax.swing.JToggleButton();</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <a class="code" href="classproperty_1_1_color_dialog.html#a8d3c3f7114ddd96f28780f2b24716cbf">jLabel1</a> = <span class="keyword">new</span> javax.swing.JLabel();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <a class="code" href="classproperty_1_1_color_dialog.html#a0e6e286dbed34c608dd131ed78350067">buttonGroup1</a>.add(<a class="code" href="classproperty_1_1_color_dialog.html#a093389b155b362a6059c194e1dcde5a1">bFillColor</a>);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <a class="code" href="classproperty_1_1_color_dialog.html#a093389b155b362a6059c194e1dcde5a1">bFillColor</a>.addActionListener(<span class="keyword">new</span> java.awt.event.ActionListener() {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            public void actionPerformed(java.awt.event.ActionEvent evt) {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                bFillColorActionPerformed(evt);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        });</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <a class="code" href="classproperty_1_1_color_dialog.html#ab7870562e16adddf41ced176ef01f1b8">colorPane</a>.setBackground(<span class="keyword">new</span> java.awt.Color(204, 204, 255));</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <a class="code" href="classproperty_1_1_color_dialog.html#ab7870562e16adddf41ced176ef01f1b8">colorPane</a>.addMouseListener(<span class="keyword">new</span> java.awt.event.MouseAdapter() {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            public void mousePressed(java.awt.event.MouseEvent evt) {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                colorPaneMousePressed(evt);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        });</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <a class="code" href="classproperty_1_1_color_dialog.html#a40aa4a0c0f91f89ed220ed1b3542174e">jLabel2</a>.setText(<span class="stringliteral">&quot;      Fill&quot;</span>);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <a class="code" href="classproperty_1_1_color_dialog.html#a6d0cef13a36f2491d50845c3270af217">colorChooser</a>.addActionListener(<span class="keyword">new</span> java.awt.event.ActionListener() {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            public void actionPerformed(java.awt.event.ActionEvent evt) {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                colorChooserActionPerformed(evt);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        });</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <a class="code" href="classproperty_1_1_color_dialog.html#a0e6e286dbed34c608dd131ed78350067">buttonGroup1</a>.add(<a class="code" href="classproperty_1_1_color_dialog.html#a56724336a70680f869de86ee0198d9f5">bStrokeColor</a>);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <a class="code" href="classproperty_1_1_color_dialog.html#a56724336a70680f869de86ee0198d9f5">bStrokeColor</a>.setSelected(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <a class="code" href="classproperty_1_1_color_dialog.html#a8d3c3f7114ddd96f28780f2b24716cbf">jLabel1</a>.setText(<span class="stringliteral">&quot;  Stroke&quot;</span>);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        javax.swing.GroupLayout layout = <span class="keyword">new</span> javax.swing.GroupLayout(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        this.setLayout(layout);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        layout.setHorizontalGroup(</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            .addGroup(layout.createSequentialGroup()</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                .addGap(10, 10, 10)</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                    .addComponent(<a class="code" href="classproperty_1_1_color_dialog.html#a56724336a70680f869de86ee0198d9f5">bStrokeColor</a>, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                    .addComponent(<a class="code" href="classproperty_1_1_color_dialog.html#a8d3c3f7114ddd96f28780f2b24716cbf">jLabel1</a>))</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                .addGap(6, 6, 6)</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                    .addComponent(<a class="code" href="classproperty_1_1_color_dialog.html#a093389b155b362a6059c194e1dcde5a1">bFillColor</a>, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                    .addComponent(<a class="code" href="classproperty_1_1_color_dialog.html#a40aa4a0c0f91f89ed220ed1b3542174e">jLabel2</a>))</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                .addGap(6, 6, 6)</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                .addComponent(<a class="code" href="classproperty_1_1_color_dialog.html#ab7870562e16adddf41ced176ef01f1b8">colorPane</a>, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                .addGap(7, 7, 7)</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                .addComponent(<a class="code" href="classproperty_1_1_color_dialog.html#a6d0cef13a36f2491d50845c3270af217">colorChooser</a>, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        );</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        layout.setVerticalGroup(</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            .addGroup(layout.createSequentialGroup()</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                .addComponent(<a class="code" href="classproperty_1_1_color_dialog.html#a56724336a70680f869de86ee0198d9f5">bStrokeColor</a>, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                .addGap(11, 11, 11)</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                .addComponent(<a class="code" href="classproperty_1_1_color_dialog.html#a8d3c3f7114ddd96f28780f2b24716cbf">jLabel1</a>))</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            .addGroup(layout.createSequentialGroup()</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                .addComponent(<a class="code" href="classproperty_1_1_color_dialog.html#a093389b155b362a6059c194e1dcde5a1">bFillColor</a>, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                .addGap(11, 11, 11)</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                .addComponent(<a class="code" href="classproperty_1_1_color_dialog.html#a40aa4a0c0f91f89ed220ed1b3542174e">jLabel2</a>))</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            .addComponent(<a class="code" href="classproperty_1_1_color_dialog.html#ab7870562e16adddf41ced176ef01f1b8">colorPane</a>, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            .addComponent(<a class="code" href="classproperty_1_1_color_dialog.html#a6d0cef13a36f2491d50845c3270af217">colorChooser</a>, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        );</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    }<span class="comment">// &lt;/editor-fold&gt;//GEN-END:initComponents</span></div>
+</div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classproperty_1_1_color_dialog_aa5555c3a9150ac27477f630bed0ba1bb_cgraph.png" border="0" usemap="#classproperty_1_1_color_dialog_aa5555c3a9150ac27477f630bed0ba1bb_cgraph" alt=""/></div>
@@ -288,156 +580,6 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a5d96c5f93193cc3c6b8acf4ef21864fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5d96c5f93193cc3c6b8acf4ef21864fc">&#9670;&nbsp;</a></span>bFillColorActionPerformed()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void property.ColorDialog.bFillColorActionPerformed </td>
-          <td>(</td>
-          <td class="paramtype">java.awt.event.ActionEvent&#160;</td>
-          <td class="paramname"><em>evt</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_color_dialog_8java_source.html#l00116">116</a> of file <a class="el" href="_color_dialog_8java_source.html">ColorDialog.java</a>.</p>
-
-</div>
-</div>
-<a id="ae89a348e485cc8ee71cf1d2876e32a09"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae89a348e485cc8ee71cf1d2876e32a09">&#9670;&nbsp;</a></span>colorPaneMousePressed()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void property.ColorDialog.colorPaneMousePressed </td>
-          <td>(</td>
-          <td class="paramtype">java.awt.event.MouseEvent&#160;</td>
-          <td class="paramname"><em>evt</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_color_dialog_8java_source.html#l00119">119</a> of file <a class="el" href="_color_dialog_8java_source.html">ColorDialog.java</a>.</p>
-
-</div>
-</div>
-<a id="afa38b524da61df288df7eda223935a01"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa38b524da61df288df7eda223935a01">&#9670;&nbsp;</a></span>colorChooserActionPerformed()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void property.ColorDialog.colorChooserActionPerformed </td>
-          <td>(</td>
-          <td class="paramtype">java.awt.event.ActionEvent&#160;</td>
-          <td class="paramname"><em>evt</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_color_dialog_8java_source.html#l00131">131</a> of file <a class="el" href="_color_dialog_8java_source.html">ColorDialog.java</a>.</p>
-
-</div>
-</div>
-<a id="acbe444c23fcd5b910daffc0e98f75fe1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acbe444c23fcd5b910daffc0e98f75fe1">&#9670;&nbsp;</a></span>getStrokeColor()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Color property.ColorDialog.getStrokeColor </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_color_dialog_8java_source.html#l00157">157</a> of file <a class="el" href="_color_dialog_8java_source.html">ColorDialog.java</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classproperty_1_1_color_dialog_acbe444c23fcd5b910daffc0e98f75fe1_icgraph.png" border="0" usemap="#classproperty_1_1_color_dialog_acbe444c23fcd5b910daffc0e98f75fe1_icgraph" alt=""/></div>
-<map name="classproperty_1_1_color_dialog_acbe444c23fcd5b910daffc0e98f75fe1_icgraph" id="classproperty_1_1_color_dialog_acbe444c23fcd5b910daffc0e98f75fe1_icgraph">
-<area shape="rect" title=" " alt="" coords="1000,49,1161,90"/>
-<area shape="rect" href="classpaint_1_1_pad_paint.html#a90316b7d8893cdfb0a92b11ba961c3c1" title=" " alt="" coords="751,5,949,32"/>
-<area shape="rect" href="classpaint_1_1_pad_paint.html#a6cae06a133ccdaf0720c9fc5985eb9e4" title=" " alt="" coords="748,56,952,83"/>
-<area shape="rect" href="classpaint_1_1_pad_paint.html#a219f87d5e5bb55ab206426528e10c39f" title=" " alt="" coords="762,107,938,133"/>
-<area shape="rect" href="classpaint_1_1_main_frame.html#a90654d50d6c8f74e5cf8db001b88bdb2" title=" " alt="" coords="493,41,700,82"/>
-<area shape="rect" href="classpaint_1_1_pad_paint.html#a382553c92e223eabaaba05ac69f60815" title=" " alt="" coords="525,107,669,133"/>
-<area shape="rect" href="classpaint_1_1_pad_paint.html#a184767bfb4fcb162ca1d00c45f91ce71" title=" " alt="" coords="279,157,417,184"/>
-<area shape="rect" href="classpaint_1_1_main_frame.html#a6386ca5437d197f9d8a9a16d8a767769" title=" " alt="" coords="251,41,445,82"/>
-<area shape="rect" href="classpaint_1_1_pad_paint.html#a5b340af5d4c2016129a0b920bf43cde7" title=" " alt="" coords="280,107,416,133"/>
-<area shape="rect" href="classpaint_1_1_main_frame.html#ae82e9bc5bca66f8df00ddead69fac496" title=" " alt="" coords="5,91,203,133"/>
-<area shape="rect" href="classpaint_1_1_main_frame.html#a758e41c07d53e3ca72727077cd13951d" title=" " alt="" coords="5,157,203,198"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="aaa6711a2baf0ba2a04e26090ce2ee007"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa6711a2baf0ba2a04e26090ce2ee007">&#9670;&nbsp;</a></span>getFillColor()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Color property.ColorDialog.getFillColor </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_color_dialog_8java_source.html#l00161">161</a> of file <a class="el" href="_color_dialog_8java_source.html">ColorDialog.java</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classproperty_1_1_color_dialog_aaa6711a2baf0ba2a04e26090ce2ee007_icgraph.png" border="0" usemap="#classproperty_1_1_color_dialog_aaa6711a2baf0ba2a04e26090ce2ee007_icgraph" alt=""/></div>
-<map name="classproperty_1_1_color_dialog_aaa6711a2baf0ba2a04e26090ce2ee007_icgraph" id="classproperty_1_1_color_dialog_aaa6711a2baf0ba2a04e26090ce2ee007_icgraph">
-<area shape="rect" title=" " alt="" coords="257,23,419,65"/>
-<area shape="rect" href="classpaint_1_1_pad_paint.html#a90316b7d8893cdfb0a92b11ba961c3c1" title=" " alt="" coords="8,5,207,32"/>
-<area shape="rect" href="classpaint_1_1_pad_paint.html#a6cae06a133ccdaf0720c9fc5985eb9e4" title=" " alt="" coords="5,56,209,83"/>
-</map>
-</div>
-
-</div>
-</div>
 <a id="a428c9d49bd378a9049baccff93357bf3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a428c9d49bd378a9049baccff93357bf3">&#9670;&nbsp;</a></span>setColorPicker()</h2>
 
@@ -453,9 +595,23 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Lay mau duoc chon va thiet lap lay mau </p>
 
-<p class="definition">Definition at line <a class="el" href="_color_dialog_8java_source.html#l00165">165</a> of file <a class="el" href="_color_dialog_8java_source.html">ColorDialog.java</a>.</p>
-<div class="dynheader">
+<p class="definition">Definition at line <a class="el" href="_color_dialog_8java_source.html#l00179">179</a> of file <a class="el" href="_color_dialog_8java_source.html">ColorDialog.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                                        {</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classproperty_1_1_color_dialog.html#a56724336a70680f869de86ee0198d9f5">bStrokeColor</a>.isSelected()) {</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;            <a class="code" href="classproperty_1_1_color_dialog.html#ab7870562e16adddf41ced176ef01f1b8">colorPane</a>.<a class="code" href="classproperty_1_1_color_pane.html#a3985c7b0efc43c01576fafc5edd7ef84">setImage</a>(c);</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;            <a class="code" href="classproperty_1_1_color_dialog.html#ac9a922b3095bbd45169893ed16613f7f">strokeIcon</a> = <a class="code" href="classproperty_1_1_color_dialog.html#ab7870562e16adddf41ced176ef01f1b8">colorPane</a>.<a class="code" href="classproperty_1_1_color_pane.html#a8860c481c1e45cafebe0d3774fce9715">getImage</a>();</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;            <a class="code" href="classproperty_1_1_color_dialog.html#afdab0c35151b3b65ce38eb1553a7c04c">strokeColor</a> = c;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;            <a class="code" href="classproperty_1_1_color_dialog.html#a56724336a70680f869de86ee0198d9f5">bStrokeColor</a>.setIcon(<a class="code" href="classproperty_1_1_color_dialog.html#ac9a922b3095bbd45169893ed16613f7f">strokeIcon</a>);</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="classproperty_1_1_color_dialog.html#a093389b155b362a6059c194e1dcde5a1">bFillColor</a>.isSelected()) {</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;            <a class="code" href="classproperty_1_1_color_dialog.html#ab7870562e16adddf41ced176ef01f1b8">colorPane</a>.<a class="code" href="classproperty_1_1_color_pane.html#a3985c7b0efc43c01576fafc5edd7ef84">setImage</a>(c);</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;            <a class="code" href="classproperty_1_1_color_dialog.html#aeaba2af61f37ca5a6a6488ef10257157">fillIcon</a> = <a class="code" href="classproperty_1_1_color_dialog.html#ab7870562e16adddf41ced176ef01f1b8">colorPane</a>.<a class="code" href="classproperty_1_1_color_pane.html#a8860c481c1e45cafebe0d3774fce9715">getImage</a>();</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;            <a class="code" href="classproperty_1_1_color_dialog.html#a1290fb8772a946627bbfd4f277348ce9">fillColor</a> = c;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;            <a class="code" href="classproperty_1_1_color_dialog.html#a093389b155b362a6059c194e1dcde5a1">bFillColor</a>.setIcon(<a class="code" href="classproperty_1_1_color_dialog.html#aeaba2af61f37ca5a6a6488ef10257157">fillIcon</a>);</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        }</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    }</div>
+</div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classproperty_1_1_color_dialog_a428c9d49bd378a9049baccff93357bf3_icgraph.png" border="0" usemap="#classproperty_1_1_color_dialog_a428c9d49bd378a9049baccff93357bf3_icgraph" alt=""/></div>
@@ -467,146 +623,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a6eebb5d35d7aa93b154000ee3d17694f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6eebb5d35d7aa93b154000ee3d17694f">&#9670;&nbsp;</a></span>getColorPicker()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Color property.ColorDialog.getColorPicker </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_color_dialog_8java_source.html#l00179">179</a> of file <a class="el" href="_color_dialog_8java_source.html">ColorDialog.java</a>.</p>
-
-</div>
-</div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="ac9a922b3095bbd45169893ed16613f7f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac9a922b3095bbd45169893ed16613f7f">&#9670;&nbsp;</a></span>strokeIcon</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">ImageIcon property.ColorDialog.strokeIcon</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_color_dialog_8java_source.html#l00013">13</a> of file <a class="el" href="_color_dialog_8java_source.html">ColorDialog.java</a>.</p>
-
-</div>
-</div>
-<a id="aeaba2af61f37ca5a6a6488ef10257157"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeaba2af61f37ca5a6a6488ef10257157">&#9670;&nbsp;</a></span>fillIcon</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">ImageIcon property.ColorDialog.fillIcon</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_color_dialog_8java_source.html#l00014">14</a> of file <a class="el" href="_color_dialog_8java_source.html">ColorDialog.java</a>.</p>
-
-</div>
-</div>
-<a id="afdab0c35151b3b65ce38eb1553a7c04c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afdab0c35151b3b65ce38eb1553a7c04c">&#9670;&nbsp;</a></span>strokeColor</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Color property.ColorDialog.strokeColor</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_color_dialog_8java_source.html#l00015">15</a> of file <a class="el" href="_color_dialog_8java_source.html">ColorDialog.java</a>.</p>
-
-</div>
-</div>
-<a id="a1290fb8772a946627bbfd4f277348ce9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1290fb8772a946627bbfd4f277348ce9">&#9670;&nbsp;</a></span>fillColor</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Color property.ColorDialog.fillColor</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_color_dialog_8java_source.html#l00016">16</a> of file <a class="el" href="_color_dialog_8java_source.html">ColorDialog.java</a>.</p>
-
-</div>
-</div>
-<a id="a2a516f4d9c5ed48d1c7a9ea9a6773263"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a516f4d9c5ed48d1c7a9ea9a6773263">&#9670;&nbsp;</a></span>colorPicker</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Color property.ColorDialog.colorPicker</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_color_dialog_8java_source.html#l00018">18</a> of file <a class="el" href="_color_dialog_8java_source.html">ColorDialog.java</a>.</p>
-
-</div>
-</div>
 <a id="a093389b155b362a6059c194e1dcde5a1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a093389b155b362a6059c194e1dcde5a1">&#9670;&nbsp;</a></span>bFillColor</h2>
 
@@ -627,7 +644,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_color_dialog_8java_source.html#l00147">147</a> of file <a class="el" href="_color_dialog_8java_source.html">ColorDialog.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_color_dialog_8java_source.html#l00159">159</a> of file <a class="el" href="_color_dialog_8java_source.html">ColorDialog.java</a>.</p>
 
 </div>
 </div>
@@ -651,7 +668,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_color_dialog_8java_source.html#l00148">148</a> of file <a class="el" href="_color_dialog_8java_source.html">ColorDialog.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_color_dialog_8java_source.html#l00160">160</a> of file <a class="el" href="_color_dialog_8java_source.html">ColorDialog.java</a>.</p>
 
 </div>
 </div>
@@ -675,7 +692,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_color_dialog_8java_source.html#l00149">149</a> of file <a class="el" href="_color_dialog_8java_source.html">ColorDialog.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_color_dialog_8java_source.html#l00161">161</a> of file <a class="el" href="_color_dialog_8java_source.html">ColorDialog.java</a>.</p>
 
 </div>
 </div>
@@ -699,7 +716,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_color_dialog_8java_source.html#l00150">150</a> of file <a class="el" href="_color_dialog_8java_source.html">ColorDialog.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_color_dialog_8java_source.html#l00162">162</a> of file <a class="el" href="_color_dialog_8java_source.html">ColorDialog.java</a>.</p>
 
 </div>
 </div>
@@ -723,7 +740,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_color_dialog_8java_source.html#l00151">151</a> of file <a class="el" href="_color_dialog_8java_source.html">ColorDialog.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_color_dialog_8java_source.html#l00163">163</a> of file <a class="el" href="_color_dialog_8java_source.html">ColorDialog.java</a>.</p>
 
 </div>
 </div>
@@ -747,7 +764,79 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_color_dialog_8java_source.html#l00152">152</a> of file <a class="el" href="_color_dialog_8java_source.html">ColorDialog.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_color_dialog_8java_source.html#l00164">164</a> of file <a class="el" href="_color_dialog_8java_source.html">ColorDialog.java</a>.</p>
+
+</div>
+</div>
+<a id="a2a516f4d9c5ed48d1c7a9ea9a6773263"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a516f4d9c5ed48d1c7a9ea9a6773263">&#9670;&nbsp;</a></span>colorPicker</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Color property.ColorDialog.colorPicker</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_color_dialog_8java_source.html#l00017">17</a> of file <a class="el" href="_color_dialog_8java_source.html">ColorDialog.java</a>.</p>
+
+</div>
+</div>
+<a id="a1290fb8772a946627bbfd4f277348ce9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1290fb8772a946627bbfd4f277348ce9">&#9670;&nbsp;</a></span>fillColor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Color property.ColorDialog.fillColor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_color_dialog_8java_source.html#l00015">15</a> of file <a class="el" href="_color_dialog_8java_source.html">ColorDialog.java</a>.</p>
+
+</div>
+</div>
+<a id="aeaba2af61f37ca5a6a6488ef10257157"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeaba2af61f37ca5a6a6488ef10257157">&#9670;&nbsp;</a></span>fillIcon</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ImageIcon property.ColorDialog.fillIcon</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_color_dialog_8java_source.html#l00013">13</a> of file <a class="el" href="_color_dialog_8java_source.html">ColorDialog.java</a>.</p>
 
 </div>
 </div>
@@ -771,7 +860,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_color_dialog_8java_source.html#l00153">153</a> of file <a class="el" href="_color_dialog_8java_source.html">ColorDialog.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_color_dialog_8java_source.html#l00165">165</a> of file <a class="el" href="_color_dialog_8java_source.html">ColorDialog.java</a>.</p>
 
 </div>
 </div>
@@ -795,7 +884,55 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_color_dialog_8java_source.html#l00154">154</a> of file <a class="el" href="_color_dialog_8java_source.html">ColorDialog.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_color_dialog_8java_source.html#l00166">166</a> of file <a class="el" href="_color_dialog_8java_source.html">ColorDialog.java</a>.</p>
+
+</div>
+</div>
+<a id="afdab0c35151b3b65ce38eb1553a7c04c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdab0c35151b3b65ce38eb1553a7c04c">&#9670;&nbsp;</a></span>strokeColor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Color property.ColorDialog.strokeColor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_color_dialog_8java_source.html#l00014">14</a> of file <a class="el" href="_color_dialog_8java_source.html">ColorDialog.java</a>.</p>
+
+</div>
+</div>
+<a id="ac9a922b3095bbd45169893ed16613f7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9a922b3095bbd45169893ed16613f7f">&#9670;&nbsp;</a></span>strokeIcon</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ImageIcon property.ColorDialog.strokeIcon</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_color_dialog_8java_source.html#l00012">12</a> of file <a class="el" href="_color_dialog_8java_source.html">ColorDialog.java</a>.</p>
 
 </div>
 </div>
@@ -804,6 +941,25 @@ Here is the caller graph for this function:</div>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclassproperty_1_1_color_dialog_html_a40aa4a0c0f91f89ed220ed1b3542174e"><div class="ttname"><a href="classproperty_1_1_color_dialog.html#a40aa4a0c0f91f89ed220ed1b3542174e">property.ColorDialog.jLabel2</a></div><div class="ttdeci">javax.swing.JLabel jLabel2</div><div class="ttdef"><b>Definition:</b> <a href="_color_dialog_8java_source.html#l00166">ColorDialog.java:166</a></div></div>
+<div class="ttc" id="aclassproperty_1_1_color_pane_html_a3985c7b0efc43c01576fafc5edd7ef84"><div class="ttname"><a href="classproperty_1_1_color_pane.html#a3985c7b0efc43c01576fafc5edd7ef84">property.ColorPane.setImage</a></div><div class="ttdeci">void setImage(int mouseX, int mouseY)</div><div class="ttdef"><b>Definition:</b> <a href="_color_pane_8java_source.html#l00121">ColorPane.java:121</a></div></div>
+<div class="ttc" id="aclassproperty_1_1_color_dialog_html_ac9a922b3095bbd45169893ed16613f7f"><div class="ttname"><a href="classproperty_1_1_color_dialog.html#ac9a922b3095bbd45169893ed16613f7f">property.ColorDialog.strokeIcon</a></div><div class="ttdeci">ImageIcon strokeIcon</div><div class="ttdef"><b>Definition:</b> <a href="_color_dialog_8java_source.html#l00012">ColorDialog.java:12</a></div></div>
+<div class="ttc" id="aclassproperty_1_1_color_dialog_html_a85494366d8a2c94bc2cee72c7d2b2a1c"><div class="ttname"><a href="classproperty_1_1_color_dialog.html#a85494366d8a2c94bc2cee72c7d2b2a1c">property.ColorDialog.buttonGroup2</a></div><div class="ttdeci">javax.swing.ButtonGroup buttonGroup2</div><div class="ttdef"><b>Definition:</b> <a href="_color_dialog_8java_source.html#l00162">ColorDialog.java:162</a></div></div>
+<div class="ttc" id="aclassproperty_1_1_color_dialog_html_a1290fb8772a946627bbfd4f277348ce9"><div class="ttname"><a href="classproperty_1_1_color_dialog.html#a1290fb8772a946627bbfd4f277348ce9">property.ColorDialog.fillColor</a></div><div class="ttdeci">Color fillColor</div><div class="ttdef"><b>Definition:</b> <a href="_color_dialog_8java_source.html#l00015">ColorDialog.java:15</a></div></div>
+<div class="ttc" id="aclassproperty_1_1_color_dialog_html_ab7870562e16adddf41ced176ef01f1b8"><div class="ttname"><a href="classproperty_1_1_color_dialog.html#ab7870562e16adddf41ced176ef01f1b8">property.ColorDialog.colorPane</a></div><div class="ttdeci">property.ColorPane colorPane</div><div class="ttdef"><b>Definition:</b> <a href="_color_dialog_8java_source.html#l00164">ColorDialog.java:164</a></div></div>
+<div class="ttc" id="aclassproperty_1_1_color_dialog_html_aa5555c3a9150ac27477f630bed0ba1bb"><div class="ttname"><a href="classproperty_1_1_color_dialog.html#aa5555c3a9150ac27477f630bed0ba1bb">property.ColorDialog.initComponents</a></div><div class="ttdeci">void initComponents()</div><div class="ttdef"><b>Definition:</b> <a href="_color_dialog_8java_source.html#l00044">ColorDialog.java:44</a></div></div>
+<div class="ttc" id="aclassproperty_1_1_color_dialog_html_a6d0cef13a36f2491d50845c3270af217"><div class="ttname"><a href="classproperty_1_1_color_dialog.html#a6d0cef13a36f2491d50845c3270af217">property.ColorDialog.colorChooser</a></div><div class="ttdeci">javax.swing.JButton colorChooser</div><div class="ttdef"><b>Definition:</b> <a href="_color_dialog_8java_source.html#l00163">ColorDialog.java:163</a></div></div>
+<div class="ttc" id="aclassproperty_1_1_color_dialog_html_a8d3c3f7114ddd96f28780f2b24716cbf"><div class="ttname"><a href="classproperty_1_1_color_dialog.html#a8d3c3f7114ddd96f28780f2b24716cbf">property.ColorDialog.jLabel1</a></div><div class="ttdeci">javax.swing.JLabel jLabel1</div><div class="ttdef"><b>Definition:</b> <a href="_color_dialog_8java_source.html#l00165">ColorDialog.java:165</a></div></div>
+<div class="ttc" id="aclassproperty_1_1_color_dialog_html_aeaba2af61f37ca5a6a6488ef10257157"><div class="ttname"><a href="classproperty_1_1_color_dialog.html#aeaba2af61f37ca5a6a6488ef10257157">property.ColorDialog.fillIcon</a></div><div class="ttdeci">ImageIcon fillIcon</div><div class="ttdef"><b>Definition:</b> <a href="_color_dialog_8java_source.html#l00013">ColorDialog.java:13</a></div></div>
+<div class="ttc" id="aclassproperty_1_1_color_dialog_html_a56724336a70680f869de86ee0198d9f5"><div class="ttname"><a href="classproperty_1_1_color_dialog.html#a56724336a70680f869de86ee0198d9f5">property.ColorDialog.bStrokeColor</a></div><div class="ttdeci">javax.swing.JToggleButton bStrokeColor</div><div class="ttdef"><b>Definition:</b> <a href="_color_dialog_8java_source.html#l00160">ColorDialog.java:160</a></div></div>
+<div class="ttc" id="aclassproperty_1_1_color_dialog_html_afdab0c35151b3b65ce38eb1553a7c04c"><div class="ttname"><a href="classproperty_1_1_color_dialog.html#afdab0c35151b3b65ce38eb1553a7c04c">property.ColorDialog.strokeColor</a></div><div class="ttdeci">Color strokeColor</div><div class="ttdef"><b>Definition:</b> <a href="_color_dialog_8java_source.html#l00014">ColorDialog.java:14</a></div></div>
+<div class="ttc" id="aclassproperty_1_1_color_dialog_html_a2a516f4d9c5ed48d1c7a9ea9a6773263"><div class="ttname"><a href="classproperty_1_1_color_dialog.html#a2a516f4d9c5ed48d1c7a9ea9a6773263">property.ColorDialog.colorPicker</a></div><div class="ttdeci">Color colorPicker</div><div class="ttdef"><b>Definition:</b> <a href="_color_dialog_8java_source.html#l00017">ColorDialog.java:17</a></div></div>
+<div class="ttc" id="aclassproperty_1_1_color_dialog_html_a093389b155b362a6059c194e1dcde5a1"><div class="ttname"><a href="classproperty_1_1_color_dialog.html#a093389b155b362a6059c194e1dcde5a1">property.ColorDialog.bFillColor</a></div><div class="ttdeci">javax.swing.JToggleButton bFillColor</div><div class="ttdef"><b>Definition:</b> <a href="_color_dialog_8java_source.html#l00159">ColorDialog.java:159</a></div></div>
+<div class="ttc" id="aclassproperty_1_1_color_dialog_html_a767903cdd00a2ed532be5cb1fb602e48"><div class="ttname"><a href="classproperty_1_1_color_dialog.html#a767903cdd00a2ed532be5cb1fb602e48">property.ColorDialog.getImageIcon</a></div><div class="ttdeci">Image getImageIcon(String path)</div><div class="ttdef"><b>Definition:</b> <a href="_color_dialog_8java_source.html#l00033">ColorDialog.java:33</a></div></div>
+<div class="ttc" id="aclassproperty_1_1_color_pane_html_a8914dca06828d56d28e8240ee9bb0ff8"><div class="ttname"><a href="classproperty_1_1_color_pane.html#a8914dca06828d56d28e8240ee9bb0ff8">property.ColorPane.getColor</a></div><div class="ttdeci">Color getColor()</div><div class="ttdef"><b>Definition:</b> <a href="_color_pane_8java_source.html#l00112">ColorPane.java:112</a></div></div>
+<div class="ttc" id="aclassproperty_1_1_color_pane_html_a8860c481c1e45cafebe0d3774fce9715"><div class="ttname"><a href="classproperty_1_1_color_pane.html#a8860c481c1e45cafebe0d3774fce9715">property.ColorPane.getImage</a></div><div class="ttdeci">ImageIcon getImage()</div><div class="ttdef"><b>Definition:</b> <a href="_color_pane_8java_source.html#l00108">ColorPane.java:108</a></div></div>
+<div class="ttc" id="aclassproperty_1_1_color_dialog_html_a0e6e286dbed34c608dd131ed78350067"><div class="ttname"><a href="classproperty_1_1_color_dialog.html#a0e6e286dbed34c608dd131ed78350067">property.ColorDialog.buttonGroup1</a></div><div class="ttdeci">javax.swing.ButtonGroup buttonGroup1</div><div class="ttdef"><b>Definition:</b> <a href="_color_dialog_8java_source.html#l00161">ColorDialog.java:161</a></div></div>
+<div class="ttc" id="aclassproperty_1_1_color_pane_html_a79e0da8a5276b2500bf8367a3615b73f"><div class="ttname"><a href="classproperty_1_1_color_pane.html#a79e0da8a5276b2500bf8367a3615b73f">property.ColorPane.ColorPane</a></div><div class="ttdeci">ColorPane()</div><div class="ttdef"><b>Definition:</b> <a href="_color_pane_8java_source.html#l00032">ColorPane.java:32</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

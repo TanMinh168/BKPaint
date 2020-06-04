@@ -192,7 +192,17 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="interfaceshape_1_1_draw_type.html#a32f2f06d2e787ebcf8ebbb486645fb32">shape.DrawType</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_eraser_8java_source.html#l00013">13</a> of file <a class="el" href="_eraser_8java_source.html">Eraser.java</a>.</p>
-<div class="dynheader">
+<div class="fragment"><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;                                     {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        this.<a class="code" href="classshape_1_1_eraser.html#aab83b0052fafa8618096c9e60d4033fa">setSizeEraser</a>(<a class="code" href="classshape_1_1_shape.html#a95776244db45c13cbc8c22c808231f31">strokeThickness</a> + 8f);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        BasicStroke stroke = <span class="keyword">new</span> BasicStroke(<a class="code" href="classshape_1_1_eraser.html#aa56959d139b5784fb5cb19a166a551bd">sizeEraser</a>);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        g2d.setStroke(stroke);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        g2d.setColor(<a class="code" href="classshape_1_1_shape.html#a49bdc84297706340259df69e23d3ddcb">strokeColor</a>);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classshape_1_1_shape.html#a6cb0a6d0265cb4c81460dc6e9322fd42">start</a> != <span class="keyword">null</span> &amp;&amp; <a class="code" href="classshape_1_1_shape.html#a23fd06c705d1b554dacacb76135b7ce1">end</a> != <span class="keyword">null</span>) {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            g2d.drawLine(<a class="code" href="classshape_1_1_shape.html#a6cb0a6d0265cb4c81460dc6e9322fd42">start</a>.x, <a class="code" href="classshape_1_1_shape.html#a6cb0a6d0265cb4c81460dc6e9322fd42">start</a>.y, <a class="code" href="classshape_1_1_shape.html#a23fd06c705d1b554dacacb76135b7ce1">end</a>.x, <a class="code" href="classshape_1_1_shape.html#a23fd06c705d1b554dacacb76135b7ce1">end</a>.y);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        }</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    }</div>
+</div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classshape_1_1_eraser_a155333f15848f6e50e2ca277f7c4a07f_cgraph.png" border="0" usemap="#classshape_1_1_eraser_a155333f15848f6e50e2ca277f7c4a07f_cgraph" alt=""/></div>
@@ -235,7 +245,10 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_eraser_8java_source.html#l00024">24</a> of file <a class="el" href="_eraser_8java_source.html">Eraser.java</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                                 {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classshape_1_1_eraser.html#aa56959d139b5784fb5cb19a166a551bd">sizeEraser</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aab83b0052fafa8618096c9e60d4033fa"></a>
@@ -255,7 +268,10 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_eraser_8java_source.html#l00028">28</a> of file <a class="el" href="_eraser_8java_source.html">Eraser.java</a>.</p>
-<div class="dynheader">
+<div class="fragment"><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                                                {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        this.<a class="code" href="classshape_1_1_eraser.html#aa56959d139b5784fb5cb19a166a551bd">sizeEraser</a> = <a class="code" href="classshape_1_1_eraser.html#aa56959d139b5784fb5cb19a166a551bd">sizeEraser</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    }</div>
+</div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classshape_1_1_eraser_aab83b0052fafa8618096c9e60d4033fa_icgraph.png" border="0" usemap="#classshape_1_1_eraser_aab83b0052fafa8618096c9e60d4033fa_icgraph" alt=""/></div>
@@ -304,6 +320,12 @@ Here is the caller graph for this function:</div>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclassshape_1_1_eraser_html_aab83b0052fafa8618096c9e60d4033fa"><div class="ttname"><a href="classshape_1_1_eraser.html#aab83b0052fafa8618096c9e60d4033fa">shape.Eraser.setSizeEraser</a></div><div class="ttdeci">void setSizeEraser(float sizeEraser)</div><div class="ttdef"><b>Definition:</b> <a href="_eraser_8java_source.html#l00028">Eraser.java:28</a></div></div>
+<div class="ttc" id="aclassshape_1_1_shape_html_a23fd06c705d1b554dacacb76135b7ce1"><div class="ttname"><a href="classshape_1_1_shape.html#a23fd06c705d1b554dacacb76135b7ce1">shape.Shape.end</a></div><div class="ttdeci">Point end</div><div class="ttdef"><b>Definition:</b> <a href="_shape_8java_source.html#l00015">Shape.java:15</a></div></div>
+<div class="ttc" id="aclassshape_1_1_eraser_html_aa56959d139b5784fb5cb19a166a551bd"><div class="ttname"><a href="classshape_1_1_eraser.html#aa56959d139b5784fb5cb19a166a551bd">shape.Eraser.sizeEraser</a></div><div class="ttdeci">float sizeEraser</div><div class="ttdef"><b>Definition:</b> <a href="_eraser_8java_source.html#l00010">Eraser.java:10</a></div></div>
+<div class="ttc" id="aclassshape_1_1_shape_html_a49bdc84297706340259df69e23d3ddcb"><div class="ttname"><a href="classshape_1_1_shape.html#a49bdc84297706340259df69e23d3ddcb">shape.Shape.strokeColor</a></div><div class="ttdeci">Color strokeColor</div><div class="ttdef"><b>Definition:</b> <a href="_shape_8java_source.html#l00013">Shape.java:13</a></div></div>
+<div class="ttc" id="aclassshape_1_1_shape_html_a95776244db45c13cbc8c22c808231f31"><div class="ttname"><a href="classshape_1_1_shape.html#a95776244db45c13cbc8c22c808231f31">shape.Shape.strokeThickness</a></div><div class="ttdeci">float strokeThickness</div><div class="ttdef"><b>Definition:</b> <a href="_shape_8java_source.html#l00041">Shape.java:41</a></div></div>
+<div class="ttc" id="aclassshape_1_1_shape_html_a6cb0a6d0265cb4c81460dc6e9322fd42"><div class="ttname"><a href="classshape_1_1_shape.html#a6cb0a6d0265cb4c81460dc6e9322fd42">shape.Shape.start</a></div><div class="ttdeci">Point start</div><div class="ttdef"><b>Definition:</b> <a href="_shape_8java_source.html#l00015">Shape.java:15</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

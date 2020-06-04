@@ -110,7 +110,9 @@ public class ReplayPanel extends JPanel implements Runnable {
         readState();
 
     }
-
+    /**
+     * Bat dau qau trinh Replay.
+     */
     public void startReplay() {
         if (thread == null) {
             refresh();
@@ -121,11 +123,15 @@ public class ReplayPanel extends JPanel implements Runnable {
         isPlaying = true;
 
     }
-
+    /**
+     * Tam dung Replay.
+     */
     public void pauseReplay() {
         isPlaying = false;
     }
-
+    /**
+     * Dung Replay.
+     */
     public void stopReplay() {
         drawRemainderImage();
         currentStep = this.listDrawStep.size();
@@ -134,7 +140,9 @@ public class ReplayPanel extends JPanel implements Runnable {
         //   currentState = listState.size();
 
     }
-
+    /**
+     * Neu khong phai dang play thi don dep anh org va paintState
+     */
     public void flush() {
         if (isPlaying) {
             bPlay.setIcon(new ImageIcon(getClass().getResource("/icon/pause.png")));
@@ -149,7 +157,11 @@ public class ReplayPanel extends JPanel implements Runnable {
         g2.dispose();
         paintState.setData(org_img);
     }
-
+    /**
+     * Tra ve true neu dang play.
+     * Tra ve false neu dang dung play.
+     * @return
+     */
     public boolean isPlaying() {
         return isPlaying;
     }
@@ -178,11 +190,20 @@ public class ReplayPanel extends JPanel implements Runnable {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     // End of variables declaration//GEN-END:variables
+    /**
+     * Set State duoc lay tu phuog thuc readState.
+     * @param paintState
+     */
     public void setPaintState(PaintState paintState) {
         this.paintState = paintState;
         readState();
     }
-
+    /**
+     * Doc cac trang thai va cac diem da duoc ve trong trang thai do tu cac list.
+     * listPoint la danh sach cac diem da ve.
+     * listState la danh sach lu cac trang thai cua cac buoc ve.
+     * DrawStepList la danh sach cho biet hien tai dang o buoc ve nao.
+     */
     public void readState() {
         listPoint = new ArrayList<>();
         listState = paintState.getListState();
@@ -206,7 +227,9 @@ public class ReplayPanel extends JPanel implements Runnable {
         this.revalidate();
 
     }
-
+    /**
+     * Refresh qua trinh Replay ve trang thai dau.
+     */
     public void refresh() {
         g2 = (Graphics2D) buff_img.getGraphics();
         g2.drawImage(org_img, 0, 0, null);
@@ -216,7 +239,9 @@ public class ReplayPanel extends JPanel implements Runnable {
         cStateElement = 0;
         repaint();
     }
-
+    /**
+     * Huy bo cac doi tuong ve khi khong con Replay nua.
+     */
     public void dispose() {
         org_img = null;
         buff_img = null;
@@ -235,7 +260,10 @@ public class ReplayPanel extends JPanel implements Runnable {
         g2d.dispose();
         System.gc();
     }
-
+    /**
+     * Xac dinh ca thanh phan ve tai tung buoc de co the bat dau va duy tri qua trinh ve.
+     * Cac trang thai duoc lay tu listState va duoc the hien bang bien DrawType.
+     */
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
         g2 = (Graphics2D) g;
@@ -350,7 +378,11 @@ public class ReplayPanel extends JPanel implements Runnable {
             }
         }
     }
-
+    /**
+     * Duy tri qua trinh ve bang cach so sanh buoc ve hien tai.
+     * Neu dang o cac buoc Rotate hay flip thi thuc hien cac thao tac voi tham so tuong ung.
+     * Neu dang o buoc ve thi tien hanh ve lai theo tung doi tuong Rectangle, Line ...
+     */
     public void drawRemainderImage() {
         Graphics2D g2dBuffer = (Graphics2D) buff_img.getGraphics();
         int shapeIndex = 0;
@@ -434,7 +466,11 @@ public class ReplayPanel extends JPanel implements Runnable {
 
     }
 
-    //replay qua tung diem
+    /**
+     * Replay qua tung diem.
+     * Neu nhu trang thai hien tai chua phai trang thai cuoi trong DrawStepList thi tien hanh
+     * lay trang thai buoc ve trong mang DrawStepList va tien hanh so sanh, thuc hien qua trinh ve
+     */
     @Override
     public void run() {
         int increDelay = 60;
@@ -558,11 +594,17 @@ public class ReplayPanel extends JPanel implements Runnable {
         bPlay.setIcon(new ImageIcon(getClass().getResource("/icon/pause.png")));
 
     }
-
+    /**
+     * Thiet lap anh buffer
+     * @return
+     */
     public BufferedImage getBuffer() {
         return buff_img;
     }
-
+    /**
+     * Xay hinh anh voi goc alpha duoc nhap vao.
+     * @param alpha
+     */
     public void rotate(int alpha) {
         AffineTransform tx = new AffineTransform();
         if (alpha == 90) {
@@ -581,7 +623,10 @@ public class ReplayPanel extends JPanel implements Runnable {
         g2d = (Graphics2D) buff_img.getGraphics();
         repaint();
     }
-
+    /**
+     * Lat hinh anh theo truc Oy hoac Ox
+     * @param typeFlip
+     */
     public void flipping(int typeFlip) {
         AffineTransform tx = null;
         if (typeFlip == 1) {   //lat nguoc anh

@@ -174,25 +174,6 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="_polygon_8java_source.html#l00011">11</a> of file <a class="el" href="_polygon_8java_source.html">Polygon.java</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ae110ff007b832b1957867b2d3e3326f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae110ff007b832b1957867b2d3e3326f5">&#9670;&nbsp;</a></span>getListLine()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ArrayList&lt;<a class="el" href="classshape_1_1_line.html">Line</a>&gt; shape.Polygon.getListLine </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_polygon_8java_source.html#l00013">13</a> of file <a class="el" href="_polygon_8java_source.html">Polygon.java</a>.</p>
-
-</div>
-</div>
 <a id="ae13d63bbd7ec73ab113c30e55f34d5fa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae13d63bbd7ec73ab113c30e55f34d5fa">&#9670;&nbsp;</a></span>addElement()</h2>
 
@@ -210,7 +191,10 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_polygon_8java_source.html#l00017">17</a> of file <a class="el" href="_polygon_8java_source.html">Polygon.java</a>.</p>
-<div class="dynheader">
+<div class="fragment"><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                                     {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <a class="code" href="classshape_1_1_polygon.html#a24956a03ac12ef34ad46ab036afc26ad">listLine</a>.add(line);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    }</div>
+</div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classshape_1_1_polygon_ae13d63bbd7ec73ab113c30e55f34d5fa_icgraph.png" border="0" usemap="#classshape_1_1_polygon_ae13d63bbd7ec73ab113c30e55f34d5fa_icgraph" alt=""/></div>
@@ -222,8 +206,7 @@ Here is the caller graph for this function:</div>
 <area shape="rect" href="classpaint_1_1_pad_paint.html#a184767bfb4fcb162ca1d00c45f91ce71" title=" " alt="" coords="279,122,417,149"/>
 <area shape="rect" href="classpaint_1_1_main_frame.html#a6386ca5437d197f9d8a9a16d8a767769" title=" " alt="" coords="251,5,445,47"/>
 <area shape="rect" href="classpaint_1_1_pad_paint.html#a5b340af5d4c2016129a0b920bf43cde7" title=" " alt="" coords="280,71,416,98"/>
-<area shape="rect" href="classpaint_1_1_main_frame.html#ae82e9bc5bca66f8df00ddead69fac496" title=" " alt="" coords="5,56,203,97"/>
-<area shape="rect" href="classpaint_1_1_main_frame.html#a758e41c07d53e3ca72727077cd13951d" title=" " alt="" coords="5,121,203,163"/>
+<area shape="rect" href="classpaint_1_1_main_frame.html#a758e41c07d53e3ca72727077cd13951d" title=" " alt="" coords="5,115,203,156"/>
 </map>
 </div>
 
@@ -248,7 +231,13 @@ Here is the caller graph for this function:</div>
 <p>Implements <a class="el" href="interfaceshape_1_1_draw_type.html#a32f2f06d2e787ebcf8ebbb486645fb32">shape.DrawType</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_polygon_8java_source.html#l00023">23</a> of file <a class="el" href="_polygon_8java_source.html">Polygon.java</a>.</p>
-<div class="dynheader">
+<div class="fragment"><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                                     {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        g2d.setColor(<a class="code" href="classshape_1_1_shape.html#a49bdc84297706340259df69e23d3ddcb">strokeColor</a>);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;<a class="code" href="classshape_1_1_polygon.html#a24956a03ac12ef34ad46ab036afc26ad">listLine</a>.size();i++){</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            <a class="code" href="classshape_1_1_polygon.html#a24956a03ac12ef34ad46ab036afc26ad">listLine</a>.get(i).draw(g2d);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        }</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    }</div>
+</div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classshape_1_1_polygon_a8cbe64e89fb50e7e9976bf322a609ec2_icgraph.png" border="0" usemap="#classshape_1_1_polygon_a8cbe64e89fb50e7e9976bf322a609ec2_icgraph" alt=""/></div>
@@ -256,14 +245,35 @@ Here is the caller graph for this function:</div>
 <area shape="rect" title=" " alt="" coords="735,71,873,98"/>
 <area shape="rect" href="classpaint_1_1_replay_panel.html#a0aaa2ad767f067204a9585652d736473" title=" " alt="" coords="467,5,687,47"/>
 <area shape="rect" href="classpaint_1_1_pad_paint.html#a5b340af5d4c2016129a0b920bf43cde7" title=" " alt="" coords="509,71,645,98"/>
-<area shape="rect" href="classpaint_1_1_pad_paint.html#a184767bfb4fcb162ca1d00c45f91ce71" title=" " alt="" coords="507,129,646,155"/>
+<area shape="rect" href="classpaint_1_1_pad_paint.html#a184767bfb4fcb162ca1d00c45f91ce71" title=" " alt="" coords="507,122,646,149"/>
 <area shape="rect" href="classpaint_1_1_replay_panel.html#a5eedc47768d0b72adf8d2f3c0ff5f9b0" title=" " alt="" coords="222,13,418,39"/>
 <area shape="rect" href="classpaint_1_1_replay_dialog.html#afd802a71a62e07223e2109d7082248a9" title=" " alt="" coords="5,5,173,47"/>
-<area shape="rect" href="classpaint_1_1_main_frame.html#ae82e9bc5bca66f8df00ddead69fac496" title=" " alt="" coords="221,64,419,105"/>
-<area shape="rect" href="classpaint_1_1_main_frame.html#a758e41c07d53e3ca72727077cd13951d" title=" " alt="" coords="221,129,419,171"/>
+<area shape="rect" href="classpaint_1_1_main_frame.html#a758e41c07d53e3ca72727077cd13951d" title=" " alt="" coords="221,115,419,156"/>
 </map>
 </div>
 
+</div>
+</div>
+<a id="ae110ff007b832b1957867b2d3e3326f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae110ff007b832b1957867b2d3e3326f5">&#9670;&nbsp;</a></span>getListLine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ArrayList&lt;<a class="el" href="classshape_1_1_line.html">Line</a>&gt; shape.Polygon.getListLine </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_polygon_8java_source.html#l00013">13</a> of file <a class="el" href="_polygon_8java_source.html">Polygon.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;                                        {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classshape_1_1_polygon.html#a24956a03ac12ef34ad46ab036afc26ad">listLine</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -296,6 +306,8 @@ Here is the caller graph for this function:</div>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclassshape_1_1_polygon_html_a24956a03ac12ef34ad46ab036afc26ad"><div class="ttname"><a href="classshape_1_1_polygon.html#a24956a03ac12ef34ad46ab036afc26ad">shape.Polygon.listLine</a></div><div class="ttdeci">ArrayList&lt; Line &gt; listLine</div><div class="ttdef"><b>Definition:</b> <a href="_polygon_8java_source.html#l00012">Polygon.java:12</a></div></div>
+<div class="ttc" id="aclassshape_1_1_shape_html_a49bdc84297706340259df69e23d3ddcb"><div class="ttname"><a href="classshape_1_1_shape.html#a49bdc84297706340259df69e23d3ddcb">shape.Shape.strokeColor</a></div><div class="ttdeci">Color strokeColor</div><div class="ttdef"><b>Definition:</b> <a href="_shape_8java_source.html#l00013">Shape.java:13</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

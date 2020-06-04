@@ -154,10 +154,57 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_image_cell_8java_source.html#l00016">16</a> of file <a class="el" href="_image_cell_8java_source.html">ImageCell.java</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                                          {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        this.<a class="code" href="classlibrary_1_1_image_cell.html#abde698248b4a93dba52b443dcd36fd5a">image</a> = imageIcon.getImage().getScaledInstance(<a class="code" href="classlibrary_1_1_image_cell.html#a9e545af99d9676dbaa3df65aa091e3a4">WIDTH</a>, <a class="code" href="classlibrary_1_1_image_cell.html#a1b4acfac82dea35b07eee27306cdbb7c">HEIGHT</a>,Image.SCALE_SMOOTH);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="afa253101e91991bb38a35b939f06c596"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa253101e91991bb38a35b939f06c596">&#9670;&nbsp;</a></span>getIconHeight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int library.ImageCell.getIconHeight </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_image_cell_8java_source.html#l00034">34</a> of file <a class="el" href="_image_cell_8java_source.html">ImageCell.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                               {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classlibrary_1_1_image_cell.html#a1b4acfac82dea35b07eee27306cdbb7c">HEIGHT</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac20a19dd49b90321fda7d70228076f59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac20a19dd49b90321fda7d70228076f59">&#9670;&nbsp;</a></span>getIconWidth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int library.ImageCell.getIconWidth </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_image_cell_8java_source.html#l00029">29</a> of file <a class="el" href="_image_cell_8java_source.html">ImageCell.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                              {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classlibrary_1_1_image_cell.html#a9e545af99d9676dbaa3df65aa091e3a4">WIDTH</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="a0809f799423274544b9f107eb904ce1c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0809f799423274544b9f107eb904ce1c">&#9670;&nbsp;</a></span>paintIcon()</h2>
 
@@ -197,7 +244,13 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_image_cell_8java_source.html#l00021">21</a> of file <a class="el" href="_image_cell_8java_source.html">ImageCell.java</a>.</p>
-<div class="dynheader">
+<div class="fragment"><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                                                                 {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classlibrary_1_1_image_cell.html#abde698248b4a93dba52b443dcd36fd5a">image</a> != <span class="keyword">null</span>) {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            g.drawImage(<a class="code" href="classlibrary_1_1_image_cell.html#abde698248b4a93dba52b443dcd36fd5a">image</a>, x+1, y+1,<a class="code" href="classlibrary_1_1_image_cell.html#abde698248b4a93dba52b443dcd36fd5a">image</a>.getWidth(<span class="keyword">null</span>)-2,<a class="code" href="classlibrary_1_1_image_cell.html#abde698248b4a93dba52b443dcd36fd5a">image</a>.getHeight(<span class="keyword">null</span>)-2, <span class="keyword">null</span>);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        }</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    }</div>
+</div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classlibrary_1_1_image_cell_a0809f799423274544b9f107eb904ce1c_icgraph.png" border="0" usemap="#classlibrary_1_1_image_cell_a0809f799423274544b9f107eb904ce1c_icgraph" alt=""/></div>
@@ -211,69 +264,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="ac20a19dd49b90321fda7d70228076f59"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac20a19dd49b90321fda7d70228076f59">&#9670;&nbsp;</a></span>getIconWidth()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int library.ImageCell.getIconWidth </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_image_cell_8java_source.html#l00029">29</a> of file <a class="el" href="_image_cell_8java_source.html">ImageCell.java</a>.</p>
-
-</div>
-</div>
-<a id="afa253101e91991bb38a35b939f06c596"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa253101e91991bb38a35b939f06c596">&#9670;&nbsp;</a></span>getIconHeight()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int library.ImageCell.getIconHeight </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_image_cell_8java_source.html#l00034">34</a> of file <a class="el" href="_image_cell_8java_source.html">ImageCell.java</a>.</p>
-
-</div>
-</div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a9e545af99d9676dbaa3df65aa091e3a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9e545af99d9676dbaa3df65aa091e3a4">&#9670;&nbsp;</a></span>WIDTH</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final int library.ImageCell.WIDTH = 100</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_image_cell_8java_source.html#l00012">12</a> of file <a class="el" href="_image_cell_8java_source.html">ImageCell.java</a>.</p>
-
-</div>
-</div>
 <a id="a1b4acfac82dea35b07eee27306cdbb7c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1b4acfac82dea35b07eee27306cdbb7c">&#9670;&nbsp;</a></span>HEIGHT</h2>
 
@@ -322,11 +313,38 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a id="a9e545af99d9676dbaa3df65aa091e3a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e545af99d9676dbaa3df65aa091e3a4">&#9670;&nbsp;</a></span>WIDTH</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final int library.ImageCell.WIDTH = 100</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_image_cell_8java_source.html#l00012">12</a> of file <a class="el" href="_image_cell_8java_source.html">ImageCell.java</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>library/<a class="el" href="_image_cell_8java_source.html">ImageCell.java</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclasslibrary_1_1_image_cell_html_a1b4acfac82dea35b07eee27306cdbb7c"><div class="ttname"><a href="classlibrary_1_1_image_cell.html#a1b4acfac82dea35b07eee27306cdbb7c">library.ImageCell.HEIGHT</a></div><div class="ttdeci">static final int HEIGHT</div><div class="ttdef"><b>Definition:</b> <a href="_image_cell_8java_source.html#l00013">ImageCell.java:13</a></div></div>
+<div class="ttc" id="aclasslibrary_1_1_image_cell_html_abde698248b4a93dba52b443dcd36fd5a"><div class="ttname"><a href="classlibrary_1_1_image_cell.html#abde698248b4a93dba52b443dcd36fd5a">library.ImageCell.image</a></div><div class="ttdeci">Image image</div><div class="ttdef"><b>Definition:</b> <a href="_image_cell_8java_source.html#l00014">ImageCell.java:14</a></div></div>
+<div class="ttc" id="aclasslibrary_1_1_image_cell_html_a9e545af99d9676dbaa3df65aa091e3a4"><div class="ttname"><a href="classlibrary_1_1_image_cell.html#a9e545af99d9676dbaa3df65aa091e3a4">library.ImageCell.WIDTH</a></div><div class="ttdeci">static final int WIDTH</div><div class="ttdef"><b>Definition:</b> <a href="_image_cell_8java_source.html#l00012">ImageCell.java:12</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

@@ -197,7 +197,22 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="interfaceshape_1_1_draw_type.html#a32f2f06d2e787ebcf8ebbb486645fb32">shape.DrawType</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_triangle_8java_source.html#l00014">14</a> of file <a class="el" href="_triangle_8java_source.html">Triangle.java</a>.</p>
-<div class="dynheader">
+<div class="fragment"><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;                                     {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="keywordtype">int</span>[] xPoints = {<a class="code" href="classshape_1_1_shape.html#a6cb0a6d0265cb4c81460dc6e9322fd42">start</a>.x, <a class="code" href="classshape_1_1_shape.html#a23fd06c705d1b554dacacb76135b7ce1">end</a>.x, 2 * <a class="code" href="classshape_1_1_shape.html#a6cb0a6d0265cb4c81460dc6e9322fd42">start</a>.x - <a class="code" href="classshape_1_1_shape.html#a23fd06c705d1b554dacacb76135b7ce1">end</a>.x};</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keywordtype">int</span>[] yPoints = {<a class="code" href="classshape_1_1_shape.html#a6cb0a6d0265cb4c81460dc6e9322fd42">start</a>.y, <a class="code" href="classshape_1_1_shape.html#a23fd06c705d1b554dacacb76135b7ce1">end</a>.y, <a class="code" href="classshape_1_1_shape.html#a23fd06c705d1b554dacacb76135b7ce1">end</a>.y};</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;         BasicStroke stroke = <span class="keyword">new</span> BasicStroke(<a class="code" href="classshape_1_1_shape.html#a95776244db45c13cbc8c22c808231f31">strokeThickness</a>,<a class="code" href="classshape_1_1_shape.html#a9da81a96d6a2422aae2f05c4ef287c19">endStrokeCap</a>,<a class="code" href="classshape_1_1_shape.html#a91f14f61f123563a8dcefd1f59d1930d">lineStrokeJoin</a>,<a class="code" href="classshape_1_1_shape.html#a15d88edbbec1a0320055e4d369e1c5d5">miterLimit</a>,</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <a class="code" href="classshape_1_1_shape.html#aea8b54ba1922eec21008c74b2a5416a6">dashArray</a>,<a class="code" href="classshape_1_1_shape.html#a2b3fe08e448a43ce1a412c41e27a63d1">dashPhase</a>);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        g2d.setStroke(stroke);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classshape_1_1_triangle.html#a25eb587f1e7d0f2927f02ed720d59227">fillColor</a> != Color.WHITE &amp;&amp; !<a class="code" href="classshape_1_1_triangle.html#a25eb587f1e7d0f2927f02ed720d59227">fillColor</a>.equals(<span class="keyword">new</span> Color(255, 255, 255))) {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            g2d.setColor(<a class="code" href="classshape_1_1_triangle.html#a25eb587f1e7d0f2927f02ed720d59227">fillColor</a>);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            g2d.fillPolygon(xPoints, yPoints, 3);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        }</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        g2d.setColor(<a class="code" href="classshape_1_1_shape.html#a49bdc84297706340259df69e23d3ddcb">strokeColor</a>);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        g2d.drawPolygon(xPoints, yPoints, 3);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    }</div>
+</div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classshape_1_1_triangle_a010b03c67d015e2af7a1ef7226845b05_icgraph.png" border="0" usemap="#classshape_1_1_triangle_a010b03c67d015e2af7a1ef7226845b05_icgraph" alt=""/></div>
@@ -208,11 +223,10 @@ Here is the caller graph for this function:</div>
 <area shape="rect" href="classpaint_1_1_replay_panel.html#a157f393d9cc7504cd8e62852148ddd35" title=" " alt="" coords="467,122,692,149"/>
 <area shape="rect" href="classpaint_1_1_pad_paint.html#a761c370786b3ba2aa3f0731d777ab451" title=" " alt="" coords="477,173,682,199"/>
 <area shape="rect" href="classpaint_1_1_pad_paint.html#a5b340af5d4c2016129a0b920bf43cde7" title=" " alt="" coords="511,223,647,250"/>
-<area shape="rect" href="classpaint_1_1_pad_paint.html#a184767bfb4fcb162ca1d00c45f91ce71" title=" " alt="" coords="510,278,649,305"/>
+<area shape="rect" href="classpaint_1_1_pad_paint.html#a184767bfb4fcb162ca1d00c45f91ce71" title=" " alt="" coords="510,274,649,301"/>
 <area shape="rect" href="classpaint_1_1_replay_panel.html#a5eedc47768d0b72adf8d2f3c0ff5f9b0" title=" " alt="" coords="222,13,418,39"/>
 <area shape="rect" href="classpaint_1_1_replay_dialog.html#afd802a71a62e07223e2109d7082248a9" title=" " alt="" coords="5,5,173,47"/>
-<area shape="rect" href="classpaint_1_1_main_frame.html#ae82e9bc5bca66f8df00ddead69fac496" title=" " alt="" coords="221,212,419,253"/>
-<area shape="rect" href="classpaint_1_1_main_frame.html#a758e41c07d53e3ca72727077cd13951d" title=" " alt="" coords="221,277,419,319"/>
+<area shape="rect" href="classpaint_1_1_main_frame.html#a758e41c07d53e3ca72727077cd13951d" title=" " alt="" coords="221,267,419,308"/>
 </map>
 </div>
 
@@ -235,7 +249,10 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_triangle_8java_source.html#l00030">30</a> of file <a class="el" href="_triangle_8java_source.html">Triangle.java</a>.</p>
-<div class="dynheader">
+<div class="fragment"><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                                              {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        this.<a class="code" href="classshape_1_1_triangle.html#a25eb587f1e7d0f2927f02ed720d59227">fillColor</a> = <a class="code" href="classshape_1_1_triangle.html#a25eb587f1e7d0f2927f02ed720d59227">fillColor</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    }</div>
+</div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classshape_1_1_triangle_ab0bf9a72bf1c3aa167fa949249a52186_icgraph.png" border="0" usemap="#classshape_1_1_triangle_ab0bf9a72bf1c3aa167fa949249a52186_icgraph" alt=""/></div>
@@ -301,6 +318,16 @@ Here is the caller graph for this function:</div>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclassshape_1_1_shape_html_a2b3fe08e448a43ce1a412c41e27a63d1"><div class="ttname"><a href="classshape_1_1_shape.html#a2b3fe08e448a43ce1a412c41e27a63d1">shape.Shape.dashPhase</a></div><div class="ttdeci">float dashPhase</div><div class="ttdef"><b>Definition:</b> <a href="_shape_8java_source.html#l00044">Shape.java:44</a></div></div>
+<div class="ttc" id="aclassshape_1_1_shape_html_aea8b54ba1922eec21008c74b2a5416a6"><div class="ttname"><a href="classshape_1_1_shape.html#aea8b54ba1922eec21008c74b2a5416a6">shape.Shape.dashArray</a></div><div class="ttdeci">float[] dashArray</div><div class="ttdef"><b>Definition:</b> <a href="_shape_8java_source.html#l00046">Shape.java:46</a></div></div>
+<div class="ttc" id="aclassshape_1_1_shape_html_a23fd06c705d1b554dacacb76135b7ce1"><div class="ttname"><a href="classshape_1_1_shape.html#a23fd06c705d1b554dacacb76135b7ce1">shape.Shape.end</a></div><div class="ttdeci">Point end</div><div class="ttdef"><b>Definition:</b> <a href="_shape_8java_source.html#l00015">Shape.java:15</a></div></div>
+<div class="ttc" id="aclassshape_1_1_triangle_html_a25eb587f1e7d0f2927f02ed720d59227"><div class="ttname"><a href="classshape_1_1_triangle.html#a25eb587f1e7d0f2927f02ed720d59227">shape.Triangle.fillColor</a></div><div class="ttdeci">Color fillColor</div><div class="ttdef"><b>Definition:</b> <a href="_triangle_8java_source.html#l00011">Triangle.java:11</a></div></div>
+<div class="ttc" id="aclassshape_1_1_shape_html_a49bdc84297706340259df69e23d3ddcb"><div class="ttname"><a href="classshape_1_1_shape.html#a49bdc84297706340259df69e23d3ddcb">shape.Shape.strokeColor</a></div><div class="ttdeci">Color strokeColor</div><div class="ttdef"><b>Definition:</b> <a href="_shape_8java_source.html#l00013">Shape.java:13</a></div></div>
+<div class="ttc" id="aclassshape_1_1_shape_html_a95776244db45c13cbc8c22c808231f31"><div class="ttname"><a href="classshape_1_1_shape.html#a95776244db45c13cbc8c22c808231f31">shape.Shape.strokeThickness</a></div><div class="ttdeci">float strokeThickness</div><div class="ttdef"><b>Definition:</b> <a href="_shape_8java_source.html#l00041">Shape.java:41</a></div></div>
+<div class="ttc" id="aclassshape_1_1_shape_html_a9da81a96d6a2422aae2f05c4ef287c19"><div class="ttname"><a href="classshape_1_1_shape.html#a9da81a96d6a2422aae2f05c4ef287c19">shape.Shape.endStrokeCap</a></div><div class="ttdeci">int endStrokeCap</div><div class="ttdef"><b>Definition:</b> <a href="_shape_8java_source.html#l00042">Shape.java:42</a></div></div>
+<div class="ttc" id="aclassshape_1_1_shape_html_a15d88edbbec1a0320055e4d369e1c5d5"><div class="ttname"><a href="classshape_1_1_shape.html#a15d88edbbec1a0320055e4d369e1c5d5">shape.Shape.miterLimit</a></div><div class="ttdeci">float miterLimit</div><div class="ttdef"><b>Definition:</b> <a href="_shape_8java_source.html#l00045">Shape.java:45</a></div></div>
+<div class="ttc" id="aclassshape_1_1_shape_html_a91f14f61f123563a8dcefd1f59d1930d"><div class="ttname"><a href="classshape_1_1_shape.html#a91f14f61f123563a8dcefd1f59d1930d">shape.Shape.lineStrokeJoin</a></div><div class="ttdeci">int lineStrokeJoin</div><div class="ttdef"><b>Definition:</b> <a href="_shape_8java_source.html#l00043">Shape.java:43</a></div></div>
+<div class="ttc" id="aclassshape_1_1_shape_html_a6cb0a6d0265cb4c81460dc6e9322fd42"><div class="ttname"><a href="classshape_1_1_shape.html#a6cb0a6d0265cb4c81460dc6e9322fd42">shape.Shape.start</a></div><div class="ttdeci">Point start</div><div class="ttdef"><b>Definition:</b> <a href="_shape_8java_source.html#l00015">Shape.java:15</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

@@ -145,7 +145,15 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_stroke_state_8java_source.html#l00177">177</a> of file <a class="el" href="_stroke_state_8java_source.html">StrokeState.java</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                                        {</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;            setOpaque(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;            setHorizontalAlignment(CENTER);</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;            setVerticalAlignment(CENTER);</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="classproperty_1_1_stroke_state_1_1_stroke_combobox_renderer.html#ae5f231f9cb41c0dd4c4b7f1f0f313bef">fileStrokeIcon</a>.length; i++) {</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                <a class="code" href="classproperty_1_1_stroke_state_1_1_stroke_combobox_renderer.html#a636d97d32419933bf5120345023a59d6">strokeIcon</a>[i] = <span class="keyword">new</span> ImageIcon(<a class="code" href="classproperty_1_1_stroke_state.html#a481ee037f4b65594f8bba71af9971c96">getImageIcon</a>(<span class="stringliteral">&quot;/icon/stroke/&quot;</span> + <a class="code" href="classproperty_1_1_stroke_state_1_1_stroke_combobox_renderer.html#ae5f231f9cb41c0dd4c4b7f1f0f313bef">fileStrokeIcon</a>[i] + <span class="stringliteral">&quot;.png&quot;</span>));</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;            }</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -194,7 +202,24 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_stroke_state_8java_source.html#l00187">187</a> of file <a class="el" href="_stroke_state_8java_source.html">StrokeState.java</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;                                                                                                                                     {</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;            </div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;            <span class="keywordtype">int</span> selectedIndex = ((Integer) value).intValue();</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160; </div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;            <span class="keywordflow">if</span> (isSelected) {</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;                setBackground(list.getSelectionBackground());</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;                setForeground(list.getSelectionForeground());</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;            } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;                setBackground(list.getBackground());</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;                setForeground(list.getForeground());</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            }</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160; </div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;            ImageIcon icon = <a class="code" href="classproperty_1_1_stroke_state_1_1_stroke_combobox_renderer.html#a636d97d32419933bf5120345023a59d6">strokeIcon</a>[selectedIndex];</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;            setIcon(icon);</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;            setText(<span class="keyword">null</span>);</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">this</span>;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -251,6 +276,9 @@ Private Attributes</h2></td></tr>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclassproperty_1_1_stroke_state_html_a481ee037f4b65594f8bba71af9971c96"><div class="ttname"><a href="classproperty_1_1_stroke_state.html#a481ee037f4b65594f8bba71af9971c96">property.StrokeState.getImageIcon</a></div><div class="ttdeci">Image getImageIcon(String path)</div><div class="ttdef"><b>Definition:</b> <a href="_stroke_state_8java_source.html#l00167">StrokeState.java:167</a></div></div>
+<div class="ttc" id="aclassproperty_1_1_stroke_state_1_1_stroke_combobox_renderer_html_a636d97d32419933bf5120345023a59d6"><div class="ttname"><a href="classproperty_1_1_stroke_state_1_1_stroke_combobox_renderer.html#a636d97d32419933bf5120345023a59d6">property.StrokeState.StrokeComboboxRenderer.strokeIcon</a></div><div class="ttdeci">ImageIcon strokeIcon[]</div><div class="ttdef"><b>Definition:</b> <a href="_stroke_state_8java_source.html#l00175">StrokeState.java:175</a></div></div>
+<div class="ttc" id="aclassproperty_1_1_stroke_state_1_1_stroke_combobox_renderer_html_ae5f231f9cb41c0dd4c4b7f1f0f313bef"><div class="ttname"><a href="classproperty_1_1_stroke_state_1_1_stroke_combobox_renderer.html#ae5f231f9cb41c0dd4c4b7f1f0f313bef">property.StrokeState.StrokeComboboxRenderer.fileStrokeIcon</a></div><div class="ttdeci">String fileStrokeIcon[]</div><div class="ttdef"><b>Definition:</b> <a href="_stroke_state_8java_source.html#l00174">StrokeState.java:174</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

@@ -181,10 +181,75 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Tao form ColorPane1 </p>
+<p>Tao form <a class="el" href="classproperty_1_1_color_pane.html">ColorPane</a> </p>
+<p>Xac dinh thay doi trang thai chuot cua user</p>
+<p>Tra ve vi tri an chuot cua user</p>
+<p>Recover trang thai sau khi user roi chuot khoi bang mau</p>
+<p>Bat cac chuyen dong chuot cua user (keo, di chuyen)</p>
+<p>Bat chuyen dong di chuyen chuot cua user</p>
 
 <p class="definition">Definition at line <a class="el" href="_color_pane_8java_source.html#l00032">32</a> of file <a class="el" href="_color_pane_8java_source.html">ColorPane.java</a>.</p>
-<div class="dynheader">
+<div class="fragment"><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                       {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <a class="code" href="classproperty_1_1_color_pane.html#ae88ecb9e11c254939ee2d5ed96a2f2e7">initComponents</a>();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <a class="code" href="classproperty_1_1_color_pane.html#a1d6dc3d97ac6a3f4b0913c8674930474">image</a> = <span class="keyword">new</span> ColorCell(Color.WHITE);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <a class="code" href="classproperty_1_1_color_pane.html#a12acc8f0cb084d9bdbf5e3739b4ec66e">colorCell</a> = <span class="keyword">new</span> ColorCell(Color.WHITE);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="comment">//Tạo thư viện màu</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="code" href="classproperty_1_1_color_pane.html#a11b08e818a340e7042a99c3028ed103f">colors</a>[0][0] = <span class="keyword">new</span> Color(0, 0, 0);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <a class="code" href="classproperty_1_1_color_pane.html#a11b08e818a340e7042a99c3028ed103f">colors</a>[0][1] = <span class="keyword">new</span> Color(255, 0, 204);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <a class="code" href="classproperty_1_1_color_pane.html#a11b08e818a340e7042a99c3028ed103f">colors</a>[0][2] = <span class="keyword">new</span> Color(204, 204, 255);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <a class="code" href="classproperty_1_1_color_pane.html#a11b08e818a340e7042a99c3028ed103f">colors</a>[0][3] = <span class="keyword">new</span> Color(255, 0, 0);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <a class="code" href="classproperty_1_1_color_pane.html#a11b08e818a340e7042a99c3028ed103f">colors</a>[0][4] = <span class="keyword">new</span> Color(204, 102, 0);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <a class="code" href="classproperty_1_1_color_pane.html#a11b08e818a340e7042a99c3028ed103f">colors</a>[0][5] = <span class="keyword">new</span> Color(255, 255, 0);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <a class="code" href="classproperty_1_1_color_pane.html#a11b08e818a340e7042a99c3028ed103f">colors</a>[0][6] = <span class="keyword">new</span> Color(0, 153, 0);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <a class="code" href="classproperty_1_1_color_pane.html#a11b08e818a340e7042a99c3028ed103f">colors</a>[0][7] = <span class="keyword">new</span> Color(0, 153, 255);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <a class="code" href="classproperty_1_1_color_pane.html#a11b08e818a340e7042a99c3028ed103f">colors</a>[0][8] = <span class="keyword">new</span> Color(0, 0, 255);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <a class="code" href="classproperty_1_1_color_pane.html#a11b08e818a340e7042a99c3028ed103f">colors</a>[0][9] = <span class="keyword">new</span> Color(153, 0, 153);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <a class="code" href="classproperty_1_1_color_pane.html#a11b08e818a340e7042a99c3028ed103f">colors</a>[1][0] = Color.WHITE;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="classproperty_1_1_color_pane.html#a11b08e818a340e7042a99c3028ed103f">colors</a>[1][1] = <span class="keyword">new</span> Color(255, 153, 102);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <a class="code" href="classproperty_1_1_color_pane.html#a11b08e818a340e7042a99c3028ed103f">colors</a>[1][2] = <span class="keyword">new</span> Color(255, 174, 201);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <a class="code" href="classproperty_1_1_color_pane.html#a11b08e818a340e7042a99c3028ed103f">colors</a>[1][3] = <span class="keyword">new</span> Color(255, 201, 14);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <a class="code" href="classproperty_1_1_color_pane.html#a11b08e818a340e7042a99c3028ed103f">colors</a>[1][4] = <span class="keyword">new</span> Color(229, 238, 176);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <a class="code" href="classproperty_1_1_color_pane.html#a11b08e818a340e7042a99c3028ed103f">colors</a>[1][5] = <span class="keyword">new</span> Color(155, 153, 200);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <a class="code" href="classproperty_1_1_color_pane.html#a11b08e818a340e7042a99c3028ed103f">colors</a>[1][6] = <span class="keyword">new</span> Color(214, 102, 202);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <a class="code" href="classproperty_1_1_color_pane.html#a11b08e818a340e7042a99c3028ed103f">colors</a>[1][7] = <span class="keyword">new</span> Color(153, 51, 0);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <a class="code" href="classproperty_1_1_color_pane.html#a11b08e818a340e7042a99c3028ed103f">colors</a>[1][8] = <span class="keyword">new</span> Color(112, 146, 190);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <a class="code" href="classproperty_1_1_color_pane.html#a11b08e818a340e7042a99c3028ed103f">colors</a>[1][9] = <span class="keyword">new</span> Color(200, 191, 231);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <a class="code" href="classproperty_1_1_color_pane.html#a11b08e818a340e7042a99c3028ed103f">colors</a>[2][0] = <span class="keyword">new</span> Color(50, 150, 150);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <a class="code" href="classproperty_1_1_color_pane.html#a11b08e818a340e7042a99c3028ed103f">colors</a>[2][1] = <span class="keyword">new</span> Color(100, 100, 100);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <a class="code" href="classproperty_1_1_color_pane.html#a11b08e818a340e7042a99c3028ed103f">colors</a>[2][2] = <span class="keyword">new</span> Color(150, 150, 150);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <a class="code" href="classproperty_1_1_color_pane.html#a11b08e818a340e7042a99c3028ed103f">colors</a>[2][3] = <span class="keyword">new</span> Color(155, 253, 0);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <a class="code" href="classproperty_1_1_color_pane.html#a11b08e818a340e7042a99c3028ed103f">colors</a>[2][4] = <span class="keyword">new</span> Color(150, 100, 75);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <a class="code" href="classproperty_1_1_color_pane.html#a11b08e818a340e7042a99c3028ed103f">colors</a>[2][5] = <span class="keyword">new</span> Color(100, 155, 75);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <a class="code" href="classproperty_1_1_color_pane.html#a11b08e818a340e7042a99c3028ed103f">colors</a>[2][6] = <span class="keyword">new</span> Color(230, 120, 103);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <a class="code" href="classproperty_1_1_color_pane.html#a11b08e818a340e7042a99c3028ed103f">colors</a>[2][7] = <span class="keyword">new</span> Color(153, 151, 0);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <a class="code" href="classproperty_1_1_color_pane.html#a11b08e818a340e7042a99c3028ed103f">colors</a>[2][8] = <span class="keyword">new</span> Color(134, 255, 190);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <a class="code" href="classproperty_1_1_color_pane.html#a11b08e818a340e7042a99c3028ed103f">colors</a>[2][9] = <span class="keyword">new</span> Color(20, 75, 100);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        this.setPreferredSize(<span class="keyword">new</span> Dimension(251, 76));</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="classproperty_1_1_color_pane.html#a621c1fa00aba43e9817b01f545d8d17e">soDong</a>; i++) {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; <a class="code" href="classproperty_1_1_color_pane.html#ab83b1a545c30e379f2fc274d23221b34">soCot</a>; j++) {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                <span class="comment">//Gan mau cho tung o trong color cell</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                <a class="code" href="classproperty_1_1_color_pane.html#adf614d6984400a4e24d3be762a9ef500">cells</a>[i][j] = <span class="keyword">new</span> ColorCell(<a class="code" href="classproperty_1_1_color_pane.html#a11b08e818a340e7042a99c3028ed103f">colors</a>[i][j]);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        this.addMouseListener(<span class="keyword">new</span> MouseAdapter() {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <span class="keyword">public</span> <span class="keywordtype">void</span> mousePressed(MouseEvent e) {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                <a class="code" href="classproperty_1_1_color_pane.html#a3985c7b0efc43c01576fafc5edd7ef84">setImage</a>(e.getX(), e.getY());</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            <span class="keyword">public</span> <span class="keywordtype">void</span> mouseExited(MouseEvent e) {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                <a class="code" href="classproperty_1_1_color_pane.html#a61ccf4c9b31cd130b5325b2412466ae9">location</a> = <span class="keyword">null</span>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                repaint();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            }</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        });</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        this.addMouseMotionListener(<span class="keyword">new</span> MouseMotionAdapter() {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <span class="keyword">public</span> <span class="keywordtype">void</span> mouseMoved(MouseEvent e) {</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                <a class="code" href="classproperty_1_1_color_pane.html#a61ccf4c9b31cd130b5325b2412466ae9">location</a> = e.getPoint();</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                repaint();</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            }</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        });</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    }</div>
+</div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classproperty_1_1_color_pane_a79e0da8a5276b2500bf8367a3615b73f_cgraph.png" border="0" usemap="#classproperty_1_1_color_pane_a79e0da8a5276b2500bf8367a3615b73f_cgraph" alt=""/></div>
@@ -208,114 +273,6 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a8860c481c1e45cafebe0d3774fce9715"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8860c481c1e45cafebe0d3774fce9715">&#9670;&nbsp;</a></span>getImage()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ImageIcon property.ColorPane.getImage </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_color_pane_8java_source.html#l00090">90</a> of file <a class="el" href="_color_pane_8java_source.html">ColorPane.java</a>.</p>
-
-</div>
-</div>
-<a id="a8914dca06828d56d28e8240ee9bb0ff8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8914dca06828d56d28e8240ee9bb0ff8">&#9670;&nbsp;</a></span>getColor()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Color property.ColorPane.getColor </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_color_pane_8java_source.html#l00094">94</a> of file <a class="el" href="_color_pane_8java_source.html">ColorPane.java</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classproperty_1_1_color_pane_a8914dca06828d56d28e8240ee9bb0ff8_cgraph.png" border="0" usemap="#classproperty_1_1_color_pane_a8914dca06828d56d28e8240ee9bb0ff8_cgraph" alt=""/></div>
-<map name="classproperty_1_1_color_pane_a8914dca06828d56d28e8240ee9bb0ff8_cgraph" id="classproperty_1_1_color_pane_a8914dca06828d56d28e8240ee9bb0ff8_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,191,32"/>
-<area shape="rect" href="classproperty_1_1_color_cell.html#a990f6f8e975ca07ab1e474dc61ae97b5" title=" " alt="" coords="239,5,416,32"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a3985c7b0efc43c01576fafc5edd7ef84"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3985c7b0efc43c01576fafc5edd7ef84">&#9670;&nbsp;</a></span>setImage() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void property.ColorPane.setImage </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>mouseX</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>mouseY</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_color_pane_8java_source.html#l00098">98</a> of file <a class="el" href="_color_pane_8java_source.html">ColorPane.java</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classproperty_1_1_color_pane_a3985c7b0efc43c01576fafc5edd7ef84_icgraph.png" border="0" usemap="#classproperty_1_1_color_pane_a3985c7b0efc43c01576fafc5edd7ef84_icgraph" alt=""/></div>
-<map name="classproperty_1_1_color_pane_a3985c7b0efc43c01576fafc5edd7ef84_icgraph" id="classproperty_1_1_color_pane_a3985c7b0efc43c01576fafc5edd7ef84_icgraph">
-<area shape="rect" title=" " alt="" coords="680,13,871,39"/>
-<area shape="rect" href="classproperty_1_1_color_pane.html#a79e0da8a5276b2500bf8367a3615b73f" title=" " alt="" coords="435,13,632,39"/>
-<area shape="rect" href="classproperty_1_1_color_dialog.html#aa5555c3a9150ac27477f630bed0ba1bb" title=" " alt="" coords="227,5,387,47"/>
-<area shape="rect" href="classproperty_1_1_color_dialog.html#ab1537ba376c140aa010ad8dae61c960e" title=" " alt="" coords="5,5,179,47"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a91c9a114f2cfda9378bc4591d87dbc36"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a91c9a114f2cfda9378bc4591d87dbc36">&#9670;&nbsp;</a></span>setImage() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void property.ColorPane.setImage </td>
-          <td>(</td>
-          <td class="paramtype">Color&#160;</td>
-          <td class="paramname"><em>color</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_color_pane_8java_source.html#l00111">111</a> of file <a class="el" href="_color_pane_8java_source.html">ColorPane.java</a>.</p>
-
-</div>
-</div>
 <a id="a886b2d9471ec45aba712f8cdf888432b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a886b2d9471ec45aba712f8cdf888432b">&#9670;&nbsp;</a></span>drawCell()</h2>
 
@@ -342,8 +299,22 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_color_pane_8java_source.html#l00115">115</a> of file <a class="el" href="_color_pane_8java_source.html">ColorPane.java</a>.</p>
-<div class="dynheader">
+<p class="definition">Definition at line <a class="el" href="_color_pane_8java_source.html#l00138">138</a> of file <a class="el" href="_color_pane_8java_source.html">ColorPane.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;                                                 {</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        <span class="keywordflow">if</span> (mouseX % ColorCell.HEIGHT == 0 || mouseY % ColorCell.WIDTH == 0) {</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;            <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        }</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        <span class="keywordtype">int</span> dong = mouseY / ColorCell.HEIGHT;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        <span class="keywordtype">int</span> cot = mouseX / ColorCell.WIDTH;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        <span class="keywordflow">if</span> (cot &lt; 0 || cot &gt; <a class="code" href="classproperty_1_1_color_pane.html#ab83b1a545c30e379f2fc274d23221b34">soCot</a> - 1 || dong &lt; 0 || dong &gt; <a class="code" href="classproperty_1_1_color_pane.html#a621c1fa00aba43e9817b01f545d8d17e">soDong</a> - 1) {</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        }</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        <a class="code" href="classproperty_1_1_color_pane.html#a6fd2e968b42226f18f4c2004ce0aee5c">g2d</a>.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, 0.3f));</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        <a class="code" href="classproperty_1_1_color_pane.html#a6fd2e968b42226f18f4c2004ce0aee5c">g2d</a>.setPaint(Color.BLUE);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <a class="code" href="classproperty_1_1_color_pane.html#a6fd2e968b42226f18f4c2004ce0aee5c">g2d</a>.fillRect(cot * ColorCell.WIDTH, dong * ColorCell.HEIGHT, ColorCell.WIDTH, ColorCell.HEIGHT);</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    }</div>
+</div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classproperty_1_1_color_pane_a886b2d9471ec45aba712f8cdf888432b_icgraph.png" border="0" usemap="#classproperty_1_1_color_pane_a886b2d9471ec45aba712f8cdf888432b_icgraph" alt=""/></div>
@@ -353,6 +324,59 @@ Here is the caller graph for this function:</div>
 </map>
 </div>
 
+</div>
+</div>
+<a id="a8914dca06828d56d28e8240ee9bb0ff8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8914dca06828d56d28e8240ee9bb0ff8">&#9670;&nbsp;</a></span>getColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Color property.ColorPane.getColor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_color_pane_8java_source.html#l00112">112</a> of file <a class="el" href="_color_pane_8java_source.html">ColorPane.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                            {</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classproperty_1_1_color_pane.html#a1d6dc3d97ac6a3f4b0913c8674930474">image</a>.<a class="code" href="classproperty_1_1_color_cell.html#a990f6f8e975ca07ab1e474dc61ae97b5">getColor</a>();</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    }</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classproperty_1_1_color_pane_a8914dca06828d56d28e8240ee9bb0ff8_cgraph.png" border="0" usemap="#classproperty_1_1_color_pane_a8914dca06828d56d28e8240ee9bb0ff8_cgraph" alt=""/></div>
+<map name="classproperty_1_1_color_pane_a8914dca06828d56d28e8240ee9bb0ff8_cgraph" id="classproperty_1_1_color_pane_a8914dca06828d56d28e8240ee9bb0ff8_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,191,32"/>
+<area shape="rect" href="classproperty_1_1_color_cell.html#a990f6f8e975ca07ab1e474dc61ae97b5" title=" " alt="" coords="239,5,416,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8860c481c1e45cafebe0d3774fce9715"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8860c481c1e45cafebe0d3774fce9715">&#9670;&nbsp;</a></span>getImage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ImageIcon property.ColorPane.getImage </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_color_pane_8java_source.html#l00108">108</a> of file <a class="el" href="_color_pane_8java_source.html">ColorPane.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                                {</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classproperty_1_1_color_pane.html#a1d6dc3d97ac6a3f4b0913c8674930474">image</a>;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae88ecb9e11c254939ee2d5ed96a2f2e7"></a>
@@ -377,10 +401,13 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This method is called from within the constructor to initialize the form. WARNING: Do NOT modify this code. The content of this method is always regenerated by the Form Editor. </p>
+<p>This method is called from within the constructor to initialize the form. WARNING: Do NOT modify this code. The content of this method is always regenerated by the Form Editor. Khoi tao thanh phan </p>
 
-<p class="definition">Definition at line <a class="el" href="_color_pane_8java_source.html#l00137">137</a> of file <a class="el" href="_color_pane_8java_source.html">ColorPane.java</a>.</p>
-<div class="dynheader">
+<p class="definition">Definition at line <a class="el" href="_color_pane_8java_source.html#l00163">163</a> of file <a class="el" href="_color_pane_8java_source.html">ColorPane.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                                  {</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        setLayout(<span class="keyword">null</span>);</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    }<span class="comment">// &lt;/editor-fold&gt;//GEN-END:initComponents</span></div>
+</div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classproperty_1_1_color_pane_ae88ecb9e11c254939ee2d5ed96a2f2e7_icgraph.png" border="0" usemap="#classproperty_1_1_color_pane_ae88ecb9e11c254939ee2d5ed96a2f2e7_icgraph" alt=""/></div>
@@ -410,8 +437,25 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_color_pane_8java_source.html#l00146">146</a> of file <a class="el" href="_color_pane_8java_source.html">ColorPane.java</a>.</p>
-<div class="dynheader">
+<p class="definition">Definition at line <a class="el" href="_color_pane_8java_source.html#l00171">171</a> of file <a class="el" href="_color_pane_8java_source.html">ColorPane.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                                           {</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        super.paintComponent(g);</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        <a class="code" href="classproperty_1_1_color_pane.html#a6fd2e968b42226f18f4c2004ce0aee5c">g2d</a> = (Graphics2D) g;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classproperty_1_1_color_pane.html#a1d6dc3d97ac6a3f4b0913c8674930474">image</a> == <span class="keyword">null</span>) {</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            this.createImage(ColorCell.WIDTH, ColorCell.HEIGHT);</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        }</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        <a class="code" href="classproperty_1_1_color_pane.html#a6fd2e968b42226f18f4c2004ce0aee5c">g2d</a>.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, 1.0f));</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="classproperty_1_1_color_pane.html#a621c1fa00aba43e9817b01f545d8d17e">soDong</a>; i++) {</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; <a class="code" href="classproperty_1_1_color_pane.html#ab83b1a545c30e379f2fc274d23221b34">soCot</a>; j++) {</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                g.setColor(<a class="code" href="classproperty_1_1_color_pane.html#a11b08e818a340e7042a99c3028ed103f">colors</a>[i][j]);</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;                g.fillRect(j * ColorCell.WIDTH + 1, i * ColorCell.HEIGHT - 1, ColorCell.WIDTH - 2, ColorCell.HEIGHT - 2);</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;            }</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        }</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classproperty_1_1_color_pane.html#a61ccf4c9b31cd130b5325b2412466ae9">location</a> != <span class="keyword">null</span>) {</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;            <a class="code" href="classproperty_1_1_color_pane.html#a886b2d9471ec45aba712f8cdf888432b">drawCell</a>(<a class="code" href="classproperty_1_1_color_pane.html#a61ccf4c9b31cd130b5325b2412466ae9">location</a>.x, <a class="code" href="classproperty_1_1_color_pane.html#a61ccf4c9b31cd130b5325b2412466ae9">location</a>.y);</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        }</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    }</div>
+</div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classproperty_1_1_color_pane_a578744fefc5f0721e0538db07bb363b8_cgraph.png" border="0" usemap="#classproperty_1_1_color_pane_a578744fefc5f0721e0538db07bb363b8_cgraph" alt=""/></div>
@@ -423,55 +467,84 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a id="a91c9a114f2cfda9378bc4591d87dbc36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91c9a114f2cfda9378bc4591d87dbc36">&#9670;&nbsp;</a></span>setImage() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void property.ColorPane.setImage </td>
+          <td>(</td>
+          <td class="paramtype">Color&#160;</td>
+          <td class="paramname"><em>color</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_color_pane_8java_source.html#l00134">134</a> of file <a class="el" href="_color_pane_8java_source.html">ColorPane.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                                      {</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        <a class="code" href="classproperty_1_1_color_pane.html#a1d6dc3d97ac6a3f4b0913c8674930474">image</a> = <span class="keyword">new</span> ColorCell(<a class="code" href="classproperty_1_1_color_pane.html#a54c81b988e9350f28b8b45e3a65a0cd8">color</a>);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a3985c7b0efc43c01576fafc5edd7ef84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3985c7b0efc43c01576fafc5edd7ef84">&#9670;&nbsp;</a></span>setImage() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void property.ColorPane.setImage </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mouseX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mouseY</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Tra ve mau tuong ung voi vi tri an chon chua user. Neu vi tri an chon cua user nam ngay tren duong bien giua 2 o mau thi khong tra ve ket qua Neu vi tri an chon cua user nam ngoai pham vi cua bang mau thi khong tra ve ket qua </p>
+
+<p class="definition">Definition at line <a class="el" href="_color_pane_8java_source.html#l00121">121</a> of file <a class="el" href="_color_pane_8java_source.html">ColorPane.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                                                 {</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keywordflow">if</span> (mouseX % ColorCell.HEIGHT == 0 || mouseY % ColorCell.WIDTH == 0) {</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        }</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="keywordtype">int</span> dong = mouseY / ColorCell.HEIGHT;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <span class="keywordtype">int</span> cot = mouseX / ColorCell.WIDTH;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="keywordflow">if</span> (cot &lt; 0 || cot &gt; <a class="code" href="classproperty_1_1_color_pane.html#ab83b1a545c30e379f2fc274d23221b34">soCot</a> - 1 || dong &lt; 0 || dong &gt; <a class="code" href="classproperty_1_1_color_pane.html#a621c1fa00aba43e9817b01f545d8d17e">soDong</a> - 1) {</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        }</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <a class="code" href="classproperty_1_1_color_pane.html#a1d6dc3d97ac6a3f4b0913c8674930474">image</a> = <a class="code" href="classproperty_1_1_color_pane.html#adf614d6984400a4e24d3be762a9ef500">cells</a>[dong][cot];</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    }</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classproperty_1_1_color_pane_a3985c7b0efc43c01576fafc5edd7ef84_icgraph.png" border="0" usemap="#classproperty_1_1_color_pane_a3985c7b0efc43c01576fafc5edd7ef84_icgraph" alt=""/></div>
+<map name="classproperty_1_1_color_pane_a3985c7b0efc43c01576fafc5edd7ef84_icgraph" id="classproperty_1_1_color_pane_a3985c7b0efc43c01576fafc5edd7ef84_icgraph">
+<area shape="rect" title=" " alt="" coords="680,13,871,39"/>
+<area shape="rect" href="classproperty_1_1_color_pane.html#a79e0da8a5276b2500bf8367a3615b73f" title=" " alt="" coords="435,13,632,39"/>
+<area shape="rect" href="classproperty_1_1_color_dialog.html#aa5555c3a9150ac27477f630bed0ba1bb" title=" " alt="" coords="227,5,387,47"/>
+<area shape="rect" href="classproperty_1_1_color_dialog.html#ab1537ba376c140aa010ad8dae61c960e" title=" " alt="" coords="5,5,179,47"/>
+</map>
+</div>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a621c1fa00aba43e9817b01f545d8d17e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a621c1fa00aba43e9817b01f545d8d17e">&#9670;&nbsp;</a></span>soDong</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int property.ColorPane.soDong = 3</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_color_pane_8java_source.html#l00019">19</a> of file <a class="el" href="_color_pane_8java_source.html">ColorPane.java</a>.</p>
-
-</div>
-</div>
-<a id="ab83b1a545c30e379f2fc274d23221b34"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab83b1a545c30e379f2fc274d23221b34">&#9670;&nbsp;</a></span>soCot</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int property.ColorPane.soCot = 10</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_color_pane_8java_source.html#l00020">20</a> of file <a class="el" href="_color_pane_8java_source.html">ColorPane.java</a>.</p>
-
-</div>
-</div>
 <a id="adf614d6984400a4e24d3be762a9ef500"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adf614d6984400a4e24d3be762a9ef500">&#9670;&nbsp;</a></span>cells</h2>
 
@@ -493,30 +566,6 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_color_pane_8java_source.html#l00021">21</a> of file <a class="el" href="_color_pane_8java_source.html">ColorPane.java</a>.</p>
-
-</div>
-</div>
-<a id="a11b08e818a340e7042a99c3028ed103f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a11b08e818a340e7042a99c3028ed103f">&#9670;&nbsp;</a></span>colors</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Color [][] property.ColorPane.colors = new Color[<a class="el" href="classproperty_1_1_color_pane.html#a621c1fa00aba43e9817b01f545d8d17e">soDong</a>][<a class="el" href="classproperty_1_1_color_pane.html#ab83b1a545c30e379f2fc274d23221b34">soCot</a>]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_color_pane_8java_source.html#l00022">22</a> of file <a class="el" href="_color_pane_8java_source.html">ColorPane.java</a>.</p>
 
 </div>
 </div>
@@ -568,8 +617,8 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="a1d6dc3d97ac6a3f4b0913c8674930474"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d6dc3d97ac6a3f4b0913c8674930474">&#9670;&nbsp;</a></span>image</h2>
+<a id="a11b08e818a340e7042a99c3028ed103f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11b08e818a340e7042a99c3028ed103f">&#9670;&nbsp;</a></span>colors</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -578,7 +627,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classproperty_1_1_color_cell.html">ColorCell</a> property.ColorPane.image</td>
+          <td class="memname">Color [][] property.ColorPane.colors = new Color[<a class="el" href="classproperty_1_1_color_pane.html#a621c1fa00aba43e9817b01f545d8d17e">soDong</a>][<a class="el" href="classproperty_1_1_color_pane.html#ab83b1a545c30e379f2fc274d23221b34">soCot</a>]</td>
         </tr>
       </table>
   </td>
@@ -588,31 +637,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_color_pane_8java_source.html#l00025">25</a> of file <a class="el" href="_color_pane_8java_source.html">ColorPane.java</a>.</p>
-
-</div>
-</div>
-<a id="a6fd2e968b42226f18f4c2004ce0aee5c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6fd2e968b42226f18f4c2004ce0aee5c">&#9670;&nbsp;</a></span>g2d</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Graphics2D property.ColorPane.g2d</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_color_pane_8java_source.html#l00026">26</a> of file <a class="el" href="_color_pane_8java_source.html">ColorPane.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_color_pane_8java_source.html#l00022">22</a> of file <a class="el" href="_color_pane_8java_source.html">ColorPane.java</a>.</p>
 
 </div>
 </div>
@@ -640,6 +665,54 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a id="a6fd2e968b42226f18f4c2004ce0aee5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fd2e968b42226f18f4c2004ce0aee5c">&#9670;&nbsp;</a></span>g2d</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Graphics2D property.ColorPane.g2d</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_color_pane_8java_source.html#l00026">26</a> of file <a class="el" href="_color_pane_8java_source.html">ColorPane.java</a>.</p>
+
+</div>
+</div>
+<a id="a1d6dc3d97ac6a3f4b0913c8674930474"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d6dc3d97ac6a3f4b0913c8674930474">&#9670;&nbsp;</a></span>image</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classproperty_1_1_color_cell.html">ColorCell</a> property.ColorPane.image</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_color_pane_8java_source.html#l00025">25</a> of file <a class="el" href="_color_pane_8java_source.html">ColorPane.java</a>.</p>
+
+</div>
+</div>
 <a id="a61ccf4c9b31cd130b5325b2412466ae9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a61ccf4c9b31cd130b5325b2412466ae9">&#9670;&nbsp;</a></span>location</h2>
 
@@ -664,11 +737,72 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a id="ab83b1a545c30e379f2fc274d23221b34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab83b1a545c30e379f2fc274d23221b34">&#9670;&nbsp;</a></span>soCot</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int property.ColorPane.soCot = 10</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_color_pane_8java_source.html#l00020">20</a> of file <a class="el" href="_color_pane_8java_source.html">ColorPane.java</a>.</p>
+
+</div>
+</div>
+<a id="a621c1fa00aba43e9817b01f545d8d17e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a621c1fa00aba43e9817b01f545d8d17e">&#9670;&nbsp;</a></span>soDong</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int property.ColorPane.soDong = 3</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_color_pane_8java_source.html#l00019">19</a> of file <a class="el" href="_color_pane_8java_source.html">ColorPane.java</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>property/<a class="el" href="_color_pane_8java_source.html">ColorPane.java</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclassproperty_1_1_color_pane_html_a1d6dc3d97ac6a3f4b0913c8674930474"><div class="ttname"><a href="classproperty_1_1_color_pane.html#a1d6dc3d97ac6a3f4b0913c8674930474">property.ColorPane.image</a></div><div class="ttdeci">ColorCell image</div><div class="ttdef"><b>Definition:</b> <a href="_color_pane_8java_source.html#l00025">ColorPane.java:25</a></div></div>
+<div class="ttc" id="aclassproperty_1_1_color_pane_html_a886b2d9471ec45aba712f8cdf888432b"><div class="ttname"><a href="classproperty_1_1_color_pane.html#a886b2d9471ec45aba712f8cdf888432b">property.ColorPane.drawCell</a></div><div class="ttdeci">void drawCell(int mouseX, int mouseY)</div><div class="ttdef"><b>Definition:</b> <a href="_color_pane_8java_source.html#l00138">ColorPane.java:138</a></div></div>
+<div class="ttc" id="aclassproperty_1_1_color_pane_html_a3985c7b0efc43c01576fafc5edd7ef84"><div class="ttname"><a href="classproperty_1_1_color_pane.html#a3985c7b0efc43c01576fafc5edd7ef84">property.ColorPane.setImage</a></div><div class="ttdeci">void setImage(int mouseX, int mouseY)</div><div class="ttdef"><b>Definition:</b> <a href="_color_pane_8java_source.html#l00121">ColorPane.java:121</a></div></div>
+<div class="ttc" id="aclassproperty_1_1_color_pane_html_a54c81b988e9350f28b8b45e3a65a0cd8"><div class="ttname"><a href="classproperty_1_1_color_pane.html#a54c81b988e9350f28b8b45e3a65a0cd8">property.ColorPane.color</a></div><div class="ttdeci">Color color</div><div class="ttdef"><b>Definition:</b> <a href="_color_pane_8java_source.html#l00023">ColorPane.java:23</a></div></div>
+<div class="ttc" id="aclassproperty_1_1_color_pane_html_ab83b1a545c30e379f2fc274d23221b34"><div class="ttname"><a href="classproperty_1_1_color_pane.html#ab83b1a545c30e379f2fc274d23221b34">property.ColorPane.soCot</a></div><div class="ttdeci">int soCot</div><div class="ttdef"><b>Definition:</b> <a href="_color_pane_8java_source.html#l00020">ColorPane.java:20</a></div></div>
+<div class="ttc" id="aclassproperty_1_1_color_pane_html_a61ccf4c9b31cd130b5325b2412466ae9"><div class="ttname"><a href="classproperty_1_1_color_pane.html#a61ccf4c9b31cd130b5325b2412466ae9">property.ColorPane.location</a></div><div class="ttdeci">Point location</div><div class="ttdef"><b>Definition:</b> <a href="_color_pane_8java_source.html#l00027">ColorPane.java:27</a></div></div>
+<div class="ttc" id="aclassproperty_1_1_color_pane_html_ae88ecb9e11c254939ee2d5ed96a2f2e7"><div class="ttname"><a href="classproperty_1_1_color_pane.html#ae88ecb9e11c254939ee2d5ed96a2f2e7">property.ColorPane.initComponents</a></div><div class="ttdeci">void initComponents()</div><div class="ttdef"><b>Definition:</b> <a href="_color_pane_8java_source.html#l00163">ColorPane.java:163</a></div></div>
+<div class="ttc" id="aclassproperty_1_1_color_pane_html_a621c1fa00aba43e9817b01f545d8d17e"><div class="ttname"><a href="classproperty_1_1_color_pane.html#a621c1fa00aba43e9817b01f545d8d17e">property.ColorPane.soDong</a></div><div class="ttdeci">int soDong</div><div class="ttdef"><b>Definition:</b> <a href="_color_pane_8java_source.html#l00019">ColorPane.java:19</a></div></div>
+<div class="ttc" id="aclassproperty_1_1_color_pane_html_a11b08e818a340e7042a99c3028ed103f"><div class="ttname"><a href="classproperty_1_1_color_pane.html#a11b08e818a340e7042a99c3028ed103f">property.ColorPane.colors</a></div><div class="ttdeci">Color[][] colors</div><div class="ttdef"><b>Definition:</b> <a href="_color_pane_8java_source.html#l00022">ColorPane.java:22</a></div></div>
+<div class="ttc" id="aclassproperty_1_1_color_pane_html_a6fd2e968b42226f18f4c2004ce0aee5c"><div class="ttname"><a href="classproperty_1_1_color_pane.html#a6fd2e968b42226f18f4c2004ce0aee5c">property.ColorPane.g2d</a></div><div class="ttdeci">Graphics2D g2d</div><div class="ttdef"><b>Definition:</b> <a href="_color_pane_8java_source.html#l00026">ColorPane.java:26</a></div></div>
+<div class="ttc" id="aclassproperty_1_1_color_pane_html_adf614d6984400a4e24d3be762a9ef500"><div class="ttname"><a href="classproperty_1_1_color_pane.html#adf614d6984400a4e24d3be762a9ef500">property.ColorPane.cells</a></div><div class="ttdeci">ColorCell[][] cells</div><div class="ttdef"><b>Definition:</b> <a href="_color_pane_8java_source.html#l00021">ColorPane.java:21</a></div></div>
+<div class="ttc" id="aclassproperty_1_1_color_pane_html_a12acc8f0cb084d9bdbf5e3739b4ec66e"><div class="ttname"><a href="classproperty_1_1_color_pane.html#a12acc8f0cb084d9bdbf5e3739b4ec66e">property.ColorPane.colorCell</a></div><div class="ttdeci">ColorCell colorCell</div><div class="ttdef"><b>Definition:</b> <a href="_color_pane_8java_source.html#l00024">ColorPane.java:24</a></div></div>
+<div class="ttc" id="aclassproperty_1_1_color_cell_html_a990f6f8e975ca07ab1e474dc61ae97b5"><div class="ttname"><a href="classproperty_1_1_color_cell.html#a990f6f8e975ca07ab1e474dc61ae97b5">property.ColorCell.getColor</a></div><div class="ttdeci">Color getColor()</div><div class="ttdef"><b>Definition:</b> <a href="_color_cell_8java_source.html#l00031">ColorCell.java:31</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
