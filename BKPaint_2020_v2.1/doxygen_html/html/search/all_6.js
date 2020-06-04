@@ -23,7 +23,7 @@ var searchData=
   ['getfontname_197',['getFontName',['../classproperty_1_1_text_panel.html#a431ec1b1a28de22588e8af4da690222b',1,'property::TextPanel']]],
   ['getfontsize_198',['getFontSize',['../classproperty_1_1_text_panel.html#afb18028ca00401e744ebe630f2a2c43d',1,'property::TextPanel']]],
   ['getfontstyle_199',['getFontStyle',['../classproperty_1_1_text_panel.html#a01572721b7a47ad3fa76e780cb94f173',1,'property::TextPanel']]],
-  ['getheight_200',['getHeight',['../classpaint_1_1_paint_state.html#a51264565a7bffb10e899c95f7f090805',1,'paint.PaintState.getHeight()'],['../classshape_1_1_selection_shape.html#a50f5a1800799c17c35da7cb2af13a2be',1,'shape.SelectionShape.getHeight()']]],
+  ['getheight_200',['getHeight',['../classpaint_1_1_pad_paint.html#a62662e978f8a0b245656c9217b04ee37',1,'paint.PadPaint.getHeight()'],['../classpaint_1_1_paint_state.html#a51264565a7bffb10e899c95f7f090805',1,'paint.PaintState.getHeight()'],['../classshape_1_1_selection_shape.html#a50f5a1800799c17c35da7cb2af13a2be',1,'shape.SelectionShape.getHeight()']]],
   ['geticonheight_201',['getIconHeight',['../classlibrary_1_1_image_cell.html#afa253101e91991bb38a35b939f06c596',1,'library::ImageCell']]],
   ['geticonwidth_202',['getIconWidth',['../classlibrary_1_1_image_cell.html#ac20a19dd49b90321fda7d70228076f59',1,'library::ImageCell']]],
   ['getimage_203',['getImage',['../classproperty_1_1_color_pane.html#a8860c481c1e45cafebe0d3774fce9715',1,'property::ColorPane']]],
@@ -48,7 +48,7 @@ var searchData=
   ['getstrokecolor_222',['getStrokeColor',['../classproperty_1_1_color_dialog.html#acbe444c23fcd5b910daffc0e98f75fe1',1,'property.ColorDialog.getStrokeColor()'],['../classshape_1_1_pencil.html#a2d6f3f3908a31f108c66a52074d3dcea',1,'shape.Pencil.getStrokeColor()'],['../classshape_1_1_right_triangle.html#ae6df93724359fb4d881c3a1dee26305f',1,'shape.RightTriangle.getStrokeColor()'],['../classshape_1_1_round_rect.html#a3d6006d16efb711726b6814f4f19fad4',1,'shape.RoundRect.getStrokeColor()'],['../classshape_1_1_shape.html#a63b868da95da9d757c4fb9ecf8eac118',1,'shape.Shape.getStrokeColor()']]],
   ['getstrokethickness_223',['getStrokeThickness',['../classproperty_1_1_stroke_state.html#a4bec5c1d6b9a02d6fd44446abdf3370c',1,'property::StrokeState']]],
   ['gettextcolor_224',['getTextColor',['../classshape_1_1_text.html#a230ed19dd13a371c35aa21cc811ed9f8',1,'shape::Text']]],
-  ['getwidth_225',['getWidth',['../classpaint_1_1_paint_state.html#a90248c8d00d5d512425ea866b060bb36',1,'paint.PaintState.getWidth()'],['../classshape_1_1_selection_shape.html#a28c4e17545bea26ce6b78d699005e80d',1,'shape.SelectionShape.getWidth()']]],
+  ['getwidth_225',['getWidth',['../classpaint_1_1_pad_paint.html#a90e044fa111407e41430a1eea4e860d8',1,'paint.PadPaint.getWidth()'],['../classpaint_1_1_paint_state.html#a90248c8d00d5d512425ea866b060bb36',1,'paint.PaintState.getWidth()'],['../classshape_1_1_selection_shape.html#a28c4e17545bea26ce6b78d699005e80d',1,'shape.SelectionShape.getWidth()']]],
   ['getzoom_226',['getZoom',['../classpaint_1_1_pad_paint.html#a7397c33b326e1bce7dcd8014340fa6da',1,'paint::PadPaint']]],
   ['gp_227',['gp',['../classshape_1_1_triangle.html#a08b40e94014660a9778570fce4d807f5',1,'shape::Triangle']]]
 ];
