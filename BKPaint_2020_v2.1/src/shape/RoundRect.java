@@ -11,7 +11,12 @@ public class RoundRect extends Shape implements DrawType {
     private Color fillColor;
     private static final int ARC_WIDTH = 50;
     private static final int ARC_HEIGHT = 50;
+    
 
+    /**
+     * Hinh chu nhat co cac canh tron.
+     * @param g2d 
+     */
     @Override
     public void draw(Graphics2D g2d) {
          BasicStroke stroke = new BasicStroke(strokeThickness,endStrokeCap,lineStrokeJoin,miterLimit,

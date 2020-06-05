@@ -6,7 +6,12 @@ import java.awt.Color;
 import java.awt.Graphics2D;
 
 
-//hình tam giác vuông cần phải được đổ màu, ở đầy phải dùng fillPolygon
+
+/**
+ * Tam giac vuong khong co method do mau cu the nen ta dung fillPolygon
+ * Tham so : mang toa do X,Y va tong so diem
+ * @author Hoang
+ */
 public class RightTriangle extends Shape implements DrawType {
     private Color fillColor;
     
@@ -25,9 +30,13 @@ public class RightTriangle extends Shape implements DrawType {
 
     }
 
+    /**
+     * @return mau net ve
+     */
     public Color getStrokeColor() {
         return strokeColor;
     }
+    // set mau cho net ve
     public void setFillColor(Color fillColor ){
         this.fillColor = fillColor;
     }

@@ -9,6 +9,10 @@ public class Eraser extends Shape implements DrawType {
 
     private float sizeEraser;
 
+    /**
+     * Tay giong nhu pencil nhung lay mau cho fillcolor
+     * @param g2d 
+     */
     @Override
     public void draw(Graphics2D g2d) {
         this.setSizeEraser(strokeThickness + 8f);

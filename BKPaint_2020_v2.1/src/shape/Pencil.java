@@ -15,9 +15,15 @@ public class Pencil extends Shape implements DrawType {
         if(miterLimit>=1.0f)
              stroke = new BasicStroke(strokeThickness,endStrokeCap,lineStrokeJoin,miterLimit,
         dashArray,dashPhase);
+        /*
+        Neu khoi tao stroke thanh cong thi setStroke cho doi tuong do hoa
+        */
         if (stroke != null) {
             g2d.setStroke(stroke);
         }
+        /*
+        Neu diem va diem cuoi khong trung nhau thi bat dau ve duong thang
+        */
         g2d.setColor(strokeColor);
         if (start != null && end != null) {
             g2d.drawLine(start.x, start.y, end.x, end.y);

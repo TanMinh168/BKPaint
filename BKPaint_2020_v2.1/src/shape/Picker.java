@@ -8,7 +8,10 @@ import java.awt.Graphics2D;
 public class Picker extends Shape implements DrawType {
     
     private Color color;
-    
+    /**
+     * Tra ve mau tai noi con tro tro toi.
+     * @param g2d 
+     */
     @Override
     public void draw(Graphics2D g2d) {
 
