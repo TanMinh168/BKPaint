@@ -12,7 +12,13 @@ import java.util.Stack;
 
 public class Bucket extends Shape implements DrawType {
 
+    /**
+     * Diem bat dau do mau
+     */
     private Point start;
+    /**
+     * Mau duoc chon
+     */
     private Color color;
     private boolean filled = true;
 
@@ -122,11 +128,15 @@ public class Bucket extends Shape implements DrawType {
     }
 
     private void boundaryFill(BufferedImage image) {
+        // tra ve mau tai diem bat dau
         int startColor = image.getRGB(this.start.x, this.start.y);
+        // mau duoc chon
         int fillColor = this.color.getRGB();
+        // Neu mau duoc chon trung vs mau tai diem bat dau thi ket thuc
         if (startColor == fillColor) {
             return;
         }
+        // Doi mau tai diem bat dau thanh mau duoc chon
         image.setRGB(this.start.x, this.start.y, fillColor);
 
 
@@ -135,6 +145,11 @@ public class Bucket extends Shape implements DrawType {
         while (!listPoint.isEmpty()) {
             Point temp = listPoint.get(0);
             if ((temp.x >= 0 && temp.x <= image.getWidth() - 2 && temp.y >= 0) && temp.y <= image.getHeight() - 2) {
+                /**
+                 * Lan mau ra 8 huong dong thoi them diem vua doi mau vao listPoint.
+                 * Lay dan trong listPoint ra dan de tiep tuc de quy
+                 * Chua toi uu vi duyet trung nhieu diem
+                 */
                 if (temp.x - 1 >= 0 && temp.y - 1 >= 0 && (image.getRGB(temp.x - 1, temp.y - 1) == startColor)) {
                     image.setRGB(temp.x - 1, temp.y - 1, fillColor);
                     listPoint.add(new Point(temp.x - 1, temp.y - 1));
@@ -214,6 +229,9 @@ public class Bucket extends Shape implements DrawType {
         }
     }
 
+    /**
+     * @return diem bat dau lan mau
+     */
     public Point getPoint() {
         return this.start;
     }
