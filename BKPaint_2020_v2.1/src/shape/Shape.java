@@ -38,7 +38,13 @@ public class Shape implements Serializable {
         return this.strokeColor;
     }
     
+    /**
+     * Do day net ve
+     */
     protected float strokeThickness;
+    /**
+     * 
+     */
     protected int endStrokeCap;
     protected int lineStrokeJoin;
     protected float dashPhase;
