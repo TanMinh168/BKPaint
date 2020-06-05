@@ -39,19 +39,27 @@ public class Shape implements Serializable {
     }
     
     /**
-     * Do day net ve
+     * Do day net ve.
      */
     protected float strokeThickness;
     /**
-     * 
+     * Quy dinh phan vien o goc doan thang.
      */
     protected int endStrokeCap;
+    /**
+     * Quy dinh kieu duong cong noi giua 2 doan thang.
+     */
     protected int lineStrokeJoin;
+    /**
+     * Dinh nghia kieu ve giua các phan hien va cac phan an.
+     */
     protected float dashPhase;
     protected float miterLimit = 1.0f;
     protected float[] dashArray;
     
-    //Lay thong tin cua mot stroke
+    /**
+     * Lay thong tin cua mot net chu 
+     */
     public void setStroke(BasicStroke stroke){
         strokeThickness = stroke.getLineWidth();
         endStrokeCap = stroke.getEndCap();
