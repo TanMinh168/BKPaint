@@ -45,7 +45,6 @@ import shape.Triangle;
 
 public class PadPaint extends javax.swing.JPanel implements MouseListener, MouseMotionListener {
 
-    
     private PaintTool paintTool = new PaintTool();
     private ColorDialog colorChooser = new ColorDialog();
     private Line line;
@@ -97,6 +96,10 @@ public class PadPaint extends javax.swing.JPanel implements MouseListener, Mouse
     private boolean isMouseExit;
     private boolean startSelRect = false;
 
+    /**
+     * Thiet lap panel de viet chu
+     * @param textPanel 
+     */
     public void setTextPanel(TextPanel textPanel) {
         this.textPanel = textPanel;
     }
@@ -105,10 +108,12 @@ public class PadPaint extends javax.swing.JPanel implements MouseListener, Mouse
         this.paintTool = paintTool;
     }
 
+    // Thiet lap trang thai net ve
     public void setStrokeState(StrokeState strokeState) {
         this.strokeState = strokeState;
     }
 
+    // Thiet lap ColorDialog
     public void setColorChooser(ColorDialog colorChooser) {
         this.colorChooser = colorChooser;
     }
@@ -117,6 +122,14 @@ public class PadPaint extends javax.swing.JPanel implements MouseListener, Mouse
         return paintState;
     }
 
+    /**
+     * Thiet lap anh , ten, toa do con tro
+     * @param  duong dan toi anh
+     * @param  ten con tro
+     * @param x toa do
+     * @param y toa doi                     
+     * @return 
+     */
     public Cursor setCursor(String path, String nameCursor, int x, int y) {
         Toolkit toolKit = Toolkit.getDefaultToolkit();
         Image image = toolKit.getImage(getClass().getResource(path));
@@ -129,7 +142,12 @@ public class PadPaint extends javax.swing.JPanel implements MouseListener, Mouse
     public boolean isSaving() {
         return isSaved;
     }
+    
 
+    /**
+     * /thay đổi kích thước panel theo ti le da chon cho phù hợp sau khi zoom
+     * @param z ti le phong to thu nho
+     */
     public void setZoom(int z) {
         switch (z / 10) {
             case 2:
@@ -161,7 +179,7 @@ public class PadPaint extends javax.swing.JPanel implements MouseListener, Mouse
                 break;
 
         }
-        this.setSize((int) (buff_img.getWidth() * zoom), (int) (buff_img.getHeight() * zoom));                //thay đổi kích thước panel cho phù hợp sau khi zoom
+        this.setSize((int) (buff_img.getWidth() * zoom), (int) (buff_img.getHeight() * zoom));                
         this.revalidate();
     }
 
@@ -177,6 +195,11 @@ public class PadPaint extends javax.swing.JPanel implements MouseListener, Mouse
         return p;
     }
 
+    /**
+     * Ham kiem tra xem p co nam trong khu vuc sel_rect khong 
+     * @param p diem can kiem tra
+     * @return true, false
+     */
     private boolean testHit(Point p) {
         if (sel_rect != null && sel_rect.getStartLocation() != null && sel_rect.getEndlocation() != null) {
 
@@ -194,6 +217,13 @@ public class PadPaint extends javax.swing.JPanel implements MouseListener, Mouse
         }
     }
 
+    /**
+     * Kiem tra xem diem p co nam trong hcn tao boi 2 diem start va end khong
+     * @param p diem can kiem tra
+     * @param start diem bat dau
+     * @param end diem ket thuc
+     * @return true, false
+     */
     private boolean testMousePressed(Point p, Point start, Point end) {
         int a[] = {Math.min(start.x, end.x), Math.min(start.y, end.y), Math.max(start.x, end.x), Math.max(start.y, end.y)};
         if (p.x > a[0] && p.x < a[2] && p.y > a[1] && p.y < a[3]) {
@@ -223,7 +253,7 @@ public class PadPaint extends javax.swing.JPanel implements MouseListener, Mouse
 	this.width = width;
         this.height = height;
         this.setSize(new Dimension(width, height));
-        ///Khoi tao anh
+        // Khoi tao anh
         org_img = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
         g2d = (Graphics2D) org_img.getGraphics();
         g2d.setColor(new Color(255, 255, 255));
@@ -237,6 +267,11 @@ public class PadPaint extends javax.swing.JPanel implements MouseListener, Mouse
         g2.dispose();
         
     }
+        /**
+         * Constructor cua padPaint
+         * @param width chieu rong 
+         * @param height chieu dai
+         */
     public PadPaint(int width, int height) {
         initComponents();
         line = new Line();
@@ -279,6 +314,7 @@ public class PadPaint extends javax.swing.JPanel implements MouseListener, Mouse
     }
 
     public void cut() {
+        // Neu vung chon rong thi ket thuc
         if (sel_rect != null) {
             int[] data = sel_rect.getData();
             int w = sel_rect.getWidth();
@@ -286,10 +322,12 @@ public class PadPaint extends javax.swing.JPanel implements MouseListener, Mouse
             if (w == 0 || h == 0) {
                 return;
             }
+            // Tao ra 1 bufferImage
             cpy_img = new BufferedImage(w, h, BufferedImage.TYPE_INT_RGB);
             cpy_img.getRaster().setPixels(0, 0, w, h, data);
             Graphics2D g = (Graphics2D) buff_img.getGraphics();
             g.setColor(Color.WHITE);
+            // copy pixels anh vung duoc chon vao copy_img va xoa vung duoc chon
             g.fillRect(sel_rect.getStartOrigin().x, sel_rect.getStartOrigin().y, w, h);
             repaint();
             sel_rect = null;
@@ -298,6 +336,9 @@ public class PadPaint extends javax.swing.JPanel implements MouseListener, Mouse
 
     }
 
+    /**
+     * Luu anh vung duoc chon vao cpy_img (BufferImage)
+     */
     public void copy() {
         if (sel_rect != null) {
             int[] data = sel_rect.getData();
@@ -312,6 +353,9 @@ public class PadPaint extends javax.swing.JPanel implements MouseListener, Mouse
 
     }
 
+    /**
+     * Paste anh tu cpy_img vao vung khac va xoa vung chon, xoa cpy_img
+     */
     public void paste() {
         if (cpy_img != null) {
             Graphics2D g = (Graphics2D) buff_img.getGraphics();
@@ -323,6 +367,9 @@ public class PadPaint extends javax.swing.JPanel implements MouseListener, Mouse
         cpy_img = null;
     }
 
+    /**
+     * Xoa vung chon
+     */
     public void delete() {
         if (sel_rect != null) {
             int[] data = sel_rect.getData();
@@ -341,7 +388,7 @@ public class PadPaint extends javax.swing.JPanel implements MouseListener, Mouse
     }
 
     public void toolChange() {
-        //Neu polygon chua hoan thanh ma dachon cong cu khac thi se hoan thanh polygon
+        // Neu polygon chua hoan thanh ma da chon cong cu khac thi se hoan thanh polygon
         if (startPolygon != null) {
             if (!paintTool.getDrawMode().equals(DrawMode.POLYGON)) {
 
@@ -372,7 +419,7 @@ public class PadPaint extends javax.swing.JPanel implements MouseListener, Mouse
                 startCurve = false;
                 start = null;
                 end = null;
-            } else {   //Neu chon tool khac thi se ve curve len buffer
+            } else {   // Neu chon tool khac thi se ve curve len buffer
                 curve.draw(g2d);
                 repaint();
                 paintState.addDrawState(curve);
@@ -382,8 +429,8 @@ public class PadPaint extends javax.swing.JPanel implements MouseListener, Mouse
                 start = null;
                 end = null;
             }
-        } else if (startSelRect == true) {    //Hinh selrect vua moi duoc chon
-            if (sel_rect.isCreating()) {  //Neu ma anh da duoc tao thi se luu anh
+        } else if (startSelRect == true) {    // Hinh selrect vua moi duoc chon
+            if (sel_rect.isCreating()) {  // Neu ma anh da duoc tao thi se luu anh
                 sel_rect.setSelected(true);
                 sel_rect.draw(g2d);
                 paintState.addDrawState(sel_rect);
@@ -432,7 +479,7 @@ public class PadPaint extends javax.swing.JPanel implements MouseListener, Mouse
         //Lay ra trang thai cuoi de tro lai trang thai truoc do
         int stepState = paintState.removeEndStep();
         redoState.addDrawStep(stepState);
-        //lay ra trang thai cua buoc ve cuoi cung
+        //Lay ra trang thai cua buoc ve cuoi cung
         switch (stepState) {
             case PaintState.ROTATE_RIGHT:
                 //Neu anh vua moi duoc quay phai thi se quay trai tro lai
@@ -937,7 +984,7 @@ public class PadPaint extends javax.swing.JPanel implements MouseListener, Mouse
             case LINE:
                 line = new Line();
                 line.setStroke(strokeState.getStroke());
-                //set màu cho stroke
+                //set mau cho stroke
                 line.setStrokeColor(colorChooser.getStrokeColor());
                 //Thêm điểm đầu vào danh sách điểm di chuột
                 line.addDraggedPoint(getPoint(start));
@@ -1360,8 +1407,10 @@ public class PadPaint extends javax.swing.JPanel implements MouseListener, Mouse
 
     @Override
     public void mouseMoved(MouseEvent e) {
+    	// Hien thi toa do con tro trong padPaint
         lbLocation.setText(getPoint(e.getPoint()).x + ", " + getPoint(e.getPoint()).y + "px");
 
+        // Thiet lap hinh anh con tro cho tung loai paintTool
         if (paintTool.getDrawMode() == DrawMode.ZOOM) {
             setCursor(cursorOfZoom);
             end = getPoint(e.getPoint());
