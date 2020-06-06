@@ -51,8 +51,8 @@ public class MainFrame extends javax.swing.JFrame {
         initComponents();
         bCopy.setIcon(new ImageIcon(getImageIcon("/icon/copy.png")));
         bCut.setIcon(new ImageIcon(getImageIcon("/icon/cut.png")));
-        bUndo.setIcon(new ImageIcon(getImageIcon("/icon/undo.png")));
-        bRedo.setIcon(new ImageIcon(getImageIcon("/icon/redo.png")));
+        bUndo.setIcon(new ImageIcon(getImageIcon("/icon/undo2.png")));
+        bRedo.setIcon(new ImageIcon(getImageIcon("/icon/redo2.png")));
         bCut.setIcon(new ImageIcon(getImageIcon("/icon/cut.png")));
         bZoomadd.setIcon(new ImageIcon(getImageIcon("/icon/zoomplus.png")));
         bZoomMinus.setIcon(new ImageIcon(getImageIcon("/icon/zoomMinus.png")));
@@ -145,11 +145,11 @@ public class MainFrame extends javax.swing.JFrame {
         jPanel6 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
         cbTransform = new javax.swing.JComboBox();
-        bCopy = new javax.swing.JButton();
-        bCut = new javax.swing.JButton();
+        bCopy = new OvalButton("");
+        bCut = new OvalButton("");
         jButton2 = new javax.swing.JButton();
-        bUndo = new javax.swing.JButton();
-        bRedo = new javax.swing.JButton();
+        bUndo = new OvalButton("");
+        bRedo = new OvalButton("");
         paintTool = new paint.PaintTool();
         filler1 = new javax.swing.Box.Filler(new java.awt.Dimension(0, 0), new java.awt.Dimension(0, 0), new java.awt.Dimension(0, 32767));
         colorDialog1 = new property.ColorDialog();
@@ -169,8 +169,8 @@ public class MainFrame extends javax.swing.JFrame {
         height_tf = new javax.swing.JTextField();
         OK_btn = new javax.swing.JToggleButton();
         sZoom = new javax.swing.JSlider();
-        bZoomOut = new javax.swing.JButton();
-        bZoomIn = new javax.swing.JButton();
+        bZoomOut = new OvalButton("");
+        bZoomIn = new OvalButton("");
         lbLocation = new javax.swing.JLabel();
         scrollPane = new javax.swing.JScrollPane();
         lbZoomInfo = new javax.swing.JLabel();
@@ -261,14 +261,14 @@ public class MainFrame extends javax.swing.JFrame {
                         .addComponent(bCopy, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(6, 6, 6)
                         .addComponent(bCut, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 12, Short.MAX_VALUE)
                         .addComponent(cbTransform, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addGap(10, 10, 10)
+                        .addContainerGap()
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton2))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 15, Short.MAX_VALUE)
+                            .addComponent(jButton2)
+                            .addComponent(jButton1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(bUndo, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(bRedo, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -283,18 +283,18 @@ public class MainFrame extends javax.swing.JFrame {
                     .addGroup(jPanel6Layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(cbTransform, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addGap(11, 11, 11)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
+                        .addGap(5, 5, 5)
                         .addComponent(jButton1)
-                        .addGap(6, 6, 6)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jButton2))
                     .addGroup(jPanel6Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(bUndo, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(bRedo, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(bUndo, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(bRedo, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(7, 7, 7))
         );
 
         paintTool.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -341,7 +341,7 @@ public class MainFrame extends javax.swing.JFrame {
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGap(10, 10, 10)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -744,6 +744,81 @@ public class MainFrame extends javax.swing.JFrame {
     }
 
 
+ private class OvalButton extends JButton {
+
+        private Color startColor = new Color(204,204,255);
+        private Color endColor = new Color(204,204,255);
+        private Color rollOverColor = new Color(204,204,255);
+        private Color pressedColor = new Color(204,204,255);
+        ;
+	private GradientPaint GP;
+
+        /**
+         * Constructor takes String argument
+         *
+         * @param text
+         */
+        public OvalButton(String text) {
+            super();
+            setText(text);
+            setContentAreaFilled(false);
+            setBorderPainted(false);
+            setFont(new Font("Thoma", Font.BOLD, 12));
+            setForeground(Color.WHITE);
+            setFocusable(false);
+
+        }
+
+        public void paintComponent(Graphics g) {
+            Graphics2D g2d = (Graphics2D) g.create();
+            g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING,
+                    RenderingHints.VALUE_ANTIALIAS_ON);
+            int h = getHeight();
+            int w = getWidth();
+            ButtonModel model = getModel();
+
+            if (!model.isEnabled()) {
+                setForeground(new Color(204,204,255));
+                GP = new GradientPaint(0, 0, new Color(204,204,255), 0, h, new Color(204,204,255), true);
+            } else {
+                setForeground(Color.WHITE);
+                if (model.isRollover()) {
+                    GP = new GradientPaint(0, 0, rollOverColor, 0, h, rollOverColor,
+                            true);
+
+                } else {
+                    GP = new GradientPaint(0, 0, startColor, 0, h, endColor, true);
+                }
+            }
+            g2d.setPaint(GP);
+            GradientPaint p1;
+            GradientPaint p2;
+
+            if (model.isPressed()) {
+                GP = new GradientPaint(0, 0, pressedColor, 0, h, pressedColor, true);
+                g2d.setPaint(GP);
+                p1 = new GradientPaint(0, 0, new Color(0, 0, 0), 0, h - 1,
+                        new Color(204,204,255));
+                p2 = new GradientPaint(0, 1, new Color(204,204,255), 0, h - 1,
+                        new Color(204,204,255));
+            } else {
+                p1 = new GradientPaint(0, 0, new Color(204,204,255), 0, h - 1,
+                        new Color(0, 0, 0));
+                p2 = new GradientPaint(0, 1, new Color(204,204,255), 0,
+                        h - 1, new Color(204,204,255));
+                GP = new GradientPaint(0, 0, startColor, 0, h, endColor, true);
+            }
+
+            g2d.fillOval(0, 0, h, h);
+            g2d.setPaint(p1);
+            g2d.drawOval(0, 0, h - 1, h - 1);
+            g2d.setPaint(p2);
+            g2d.drawOval(0, 0, h - 1, h - 1);
+            g2d.dispose();
+
+            super.paintComponent(g);
+        }
+    }
 
     private void bZoomInActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bZoomInActionPerformed
         sZoom.setValue(sZoom.getValue() + 10);
