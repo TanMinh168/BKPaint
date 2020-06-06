@@ -9,10 +9,12 @@ import shape.DrawType;
 
 
 public class PaintState implements Serializable{
+    // Bien enum luu cac kieu xoay va trang thai ve
     public static final int ROTATE_RIGHT=1,ROTATE_LEFT = 2,ROTATE_REVERSE = 3,V_FLIP = 4,H_FLIP = 5,PAINTTING = 6;
     private ArrayList<Integer> drawStepList;
     private ArrayList<DrawType> listShape;
     private DrawType drawType;
+    // Mang luu pixels
     private int[] data = null;  
     private int w,h;
     public PaintState(){
@@ -51,11 +53,18 @@ public class PaintState implements Serializable{
         System.gc();
     }
     
+    // Raster dai dien cho mot hinh hop chu nhat pixels
     public void setData(BufferedImage buff_img){
+        // Lay chieu dai chieu rong cua Buff_img
         w = buff_img.getWidth();
         h = buff_img.getHeight();
         data = new int[w*h*3];
+        // Tra ve WriableRaster
         final WritableRaster wr = buff_img.getRaster();
+        /**
+         * 0 0 la toa do cua goc trai padPaint
+         * w h la do dai padPaint
+         */
         data = wr.getPixels(0, 0, w, h,data);
     }
     public int[] getData(){
