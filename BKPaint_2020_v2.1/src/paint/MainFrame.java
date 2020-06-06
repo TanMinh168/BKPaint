@@ -45,7 +45,7 @@ public class MainFrame extends javax.swing.JFrame {
     private PadPaint padPaint = null;
     private final JFileChooser fc = new JFileChooser();
     private JPanel backgroundPanel = new JPanel();
-    private int width = 909, height = 439;
+    private int width = 900, height = 450;
 
     public MainFrame() {
         initComponents();
@@ -67,8 +67,8 @@ public class MainFrame extends javax.swing.JFrame {
         saveAsFile.setIcon(new ImageIcon(getImageIcon("/icon/saveAs.png")));
         exitFile.setIcon(new ImageIcon(getImageIcon("/icon/exit.png")));
         
-        width_tf.setText("909");
-        height_tf.setText("439");
+        width_tf.setText("900");
+        height_tf.setText("450");
         
         padPaint = new PadPaint(width, height);
         backgroundPanel.setLayout(null);
