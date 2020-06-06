@@ -11,7 +11,10 @@ import java.util.ArrayList;
 
 public class Curve extends Shape implements DrawType {
     private int state = 1;
-    private ArrayList<Point> list;  //dung thang nay de chua danh sach 4 diem can ve
+    /**
+     * Chua danh sach 4 diem can ve.
+     */
+    private ArrayList<Point> list; 
     private ArrayList<Point> listPointToState1;
     private ArrayList<Point> listPointToState2;
     private ArrayList<Point> listPointToState3;
@@ -21,17 +24,17 @@ public class Curve extends Shape implements DrawType {
         listPointToState2 = new ArrayList<>();
         listPointToState3 = new ArrayList<>();
         Point p;
-        //add 4 diem vao cho thang list
+        // Add 4 diem vao list
         for(int i = 0; i < 4; i++){
             p = new Point(0, 0);
             list.add(p);
         }
         
-        //Dat lai trang thai ban dau la mot
+        // Dat lai trang thai ban dau la mot
         state = 1;
     }
     
-    //Dta lai trang thai cua cung ve lai ban dau
+    //Dat lai trang thai cua cung ve lai ban dau
      public void resetState(){
         this.state = 1;
     }
