@@ -140,21 +140,22 @@ public class MainFrame extends javax.swing.JFrame {
     private void initComponents() {
 
         jTabbedPane3 = new javax.swing.JTabbedPane();
+        jTabbedPane2 = new javax.swing.JTabbedPane();
         SettingPane = new javax.swing.JTabbedPane();
         jPanel4 = new javax.swing.JPanel();
         jPanel6 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
         cbTransform = new javax.swing.JComboBox();
-        bCopy = new OvalButton("");
-        bCut = new OvalButton("");
+        bCopy = new javax.swing.JButton();
+        bCut = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         bUndo = new OvalButton("");
         bRedo = new OvalButton("");
-        paintTool = new paint.PaintTool();
         filler1 = new javax.swing.Box.Filler(new java.awt.Dimension(0, 0), new java.awt.Dimension(0, 0), new java.awt.Dimension(0, 32767));
         colorDialog1 = new property.ColorDialog();
         strokeState = new property.StrokeState();
         jLayeredPane1 = new javax.swing.JLayeredPane();
+        paintTool = new paint.PaintTool();
         jPanel1 = new javax.swing.JPanel();
         bReplay = new JButton();
         bLibrary = new javax.swing.JButton();
@@ -163,8 +164,9 @@ public class MainFrame extends javax.swing.JFrame {
         bZoomMinus = new javax.swing.JButton();
         bZoomorg = new javax.swing.JButton();
         textPanel1 = new property.TextPanel();
-        jLabel3 = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
         width_tf = new javax.swing.JTextField();
         height_tf = new javax.swing.JTextField();
         OK_btn = new javax.swing.JToggleButton();
@@ -177,6 +179,7 @@ public class MainFrame extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         lbSize = new javax.swing.JLabel();
+        jTabbedPane1 = new javax.swing.JTabbedPane();
         jMenuBar1 = new javax.swing.JMenuBar();
         miNew = new javax.swing.JMenu();
         newFile = new javax.swing.JMenuItem();
@@ -244,7 +247,7 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
-        bRedo.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(204, 204, 255), null));
+        bRedo.setBorder(null);
         bRedo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bRedoActionPerformed(evt);
@@ -261,14 +264,14 @@ public class MainFrame extends javax.swing.JFrame {
                         .addComponent(bCopy, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(6, 6, 6)
                         .addComponent(bCut, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 12, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(cbTransform, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addContainerGap()
+                        .addGap(10, 10, 10)
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton2)
-                            .addComponent(jButton1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton2))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 15, Short.MAX_VALUE)
                         .addComponent(bUndo, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(bRedo, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -283,19 +286,21 @@ public class MainFrame extends javax.swing.JFrame {
                     .addGroup(jPanel6Layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(cbTransform, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
-                        .addGap(5, 5, 5)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(11, 11, 11)
                         .addComponent(jButton1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(6, 6, 6)
                         .addComponent(jButton2))
                     .addGroup(jPanel6Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(bUndo, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(bRedo, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(7, 7, 7))
+                        .addComponent(bUndo, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(bRedo, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))))
         );
+
+        colorDialog1.setBackground(new java.awt.Color(233, 247, 247));
 
         paintTool.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -308,17 +313,21 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
-        colorDialog1.setBackground(new java.awt.Color(233, 247, 247));
+        jLayeredPane1.setLayer(paintTool, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout jLayeredPane1Layout = new javax.swing.GroupLayout(jLayeredPane1);
         jLayeredPane1.setLayout(jLayeredPane1Layout);
         jLayeredPane1Layout.setHorizontalGroup(
             jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 340, Short.MAX_VALUE)
+            .addGroup(jLayeredPane1Layout.createSequentialGroup()
+                .addComponent(paintTool, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 44, Short.MAX_VALUE))
         );
         jLayeredPane1Layout.setVerticalGroup(
             jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 70, Short.MAX_VALUE)
+            .addGroup(jLayeredPane1Layout.createSequentialGroup()
+                .addComponent(paintTool, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 13, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
@@ -328,9 +337,7 @@ public class MainFrame extends javax.swing.JFrame {
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(3, 3, 3)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(paintTool, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addComponent(strokeState, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(10, 10, 10)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -341,12 +348,10 @@ public class MainFrame extends javax.swing.JFrame {
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGap(10, 10, 10)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(paintTool, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGap(20, 20, 20)
                 .addComponent(strokeState, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -419,9 +424,11 @@ public class MainFrame extends javax.swing.JFrame {
 
         textPanel1.setBackground(new java.awt.Color(233, 247, 247));
 
-        jLabel3.setText("Height:");
+        jPanel2.setBackground(new java.awt.Color(233, 247, 247));
 
         jLabel4.setText("Width:");
+
+        jLabel3.setText("Height:");
 
         width_tf.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -436,29 +443,53 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel4)
+                            .addComponent(jLabel3))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(width_tf, javax.swing.GroupLayout.DEFAULT_SIZE, 76, Short.MAX_VALUE)
+                            .addComponent(height_tf)))
+                    .addComponent(OK_btn))
+                .addContainerGap(74, Short.MAX_VALUE))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel4)
+                    .addComponent(width_tf, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3)
+                    .addComponent(height_tf, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(4, 4, 4)
+                .addComponent(OK_btn)
+                .addGap(36, 36, 36))
+        );
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 84, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addGroup(jPanel1Layout.createSequentialGroup()
-                            .addComponent(jLabel4)
-                            .addGap(18, 18, 18)
-                            .addComponent(width_tf, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(jPanel1Layout.createSequentialGroup()
-                            .addComponent(jLabel3)
-                            .addGap(18, 18, 18)
-                            .addComponent(height_tf, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(OK_btn))
-                .addGap(54, 54, 54)
+                .addGap(27, 27, 27)
+                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
                 .addComponent(textPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(52, 52, 52)
+                .addGap(46, 46, 46)
                 .addComponent(bReplay, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(6, 6, 6)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(bLibrary, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -468,22 +499,11 @@ public class MainFrame extends javax.swing.JFrame {
                     .addComponent(bLibrary, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(8, 8, 8)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(width_tf, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel4))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(height_tf, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel3))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(OK_btn))
-                            .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(textPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(bReplay, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(0, 0, Short.MAX_VALUE))
+                        .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(bReplay, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(textPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         SettingPane.addTab("Option", jPanel1);
@@ -682,6 +702,7 @@ public class MainFrame extends javax.swing.JFrame {
                 if (specify == JOptionPane.YES_OPTION) {
                     if (saveImageToFile()) {
                         padPaint.flush();
+                        padPaint.SetSize(width,height);
                     } else {
                         return;
                     }
@@ -864,142 +885,30 @@ public class MainFrame extends javax.swing.JFrame {
 
     }//GEN-LAST:event_sZoomStateChanged
 
-    private void bZoomorgActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bZoomorgActionPerformed
-        sZoom.setValue(60);
-    }//GEN-LAST:event_bZoomorgActionPerformed
-
-    private void bZoomMinusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bZoomMinusActionPerformed
-        sZoom.setValue(sZoom.getValue() - 10);
-    }//GEN-LAST:event_bZoomMinusActionPerformed
-
-    private void bZoomaddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bZoomaddActionPerformed
-        sZoom.setValue(sZoom.getValue() + 10);
-    }//GEN-LAST:event_bZoomaddActionPerformed
-
-    private void bLibraryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bLibraryActionPerformed
-        Library library = new Library(this, true);
-        buff_img = library.getBufferedImage();
-        if (buff_img != null) {
-            //anh chua duoc luu
-            if (padPaint.isSaving() == false) {
-                Object[] option = {"Save", "Don't Save", "Cancel"};
-                int specify = JOptionPane.showOptionDialog(this, "Do you want to save file ?", "BKPaint", JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.QUESTION_MESSAGE, null, option, rootPane);
-                if (specify != JOptionPane.CANCEL_OPTION && specify != JOptionPane.CLOSED_OPTION) {
-                    if (specify == JOptionPane.YES_OPTION) {
-                        saveImageToFile();
-                    }
-                    padPaint.loadImage(library.getBufferedImage());
-                    backgroundPanel.setPreferredSize(new Dimension(buff_img.getWidth() + 120, buff_img.getHeight() + 50));
-                }
-            } else if (padPaint.isSaving() == true) {
-                padPaint.loadImage(library.getBufferedImage());
-                backgroundPanel.setPreferredSize(new Dimension(buff_img.getWidth() + 120, buff_img.getHeight() + 50));
-            }
-
-        }
-    }//GEN-LAST:event_bLibraryActionPerformed
-
-    private void bReplayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bReplayActionPerformed
-        padPaint.toolChange();
-        System.gc();
-        new ReplayDialog(this, true, padPaint.getListState());
-    }//GEN-LAST:event_bReplayActionPerformed
-
-    private void paintToolPropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_paintToolPropertyChange
-        System.out.println("tool change");
-    }//GEN-LAST:event_paintToolPropertyChange
-
-    private void paintToolMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_paintToolMouseClicked
-
-    }//GEN-LAST:event_paintToolMouseClicked
-
-    private void bRedoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bRedoActionPerformed
-                 // TODO add your handling code here:
-                 padPaint.redo();  
-    }//GEN-LAST:event_bRedoActionPerformed
-
-    private void bUndoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bUndoActionPerformed
-               // TODO add your handling code here:
-                padPaint.undo();
-    }//GEN-LAST:event_bUndoActionPerformed
-
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        padPaint.delete();
-    }//GEN-LAST:event_jButton2ActionPerformed
-
-    private void bCutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bCutActionPerformed
-        padPaint.cut();
-    }//GEN-LAST:event_bCutActionPerformed
-
-    private void bCopyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bCopyActionPerformed
-        padPaint.copy();
-    }//GEN-LAST:event_bCopyActionPerformed
-
-//update by hung
-    private void cbTransformActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbTransformActionPerformed
-        if (cbTransform.getSelectedItem() == cbTransform.getItemAt(1)) {
-            padPaint.rotate(90);
-
-        } else if (cbTransform.getSelectedItem() == cbTransform.getItemAt(2)) {
-            padPaint.rotate(-90);
-
-        } else if (cbTransform.getSelectedItem() == cbTransform.getItemAt(3)) {
-            padPaint.rotate(180);
-
-        } else if (cbTransform.getSelectedItem() == cbTransform.getItemAt(4)) {
-            padPaint.flipping(1);
-
-        } else if (cbTransform.getSelectedItem() == cbTransform.getItemAt(5)) {
-            padPaint.flipping(2);
-
-        }
-        buff_img = padPaint.getBuffer();
-        backgroundPanel.setPreferredSize(new Dimension(padPaint.getWidth() + 30, padPaint.getHeight() + 30));
-        cbTransform.setSelectedIndex(0);
-    }//GEN-LAST:event_cbTransformActionPerformed
-
-    private void cbTransformItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cbTransformItemStateChanged
-
-    }//GEN-LAST:event_cbTransformItemStateChanged
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        padPaint.paste();
-    }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
-        // TODO add your handling code here:
-        padPaint.paste();
-    }//GEN-LAST:event_jButton1MouseClicked
-
-    private void width_tfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_width_tfActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_width_tfActionPerformed
-
     private void OK_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OK_btnActionPerformed
         // TODO add your handling code here:
-       /**
+        /**
         * Neu file chua duoc luu ma muon mo rong nen ve thi can hien dialog hoi xem nguoi dung co muon luu hay khong
         */
-        
+
         if (padPaint.isSaving() == false) {
-                    Object[] option = {"Save", "Don't Save", "Cancel"};
-                    int specify = JOptionPane.showOptionDialog(null, "Do you want to save file ?", "BKPaint", JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.QUESTION_MESSAGE, null, option, rootPane);
-                    if (specify != JOptionPane.CANCEL_OPTION && specify != JOptionPane.CLOSED_OPTION) {
-                        if (specify == JOptionPane.YES_OPTION) {
-                            saveImageToFile();
-                        }
-                        
-                    }
-                    else {
-                            return;
-                    }
-       }
-        
-        
+            Object[] option = {"Save", "Don't Save", "Cancel"};
+            int specify = JOptionPane.showOptionDialog(null, "Do you want to save file ?", "BKPaint", JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.QUESTION_MESSAGE, null, option, rootPane);
+            if (specify != JOptionPane.CANCEL_OPTION && specify != JOptionPane.CLOSED_OPTION) {
+                if (specify == JOptionPane.YES_OPTION) {
+                    saveImageToFile();
+                }
+
+            }
+            else {
+                return;
+            }
+        }
+
         try{
             int value = Integer.parseInt(width_tf.getText());
             if(value > 0)
-                width = value;
+            width = value;
             else{
                 JOptionPane.showMessageDialog(null,"Width value must be larger than 0!", "Invalid value", JOptionPane.ERROR_MESSAGE);
                 width_tf.setText(String.valueOf(width));
@@ -1016,7 +925,7 @@ public class MainFrame extends javax.swing.JFrame {
         try{
             int value = Integer.parseInt(height_tf.getText());
             if(value > 0)
-                height = value;
+            height = value;
             else{
                 JOptionPane.showMessageDialog(null,"Height value must be larger than 0!", "Invalid value", JOptionPane.ERROR_MESSAGE);
                 width_tf.setText(String.valueOf(width));
@@ -1084,6 +993,117 @@ public class MainFrame extends javax.swing.JFrame {
         });
     }//GEN-LAST:event_OK_btnActionPerformed
 
+    private void width_tfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_width_tfActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_width_tfActionPerformed
+
+    private void bZoomorgActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bZoomorgActionPerformed
+        sZoom.setValue(60);
+    }//GEN-LAST:event_bZoomorgActionPerformed
+
+    private void bZoomMinusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bZoomMinusActionPerformed
+        sZoom.setValue(sZoom.getValue() - 10);
+    }//GEN-LAST:event_bZoomMinusActionPerformed
+
+    private void bZoomaddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bZoomaddActionPerformed
+        sZoom.setValue(sZoom.getValue() + 10);
+    }//GEN-LAST:event_bZoomaddActionPerformed
+
+    private void bLibraryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bLibraryActionPerformed
+        Library library = new Library(this, true);
+        buff_img = library.getBufferedImage();
+        if (buff_img != null) {
+            //anh chua duoc luu
+            if (padPaint.isSaving() == false) {
+                Object[] option = {"Save", "Don't Save", "Cancel"};
+                int specify = JOptionPane.showOptionDialog(this, "Do you want to save file ?", "BKPaint", JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.QUESTION_MESSAGE, null, option, rootPane);
+                if (specify != JOptionPane.CANCEL_OPTION && specify != JOptionPane.CLOSED_OPTION) {
+                    if (specify == JOptionPane.YES_OPTION) {
+                        saveImageToFile();
+                    }
+                    padPaint.loadImage(library.getBufferedImage());
+                    backgroundPanel.setPreferredSize(new Dimension(buff_img.getWidth() + 120, buff_img.getHeight() + 50));
+                }
+            } else if (padPaint.isSaving() == true) {
+                padPaint.loadImage(library.getBufferedImage());
+                backgroundPanel.setPreferredSize(new Dimension(buff_img.getWidth() + 120, buff_img.getHeight() + 50));
+            }
+
+        }
+    }//GEN-LAST:event_bLibraryActionPerformed
+
+    private void bReplayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bReplayActionPerformed
+        padPaint.toolChange();
+        System.gc();
+        new ReplayDialog(this, true, padPaint.getListState());
+    }//GEN-LAST:event_bReplayActionPerformed
+
+    private void paintToolPropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_paintToolPropertyChange
+        System.out.println("tool change");
+    }//GEN-LAST:event_paintToolPropertyChange
+
+    private void paintToolMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_paintToolMouseClicked
+
+    }//GEN-LAST:event_paintToolMouseClicked
+
+    private void bRedoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bRedoActionPerformed
+        // TODO add your handling code here:
+        padPaint.redo();
+    }//GEN-LAST:event_bRedoActionPerformed
+
+    private void bUndoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bUndoActionPerformed
+        // TODO add your handling code here:
+        padPaint.undo();
+    }//GEN-LAST:event_bUndoActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        padPaint.delete();
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void bCutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bCutActionPerformed
+        padPaint.cut();
+    }//GEN-LAST:event_bCutActionPerformed
+
+    private void bCopyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bCopyActionPerformed
+        padPaint.copy();
+    }//GEN-LAST:event_bCopyActionPerformed
+
+//update by hung
+    private void cbTransformActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbTransformActionPerformed
+        if (cbTransform.getSelectedItem() == cbTransform.getItemAt(1)) {
+            padPaint.rotate(90);
+
+        } else if (cbTransform.getSelectedItem() == cbTransform.getItemAt(2)) {
+            padPaint.rotate(-90);
+
+        } else if (cbTransform.getSelectedItem() == cbTransform.getItemAt(3)) {
+            padPaint.rotate(180);
+
+        } else if (cbTransform.getSelectedItem() == cbTransform.getItemAt(4)) {
+            padPaint.flipping(1);
+
+        } else if (cbTransform.getSelectedItem() == cbTransform.getItemAt(5)) {
+            padPaint.flipping(2);
+
+        }
+        buff_img = padPaint.getBuffer();
+        backgroundPanel.setPreferredSize(new Dimension(padPaint.getWidth() + 30, padPaint.getHeight() + 30));
+        cbTransform.setSelectedIndex(0);
+    }//GEN-LAST:event_cbTransformActionPerformed
+
+    private void cbTransformItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cbTransformItemStateChanged
+
+    }//GEN-LAST:event_cbTransformItemStateChanged
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        padPaint.paste();
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
+        // TODO add your handling code here:
+        padPaint.paste();
+    }//GEN-LAST:event_jButton1MouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -1150,10 +1170,13 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JLayeredPane jLayeredPane1;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPopupMenu.Separator jSeparator1;
+    private javax.swing.JTabbedPane jTabbedPane1;
+    private javax.swing.JTabbedPane jTabbedPane2;
     private javax.swing.JTabbedPane jTabbedPane3;
     private javax.swing.JLabel lbLocation;
     private javax.swing.JLabel lbSize;
