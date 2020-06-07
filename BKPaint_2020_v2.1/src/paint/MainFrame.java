@@ -51,8 +51,8 @@ public class MainFrame extends javax.swing.JFrame {
         initComponents();
         bCopy.setIcon(new ImageIcon(getImageIcon("/icon/copy.png")));
         bCut.setIcon(new ImageIcon(getImageIcon("/icon/cut.png")));
-        bUndo.setIcon(new ImageIcon(getImageIcon("/icon/undo2.png")));
-        bRedo.setIcon(new ImageIcon(getImageIcon("/icon/redo2.png")));
+        bUndo.setIcon(new ImageIcon(getImageIcon("/icon/undo.png")));
+        bRedo.setIcon(new ImageIcon(getImageIcon("/icon/redo.png")));
         bCut.setIcon(new ImageIcon(getImageIcon("/icon/cut.png")));
         bZoomadd.setIcon(new ImageIcon(getImageIcon("/icon/zoomplus.png")));
         bZoomMinus.setIcon(new ImageIcon(getImageIcon("/icon/zoomMinus.png")));
@@ -149,8 +149,8 @@ public class MainFrame extends javax.swing.JFrame {
         bCopy = new javax.swing.JButton();
         bCut = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
-        bUndo = new OvalButton("");
-        bRedo = new OvalButton("");
+        bUndo = new javax.swing.JButton();
+        bRedo = new javax.swing.JButton();
         filler1 = new javax.swing.Box.Filler(new java.awt.Dimension(0, 0), new java.awt.Dimension(0, 0), new java.awt.Dimension(0, 32767));
         colorDialog1 = new property.ColorDialog();
         strokeState = new property.StrokeState();
@@ -171,8 +171,8 @@ public class MainFrame extends javax.swing.JFrame {
         height_tf = new javax.swing.JTextField();
         OK_btn = new javax.swing.JToggleButton();
         sZoom = new javax.swing.JSlider();
-        bZoomOut = new OvalButton("");
-        bZoomIn = new OvalButton("");
+        bZoomOut = new javax.swing.JButton();
+        bZoomIn = new javax.swing.JButton();
         lbLocation = new javax.swing.JLabel();
         scrollPane = new javax.swing.JScrollPane();
         lbZoomInfo = new javax.swing.JLabel();
@@ -192,7 +192,10 @@ public class MainFrame extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(233, 247, 247));
 
+        SettingPane.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
         jPanel4.setBackground(new java.awt.Color(233, 247, 247));
+        jPanel4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         jPanel6.setBackground(new java.awt.Color(233, 247, 247));
 
@@ -338,6 +341,7 @@ public class MainFrame extends javax.swing.JFrame {
                 .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(3, 3, 3)
                 .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
                 .addComponent(strokeState, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(10, 10, 10)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -367,6 +371,7 @@ public class MainFrame extends javax.swing.JFrame {
         SettingPane.addTab("Home", jPanel4);
 
         jPanel1.setBackground(new java.awt.Color(233, 247, 247));
+        jPanel1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         bReplay.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -762,83 +767,6 @@ public class MainFrame extends javax.swing.JFrame {
             }
         }
         return false;
-    }
-
-
- private class OvalButton extends JButton {
-
-        private Color startColor = new Color(204,204,255);
-        private Color endColor = new Color(204,204,255);
-        private Color rollOverColor = new Color(204,204,255);
-        private Color pressedColor = new Color(204,204,255);
-        ;
-	private GradientPaint GP;
-
-        /**
-         * Constructor takes String argument
-         *
-         * @param text
-         */
-        public OvalButton(String text) {
-            super();
-            setText(text);
-            setContentAreaFilled(false);
-            setBorderPainted(false);
-            setFont(new Font("Thoma", Font.BOLD, 12));
-            setForeground(Color.WHITE);
-            setFocusable(false);
-
-        }
-
-        public void paintComponent(Graphics g) {
-            Graphics2D g2d = (Graphics2D) g.create();
-            g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING,
-                    RenderingHints.VALUE_ANTIALIAS_ON);
-            int h = getHeight();
-            int w = getWidth();
-            ButtonModel model = getModel();
-
-            if (!model.isEnabled()) {
-                setForeground(new Color(204,204,255));
-                GP = new GradientPaint(0, 0, new Color(204,204,255), 0, h, new Color(204,204,255), true);
-            } else {
-                setForeground(Color.WHITE);
-                if (model.isRollover()) {
-                    GP = new GradientPaint(0, 0, rollOverColor, 0, h, rollOverColor,
-                            true);
-
-                } else {
-                    GP = new GradientPaint(0, 0, startColor, 0, h, endColor, true);
-                }
-            }
-            g2d.setPaint(GP);
-            GradientPaint p1;
-            GradientPaint p2;
-
-            if (model.isPressed()) {
-                GP = new GradientPaint(0, 0, pressedColor, 0, h, pressedColor, true);
-                g2d.setPaint(GP);
-                p1 = new GradientPaint(0, 0, new Color(0, 0, 0), 0, h - 1,
-                        new Color(204,204,255));
-                p2 = new GradientPaint(0, 1, new Color(204,204,255), 0, h - 1,
-                        new Color(204,204,255));
-            } else {
-                p1 = new GradientPaint(0, 0, new Color(204,204,255), 0, h - 1,
-                        new Color(0, 0, 0));
-                p2 = new GradientPaint(0, 1, new Color(204,204,255), 0,
-                        h - 1, new Color(204,204,255));
-                GP = new GradientPaint(0, 0, startColor, 0, h, endColor, true);
-            }
-
-            g2d.fillOval(0, 0, h, h);
-            g2d.setPaint(p1);
-            g2d.drawOval(0, 0, h - 1, h - 1);
-            g2d.setPaint(p2);
-            g2d.drawOval(0, 0, h - 1, h - 1);
-            g2d.dispose();
-
-            super.paintComponent(g);
-        }
     }
 
     private void bZoomInActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bZoomInActionPerformed

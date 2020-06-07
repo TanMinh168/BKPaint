@@ -654,7 +654,14 @@ public class PadPaint extends javax.swing.JPanel implements MouseListener, Mouse
                                 inPencil.draw(g2d);
                             }
 
-                        } 
+                        }else if (inDrawType instanceof Eraser) {
+                        	eraser = (Eraser) inDrawType;
+                            Eraser inEraser = (Eraser) inDrawType;
+                            for (int j = 1; j < inEraser.getDraggedPoint().size(); j++) {
+                                inEraser.setPoint(inEraser.getDraggedPoint().get(j - 1), inEraser.getDraggedPoint().get(j));
+                                inEraser.draw(g2d);
+                            }
+                        }
                         else if (inDrawType instanceof Bucket) {
                             Bucket inBucket = (Bucket) inDrawType;
                             inBucket.draw(buff_img);

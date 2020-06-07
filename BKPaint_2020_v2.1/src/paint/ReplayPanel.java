@@ -369,8 +369,10 @@ public class ReplayPanel extends JPanel implements Runnable {
                         pencil.draw(g2dBuffer);
                     }
                 } else if (drawType instanceof Eraser) {
-                    if (cStateElement < listPoint.size() - 1) {
-                        eraser.setPoint(listPoint.get(cStateElement), listPoint.get(cStateElement + 1));
+                	eraser.setPoint(listPoint.get(0), listPoint.get(cStateElement));
+                    eraser.draw(g2);
+                	if (cStateElement == listPoint.size() - 1) {
+                        //eraser.setPoint(listPoint.get(cStateElement), listPoint.get(cStateElement + 1));
                         eraser.draw(g2dBuffer);
                     }
                 }
@@ -455,8 +457,13 @@ public class ReplayPanel extends JPanel implements Runnable {
                         eraser = (Eraser) inDrawType;
                         listPoint = eraser.getDraggedPoint();
                     } else if (inDrawType instanceof Bucket) {
+                    	bucket = (Bucket) inDrawType;
+                        listPoint = bucket.getArrPoint();
                         Bucket inBucket = (Bucket) inDrawType;
-                        inBucket.draw(buff_img);
+                        for (int j = 1; j < inBucket.getArrPoint().size() ; j++) {
+                        	inBucket.setStart(inBucket.getArrPoint().get(j-1));
+                        	inBucket.draw(buff_img);
+                        }
                     }
                     shapeIndex++;
                     break;
@@ -556,9 +563,22 @@ public class ReplayPanel extends JPanel implements Runnable {
                         } else if (inDrawType instanceof SelectionShape) {
                             selrect = (SelectionShape) inDrawType;
                             listPoint = selrect.getDraggedPoint();
-                        } else if (inDrawType instanceof Bucket) {
+                        }else if (inDrawType instanceof Eraser) {
+                            eraser = (Eraser) inDrawType;
+                            listPoint = eraser.getDraggedPoint();
+                            Eraser inEraser = (Eraser) inDrawType;
+                            for (int j = 1; j < inEraser.getDraggedPoint().size(); j++) {
+                                inEraser.setPoint(inEraser.getDraggedPoint().get(j - 1), inEraser.getDraggedPoint().get(j));
+                                inEraser.draw(g2d);
+                            }
+                        }else if (inDrawType instanceof Bucket) {
+                        	bucket = (Bucket) inDrawType;
+                            listPoint = bucket.getArrPoint();
                             Bucket inBucket = (Bucket) inDrawType;
-                            inBucket.draw(buff_img);
+                            for (int j = 1; j < inBucket.getArrPoint().size() ; j++) {
+                            	inBucket.setStart(inBucket.getArrPoint().get(j-1));
+                            	inBucket.draw(g2d);
+                            }
                         }
                     } else {   //Neu diem da duoc khoi tao
                         //Kiem tra xem hinh hien tai da dat den trang thai cuoi cung cua hinh chua
