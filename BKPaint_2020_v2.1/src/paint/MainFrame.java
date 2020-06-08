@@ -58,8 +58,8 @@ public class MainFrame extends javax.swing.JFrame {
         bZoomorg.setIcon(new ImageIcon(getImageIcon("/icon/zoomorg.png")));
         bReplay.setIcon(new ImageIcon(getImageIcon("/icon/replay.png")));
         bLibrary.setIcon(new ImageIcon(getImageIcon("/icon/library.png")));
-        bZoomOut.setIcon(new ImageIcon(getImageIcon("/icon/zoomout.png")));
-        bZoomIn.setIcon(new ImageIcon(getImageIcon("/icon/zoomin.png")));
+        //bZoomOut.setIcon(new ImageIcon(getImageIcon("/icon/zoomout.png")));
+        //bZoomIn.setIcon(new ImageIcon(getImageIcon("/icon/zoomin.png")));
         newFile.setIcon(new ImageIcon(getImageIcon("/icon/new.png")));
         openFile.setIcon(new ImageIcon(getImageIcon("/icon/open.png")));
         saveFile.setIcon(new ImageIcon(getImageIcon("/icon/save.png")));
@@ -76,7 +76,7 @@ public class MainFrame extends javax.swing.JFrame {
         backgroundPanel.setLayout(null);
         backgroundPanel.setBackground(new Color(204, 204, 255));
         buff_img = padPaint.getBuffer();
-        backgroundPanel.setPreferredSize(new Dimension(buff_img.getWidth() + 120, buff_img.getHeight() + 50));
+        backgroundPanel.setPreferredSize(new Dimension(buff_img.getWidth() + 20, buff_img.getHeight() + 50));
         backgroundPanel.add(padPaint);
         scrollPane.setViewportView(backgroundPanel);
         padPaint.setColorChooser(colorDialog1);
@@ -458,7 +458,7 @@ public class MainFrame extends javax.swing.JFrame {
                             .addComponent(width_tf, javax.swing.GroupLayout.DEFAULT_SIZE, 76, Short.MAX_VALUE)
                             .addComponent(height_tf)))
                     .addComponent(OK_btn))
-                .addContainerGap(146, Short.MAX_VALUE))
+                .addContainerGap(241, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -518,6 +518,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
 
         bZoomOut.setPreferredSize(new Dimension(20,20));
+        bZoomOut.setIcon(new javax.swing.ImageIcon("C:\\Users\\admin\\Desktop\\BKPaint_v2.8\\BKPaint_2020_v2.1\\data\\icon\\zoomout2 .png")); // NOI18N
         bZoomOut.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bZoomOutActionPerformed(evt);
@@ -525,6 +526,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
 
         bZoomIn.setPreferredSize(new Dimension(20,20));
+        bZoomIn.setIcon(new javax.swing.ImageIcon("C:\\Users\\admin\\Desktop\\BKPaint_v2.8\\BKPaint_2020_v2.1\\data\\icon\\zoomin2.png")); // NOI18N
         bZoomIn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bZoomInActionPerformed(evt);
@@ -614,16 +616,14 @@ public class MainFrame extends javax.swing.JFrame {
                 .addComponent(bZoomIn, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
             .addComponent(SettingPane)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(scrollPane, javax.swing.GroupLayout.PREFERRED_SIZE, 1152, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(scrollPane)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(SettingPane, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(scrollPane, javax.swing.GroupLayout.PREFERRED_SIZE, 464, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(scrollPane, javax.swing.GroupLayout.PREFERRED_SIZE, 551, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -637,7 +637,7 @@ public class MainFrame extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(lbSize, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(25, Short.MAX_VALUE))
+                .addContainerGap(20, Short.MAX_VALUE))
         );
 
         pack();
