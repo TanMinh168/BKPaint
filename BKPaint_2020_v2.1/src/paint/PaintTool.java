@@ -22,20 +22,20 @@ public class PaintTool extends javax.swing.JPanel implements ActionListener {
      */
     public PaintTool() {
         initComponents();
-        bPencil.setIcon(new ImageIcon(getImageIcon("/icon/pen.png")));
-        bBucket.setIcon(new ImageIcon(getImageIcon("/icon/bucket.png")));
+        bPencil.setIcon(new ImageIcon(getImageIcon("/icon/pen2.png")));
+        bBucket.setIcon(new ImageIcon(getImageIcon("/icon/bucket2.png")));
         bCurve.setIcon(new ImageIcon(getImageIcon("/icon/curve.png")));
-        bEraser.setIcon(new ImageIcon(getImageIcon("/icon/eraser.png")));
+        bEraser.setIcon(new ImageIcon(getImageIcon("/icon/eraser2.png")));
         bOval.setIcon(new ImageIcon(getImageIcon("/icon/oval.png")));
         bFont.setIcon(new ImageIcon(getImageIcon("/icon/font.png")));
         bLine.setIcon(new ImageIcon(getImageIcon("/icon/line.png")));
-        bPicker.setIcon(new ImageIcon(getImageIcon("/icon/picker.png")));
+        bPicker.setIcon(new ImageIcon(getImageIcon("/icon/picker2.png")));
         bPolygon.setIcon(new ImageIcon(getImageIcon("/icon/polygon.png")));
-        bRect.setIcon(new ImageIcon(getImageIcon("/icon/rect.png")));
+        bRect.setIcon(new ImageIcon(getImageIcon("/icon/rect2.png")));
         bRoundRect.setIcon(new ImageIcon(getImageIcon("/icon/roundRect.png")));
         bTriangle.setIcon(new ImageIcon(getImageIcon("/icon/triangle.png")));
         bSquareTriangle.setIcon(new ImageIcon(getImageIcon("/icon/sqtriangle.png")));
-        bZoom.setIcon(new ImageIcon(getImageIcon("/icon/zoom.png")));
+        bZoom.setIcon(new ImageIcon(getImageIcon("/icon/zoom2.png")));
         select.setIcon(new ImageIcon(getImageIcon("/icon/selrect.png")));
     }
 

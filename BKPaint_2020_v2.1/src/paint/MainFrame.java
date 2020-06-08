@@ -518,7 +518,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
 
         bZoomOut.setPreferredSize(new Dimension(20,20));
-        bZoomOut.setIcon(new javax.swing.ImageIcon("C:\\Users\\admin\\Desktop\\BKPaint_v2.8\\BKPaint_2020_v2.1\\data\\icon\\zoomout2 .png")); // NOI18N
+        bZoomOut.setIcon(new javax.swing.ImageIcon("F:\\BKPaint\\BKPaint_2020_v2.1\\build\\classes\\icon\\zoomout2 .png")); // NOI18N
         bZoomOut.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bZoomOutActionPerformed(evt);
@@ -526,7 +526,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
 
         bZoomIn.setPreferredSize(new Dimension(20,20));
-        bZoomIn.setIcon(new javax.swing.ImageIcon("C:\\Users\\admin\\Desktop\\BKPaint_v2.8\\BKPaint_2020_v2.1\\data\\icon\\zoomin2.png")); // NOI18N
+        bZoomIn.setIcon(new javax.swing.ImageIcon("F:\\BKPaint\\BKPaint_2020_v2.1\\build\\classes\\icon\\zoomin2.png")); // NOI18N
         bZoomIn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bZoomInActionPerformed(evt);
